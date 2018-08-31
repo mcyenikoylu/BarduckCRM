@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BarduckCRMModelStoreContainer" CdmEntityContainer="BarduckCRMEntities">
+    <FunctionImportMapping FunctionImportName="S_Baglanti" FunctionName="BarduckCRMModel.Store.S_Baglanti">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Baglanti_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+          <ScalarProperty Name="Ulke" ColumnName="Ulke" />
+          <ScalarProperty Name="Puan" ColumnName="Puan" />
+          <ScalarProperty Name="CepTel" ColumnName="CepTel" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EvTel" ColumnName="EvTel" />
+          <ScalarProperty Name="IsTel" ColumnName="IsTel" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+          <ScalarProperty Name="Meslek_TipID2" ColumnName="Meslek_TipID2" />
+          <ScalarProperty Name="Meslek_TipID2_STR" ColumnName="Meslek_TipID2_STR" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="MedeniHali_TipID44" ColumnName="MedeniHali_TipID44" />
+          <ScalarProperty Name="UyruguID" ColumnName="UyruguID" />
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+          <ScalarProperty Name="Semt" ColumnName="Semt" />
+          <ScalarProperty Name="PostaKodu" ColumnName="PostaKodu" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Dahili" ColumnName="Dahili" />
+          <ScalarProperty Name="Notlar" ColumnName="Notlar" />
+          <ScalarProperty Name="Bireysel" ColumnName="Bireysel" />
+          <ScalarProperty Name="TanitimEvTel" ColumnName="TanitimEvTel" />
+          <ScalarProperty Name="TanitimIsTel" ColumnName="TanitimIsTel" />
+          <ScalarProperty Name="TanitimCepTel" ColumnName="TanitimCepTel" />
+          <ScalarProperty Name="TanitimEPosta" ColumnName="TanitimEPosta" />
+          <ScalarProperty Name="Reyting" ColumnName="Reyting" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="OnekResim" ColumnName="OnekResim" />
+          <ScalarProperty Name="OnekID" ColumnName="OnekID" />
+          <ScalarProperty Name="Kurumsal" ColumnName="Kurumsal" />
+          <ScalarProperty Name="MedeniHali_TipID44_STR" ColumnName="MedeniHali_TipID44_STR" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="UlkeKodu" ColumnName="UlkeKodu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Tip" FunctionName="BarduckCRMModel.Store.S_Tip">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Tip_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_KullaniciAyarlari" FunctionName="BarduckCRMModel.Store.S_KullaniciAyarlari">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_KullaniciAyarlari_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Tema" ColumnName="Tema" />
+          <ScalarProperty Name="SikKullanilanlar" ColumnName="SikKullanilanlar" />
+          <ScalarProperty Name="QuickAccessToolbarNesneleri" ColumnName="QuickAccessToolbarNesneleri" />
+          <ScalarProperty Name="QuickAccessToolbarPozisyon" ColumnName="QuickAccessToolbarPozisyon" />
+          <ScalarProperty Name="SolNavigasyonAcikMi" ColumnName="SolNavigasyonAcikMi" />
+          <ScalarProperty Name="SolNavigasyonGenislik" ColumnName="SolNavigasyonGenislik" />
+          <ScalarProperty Name="DashboardID" ColumnName="DashboardID" />
+          <ScalarProperty Name="DashboardYenileme" ColumnName="DashboardYenileme" />
+          <ScalarProperty Name="DashboardYenilemeSure" ColumnName="DashboardYenilemeSure" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Form" FunctionName="BarduckCRMModel.Store.S_Form">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Form_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FormAdi" ColumnName="FormAdi" />
+          <ScalarProperty Name="FormBaslik" ColumnName="FormBaslik" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_Baglanti" FunctionName="BarduckCRMModel.Store.IUD_Baglanti">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Baglanti_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Ulke" FunctionName="BarduckCRMModel.Store.S_Ulke">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Ulke_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UlkeAdi" ColumnName="UlkeAdi" />
+          <ScalarProperty Name="UyrukAdi" ColumnName="UyrukAdi" />
+          <ScalarProperty Name="UlkeKodu" ColumnName="UlkeKodu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Firma" FunctionName="BarduckCRMModel.Store.S_Firma">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Firma_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="FirmaKodu" ColumnName="FirmaKodu" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_TipResimli" FunctionName="BarduckCRMModel.Store.S_TipResimli">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_TipResimli_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_Firma" FunctionName="BarduckCRMModel.Store.IUD_Firma">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Firma_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Personel" FunctionName="BarduckCRMModel.Store.S_Personel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Personel_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+          <ScalarProperty Name="Semt" ColumnName="Semt" />
+          <ScalarProperty Name="PostaKodu" ColumnName="PostaKodu" />
+          <ScalarProperty Name="CepTel" ColumnName="CepTel" />
+          <ScalarProperty Name="EvTel" ColumnName="EvTel" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Cinsiyeti_TipID72" ColumnName="Cinsiyeti_TipID72" />
+          <ScalarProperty Name="DegistirenKullaniciID" ColumnName="DegistirenKullaniciID" />
+          <ScalarProperty Name="DegistirenTarih" ColumnName="DegistirenTarih" />
+          <ScalarProperty Name="Departman_TipID1" ColumnName="Departman_TipID1" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="IseBaslangicTarihi" ColumnName="IseBaslangicTarihi" />
+          <ScalarProperty Name="IstenAyrilisTarihi" ColumnName="IstenAyrilisTarihi" />
+          <ScalarProperty Name="OfisID" ColumnName="OfisID" />
+          <ScalarProperty Name="OlusturanKullaniciID" ColumnName="OlusturanKullaniciID" />
+          <ScalarProperty Name="OlusturanTarih" ColumnName="OlusturanTarih" />
+          <ScalarProperty Name="OnekID" ColumnName="OnekID" />
+          <ScalarProperty Name="PersonelTakimID" ColumnName="PersonelTakimID" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_BaglantiHareketleri" FunctionName="BarduckCRMModel.Store.S_BaglantiHareketleri">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_BaglantiHareketleri_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AciklamaNotu" ColumnName="AciklamaNotu" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="BaglantiID" ColumnName="BaglantiID" />
+          <ScalarProperty Name="CepKisaMesajHareketiID" ColumnName="CepKisaMesajHareketiID" />
+          <ScalarProperty Name="DegistirenKullaniciID" ColumnName="DegistirenKullaniciID" />
+          <ScalarProperty Name="DegistirenTarih" ColumnName="DegistirenTarih" />
+          <ScalarProperty Name="DevamEdenHareket" ColumnName="DevamEdenHareket" />
+          <ScalarProperty Name="DurdurulanHareketID" ColumnName="DurdurulanHareketID" />
+          <ScalarProperty Name="EPostaHareketiID" ColumnName="EPostaHareketiID" />
+          <ScalarProperty Name="HareketDurumTipi_Tip26" ColumnName="HareketDurumTipi_Tip26" />
+          <ScalarProperty Name="HareketKaynagi_TipID43" ColumnName="HareketKaynagi_TipID43" />
+          <ScalarProperty Name="HareketPuani" ColumnName="HareketPuani" />
+          <ScalarProperty Name="HareketTipi_TipID17" ColumnName="HareketTipi_TipID17" />
+          <ScalarProperty Name="Hatirlatma" ColumnName="Hatirlatma" />
+          <ScalarProperty Name="HatirlatmaID" ColumnName="HatirlatmaID" />
+          <ScalarProperty Name="KampanyaTanitimiID" ColumnName="KampanyaTanitimiID" />
+          <ScalarProperty Name="OfisID" ColumnName="OfisID" />
+          <ScalarProperty Name="OlusturanKullaniciID" ColumnName="OlusturanKullaniciID" />
+          <ScalarProperty Name="OlusturanTarih" ColumnName="OlusturanTarih" />
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="Randevu" ColumnName="Randevu" />
+          <ScalarProperty Name="RandevuID" ColumnName="RandevuID" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="SesKaydiHareketiID" ColumnName="SesKaydiHareketiID" />
+          <ScalarProperty Name="Sure" ColumnName="Sure" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="TanitimTercihiEPosta" ColumnName="TanitimTercihiEPosta" />
+          <ScalarProperty Name="TanitimTercihiSMS" ColumnName="TanitimTercihiSMS" />
+          <ScalarProperty Name="TanitimTercihiTelefon" ColumnName="TanitimTercihiTelefon" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_KullaniciGirisKontrol" FunctionName="BarduckCRMModel.Store.S_KullaniciGirisKontrol">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_KullaniciGirisKontrol_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_DurdurulacakBaglantiHareketleri" FunctionName="BarduckCRMModel.Store.S_DurdurulacakBaglantiHareketleri">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_DurdurulacakBaglantiHareketleri_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Saat" ColumnName="Saat" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Ofis" FunctionName="BarduckCRMModel.Store.S_Ofis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Ofis_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OfisAdi" ColumnName="OfisAdi" />
+          <ScalarProperty Name="OfisKodu" ColumnName="OfisKodu" />
+          <ScalarProperty Name="OlusturanKullaniciID" ColumnName="OlusturanKullaniciID" />
+          <ScalarProperty Name="OlusturanTarih" ColumnName="OlusturanTarih" />
+          <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="KarsilamaPersoneliID" ColumnName="KarsilamaPersoneliID" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="DegistirenKullaniciID" ColumnName="DegistirenKullaniciID" />
+          <ScalarProperty Name="DegistirenTarih" ColumnName="DegistirenTarih" />
+          <ScalarProperty Name="Sehir" ColumnName="Sehir" />
+          <ScalarProperty Name="Semt" ColumnName="Semt" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="UlkeID" ColumnName="UlkeID" />
+          <ScalarProperty Name="YetkiliPersonelID" ColumnName="YetkiliPersonelID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_BaglantiHareketleri" FunctionName="BarduckCRMModel.Store.IUD_BaglantiHareketleri">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_BaglantiHareketleri_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_KullaniciAyarlari" FunctionName="BarduckCRMModel.Store.IUD_KullaniciAyarlari">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_KullaniciAyarlari_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Menu" FunctionName="BarduckCRMModel.Store.S_Menu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Menu_Result">
+          <ScalarProperty Name="FormAdi" ColumnName="FormAdi" />
+          <ScalarProperty Name="FormBaslik" ColumnName="FormBaslik" />
+          <ScalarProperty Name="FormID" ColumnName="FormID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuAdi" ColumnName="MenuAdi" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_AyarKarakter" FunctionName="BarduckCRMModel.Store.S_AyarKarakter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_AyarKarakter_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AyarKarakterBaslik" ColumnName="AyarKarakterBaslik" />
+          <ScalarProperty Name="Deger" ColumnName="Deger" />
+          <ScalarProperty Name="IcerikDegerAciklamasi" ColumnName="IcerikDegerAciklamasi" />
+          <ScalarProperty Name="GrupAdi" ColumnName="GrupAdi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Dashboard" FunctionName="BarduckCRMModel.Store.S_Dashboard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Dashboard_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DashboardAdi" ColumnName="DashboardAdi" />
+          <ScalarProperty Name="Layout" ColumnName="Layout" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_DosyaGet" FunctionName="BarduckCRMModel.Store.S_DosyaGet" />
+    <FunctionImportMapping FunctionImportName="S_Evraklar" FunctionName="BarduckCRMModel.Store.S_Evraklar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Evraklar_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EvrakTanimBasligi" ColumnName="EvrakTanimBasligi" />
+          <ScalarProperty Name="Aciklamalar" ColumnName="Aciklamalar" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="DosyaAdi" ColumnName="DosyaAdi" />
+          <ScalarProperty Name="DurumSecID_400" ColumnName="DurumSecID_400" />
+          <ScalarProperty Name="EvrakGosterimYeriID" ColumnName="EvrakGosterimYeriID" />
+          <ScalarProperty Name="YetkilendirmeKisID_201" ColumnName="YetkilendirmeKisID_201" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_EvrakDataSourceCalistir" FunctionName="BarduckCRMModel.Store.S_EvrakDataSourceCalistir">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_EvrakDataSourceCalistir_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EvrakDataSourceName" ColumnName="EvrakDataSourceName" />
+          <ScalarProperty Name="QueryIcerik" ColumnName="QueryIcerik" />
+          <ScalarProperty Name="QueryData" ColumnName="QueryData" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_Evraklar" FunctionName="BarduckCRMModel.Store.IUD_Evraklar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Evraklar_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_DosyaDelete" FunctionName="BarduckCRMModel.Store.S_DosyaDelete" />
+    <FunctionImportMapping FunctionImportName="S_DosyaInsert" FunctionName="BarduckCRMModel.Store.S_DosyaInsert" />
+    <FunctionImportMapping FunctionImportName="S_Kullanici" FunctionName="BarduckCRMModel.Store.S_Kullanici">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Kullanici_Result1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
+          <ScalarProperty Name="CikisTarihi" ColumnName="CikisTarihi" />
+          <ScalarProperty Name="ProfilID" ColumnName="ProfilID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_EsnekKayitQueryCalistir" FunctionName="BarduckCRMModel.Store.S_EsnekKayitQueryCalistir">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_EsnekKayitQueryCalistir_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Checkbox" ColumnName="Checkbox" />
+          <ScalarProperty Name="KayitID" ColumnName="KayitID" />
+          <ScalarProperty Name="SecilenKayitID" ColumnName="SecilenKayitID" />
+          <ScalarProperty Name="SecilenKayitDegeriInt" ColumnName="SecilenKayitDegeriInt" />
+          <ScalarProperty Name="SecilenKayitDegeriNvarchar" ColumnName="SecilenKayitDegeriNvarchar" />
+          <ScalarProperty Name="SecilenKayitDegeriDecimal" ColumnName="SecilenKayitDegeriDecimal" />
+          <ScalarProperty Name="SecilenKayitDegeriDatetime" ColumnName="SecilenKayitDegeriDatetime" />
+          <ScalarProperty Name="SecilenKayitDegeriResimID" ColumnName="SecilenKayitDegeriResimID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_EsnekKayitQuery" FunctionName="BarduckCRMModel.Store.S_EsnekKayitQuery">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_EsnekKayitQuery_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_EsnekKayit" FunctionName="BarduckCRMModel.Store.IUD_EsnekKayit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_EsnekKayit_Result">
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="S_Takim" FunctionName="BarduckCRMModel.Store.S_Takim">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_Takim_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TakimKodu" ColumnName="TakimKodu" />
+          <ScalarProperty Name="TakimAdi" ColumnName="TakimAdi" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="Sil" ColumnName="Sil" />
+          <ScalarProperty Name="OlusturanKullaniciID" ColumnName="OlusturanKullaniciID" />
+          <ScalarProperty Name="OlusturanKullaniciTarih" ColumnName="OlusturanKullaniciTarih" />
+          <ScalarProperty Name="DegistirenKullaniciID" ColumnName="DegistirenKullaniciID" />
+          <ScalarProperty Name="DegistirenKullaniciTarih" ColumnName="DegistirenKullaniciTarih" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IUD_Takim" FunctionName="BarduckCRMModel.Store.IUD_Takim">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Takim_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
