@@ -23,6 +23,10 @@ namespace BarduckCRM
 
         private void Personel_Load(object sender, EventArgs e)
         {
+            RibbonMenuGridAyarlari uc_gridAyarlari = new RibbonMenuGridAyarlari(ribbonPage1.Text);
+            uc_gridAyarlari.GrdView = gvPersonel;
+            ribbonControl1.MergeRibbon(uc_gridAyarlari.ribbonControl1);
+
             DataGetir();
         }
 
@@ -52,7 +56,8 @@ namespace BarduckCRM
             if (XtraMessageBox.Show("Kayıdı silmek istediğinizden eminmisiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                 int id = Convert.ToInt32(gvPersonel.GetFocusedRowCellValue("ID"));
-                data.IUD_Personel(true, id, "", -1, "", "", -1, "", "", null, "", null, "", "", -1, null, -1, null, -1, null, "", -1, "", "", -1, -1, null, null);
+                data.IUD_Personel(true, id, "", -1, "", "", -1, "", "", null, "", null, "", "", -1, null,
+                    -1, null, -1, null, "", -1, "", "", -1, -1, null, null);
                 Mesaj.MesajVer("Kayıt silinmiştir.", Mesaj.MesajTipi.Onay, this);
                 DataGetir();
             }

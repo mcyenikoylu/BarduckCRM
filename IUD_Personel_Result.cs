@@ -13,9 +13,9 @@ namespace BarduckCRM
     
     public partial class IUD_Personel_Result
     {
-        public int Sonuc { get; set; }
+        public int Aktif { get; set; }
         public Nullable<int> ID { get; set; }
-        public Nullable<bool> Aktif { get; set; }
-        public System.DateTime Tarih { get; set; }
+        public int Sonuc { get; set; }
+        public Nullable<int> Tarih { get; set; }
     }
 }

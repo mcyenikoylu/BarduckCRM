@@ -83,7 +83,13 @@ namespace BarduckCRM
                 frm.Show();
 
             }
+            if (value == 35) //hareket bağlantı kaynakları
+            {
+                Kullanici frm = new Kullanici();
+                frm.MdiParent = Master.ActiveForm;
+                frm.Show();
 
+            }
 
 
 

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanici));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnEkle = new DevExpress.XtraBars.BarButtonItem();
@@ -38,7 +37,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.grd = new DevExpress.XtraGrid.GridControl();
-            this.sKullaniciResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sKullaniciResultBindingSource = new System.Windows.Forms.BindingSource();
             this.gv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKullaniciAdi = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -87,27 +86,27 @@
             // btnEkle
             // 
             this.btnEkle.Caption = "Ekle";
-            this.btnEkle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnEkle.Glyph")));
             this.btnEkle.Id = 1;
-            this.btnEkle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnEkle.LargeGlyph")));
+            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.Image")));
+            this.btnEkle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.LargeImage")));
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEkle_ItemClick);
             // 
             // btnDuzenle
             // 
             this.btnDuzenle.Caption = "Düzenle";
-            this.btnDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Glyph")));
             this.btnDuzenle.Id = 2;
-            this.btnDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.LargeGlyph")));
+            this.btnDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.Image")));
+            this.btnDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.LargeImage")));
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDuzenle_ItemClick);
             // 
             // btnSil
             // 
             this.btnSil.Caption = "Sil";
-            this.btnSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSil.Glyph")));
             this.btnSil.Id = 3;
-            this.btnSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSil.LargeGlyph")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
             // 
             // ribbonPage1
@@ -115,7 +114,7 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "KULLANICI";
+            this.ribbonPage1.Text = "Kullanıcılar";
             // 
             // ribbonPageGroup1
             // 
@@ -197,8 +196,6 @@
             this.colParola.FieldName = "Parola";
             this.colParola.Name = "colParola";
             this.colParola.OptionsColumn.AllowEdit = false;
-            this.colParola.Visible = true;
-            this.colParola.VisibleIndex = 2;
             this.colParola.Width = 150;
             // 
             // colKayitTarihi
@@ -206,8 +203,6 @@
             this.colKayitTarihi.FieldName = "KayitTarihi";
             this.colKayitTarihi.Name = "colKayitTarihi";
             this.colKayitTarihi.OptionsColumn.AllowEdit = false;
-            this.colKayitTarihi.Visible = true;
-            this.colKayitTarihi.VisibleIndex = 3;
             this.colKayitTarihi.Width = 150;
             // 
             // colGirisTarihi
@@ -215,8 +210,6 @@
             this.colGirisTarihi.FieldName = "GirisTarihi";
             this.colGirisTarihi.Name = "colGirisTarihi";
             this.colGirisTarihi.OptionsColumn.AllowEdit = false;
-            this.colGirisTarihi.Visible = true;
-            this.colGirisTarihi.VisibleIndex = 4;
             this.colGirisTarihi.Width = 150;
             // 
             // colCikisTarihi
@@ -224,8 +217,6 @@
             this.colCikisTarihi.FieldName = "CikisTarihi";
             this.colCikisTarihi.Name = "colCikisTarihi";
             this.colCikisTarihi.OptionsColumn.AllowEdit = false;
-            this.colCikisTarihi.Visible = true;
-            this.colCikisTarihi.VisibleIndex = 5;
             this.colCikisTarihi.Width = 150;
             // 
             // colPersonelID
@@ -233,8 +224,6 @@
             this.colPersonelID.FieldName = "PersonelID";
             this.colPersonelID.Name = "colPersonelID";
             this.colPersonelID.OptionsColumn.AllowEdit = false;
-            this.colPersonelID.Visible = true;
-            this.colPersonelID.VisibleIndex = 6;
             this.colPersonelID.Width = 150;
             // 
             // colProfilID
@@ -242,8 +231,6 @@
             this.colProfilID.FieldName = "ProfilID";
             this.colProfilID.Name = "colProfilID";
             this.colProfilID.OptionsColumn.AllowEdit = false;
-            this.colProfilID.Visible = true;
-            this.colProfilID.VisibleIndex = 7;
             this.colProfilID.Width = 150;
             // 
             // imageOnek

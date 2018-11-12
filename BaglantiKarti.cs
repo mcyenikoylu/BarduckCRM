@@ -38,7 +38,7 @@ namespace BarduckCRM
             {
                 Cursor.Current = Cursors.WaitCursor;
 
-                tabPane1.SelectedPageIndex = 1; //tab ların hangisi seçili geleceğini belirler.
+                tabPane1.SelectedPageIndex = 0; //tab ların hangisi seçili geleceğini belirler.
 
                 barLblKayitAktifPasif.Caption = "Pasif Kayıt";
                 barLblKayitAktifPasif.Glyph = BarduckCRM.Properties.Resources.Apply_16x16;

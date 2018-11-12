@@ -73,13 +73,22 @@ namespace BarduckCRM
                     cmbHareketTarihi.EditValue = DateTime.Now.Date;
                     cmbHareketSaati.EditValue = DateTime.Now.ToShortTimeString();
                 }
-
+                BaglantiDataGetir(baglantiid);
                 Cursor.Current = Cursors.Default;
             }
             catch (Exception hata)
             {
                 Cursor.Current = Cursors.Default;
             }
+        }
+
+        private void BaglantiDataGetir(int _islemid)
+        {
+            var hareketler = data.S_BaglantiHareketleri(-1, _islemid).ToList();
+            if (hareketler.Count > 0)
+                grdHareketler.DataSource = hareketler;
+            else
+                grdHareketler.DataSource = null;
         }
 
         string sure = "00:00:00";

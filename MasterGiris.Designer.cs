@@ -60,10 +60,10 @@
             // 
             // txtKullaniciAdi
             // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(118, 66);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(143, 66);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Properties.AutoHeight = false;
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(258, 25);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(275, 25);
             this.txtKullaniciAdi.TabIndex = 2;
             // 
             // labelControl1
@@ -92,10 +92,10 @@
             // 
             // txtParola
             // 
-            this.txtParola.Location = new System.Drawing.Point(118, 97);
+            this.txtParola.Location = new System.Drawing.Point(143, 97);
             this.txtParola.Name = "txtParola";
             this.txtParola.Properties.AutoHeight = false;
-            this.txtParola.Size = new System.Drawing.Size(258, 25);
+            this.txtParola.Size = new System.Drawing.Size(275, 25);
             this.txtParola.TabIndex = 5;
             // 
             // labelControl3
@@ -103,15 +103,16 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Location = new System.Drawing.Point(26, 127);
+            this.labelControl3.Location = new System.Drawing.Point(26, 108);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(86, 25);
             this.labelControl3.TabIndex = 8;
             this.labelControl3.Text = "Şirket";
+            this.labelControl3.Visible = false;
             // 
             // cmbSirket
             // 
-            this.cmbSirket.Location = new System.Drawing.Point(118, 128);
+            this.cmbSirket.Location = new System.Drawing.Point(118, 109);
             this.cmbSirket.Name = "cmbSirket";
             this.cmbSirket.Properties.AutoHeight = false;
             editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
@@ -127,14 +128,15 @@
             this.cmbSirket.Properties.ValueMember = "LABEL";
             this.cmbSirket.Size = new System.Drawing.Size(258, 25);
             this.cmbSirket.TabIndex = 7;
+            this.cmbSirket.Visible = false;
             this.cmbSirket.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.cmbSirket_ButtonClick);
             // 
             // btnVazgec
             // 
             this.btnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVazgec.ImageOptions.Image")));
-            this.btnVazgec.Location = new System.Drawing.Point(283, 195);
+            this.btnVazgec.Location = new System.Drawing.Point(347, 140);
             this.btnVazgec.Name = "btnVazgec";
-            this.btnVazgec.Size = new System.Drawing.Size(93, 38);
+            this.btnVazgec.Size = new System.Drawing.Size(71, 32);
             this.btnVazgec.TabIndex = 1;
             this.btnVazgec.Text = "VAZGEÇ";
             this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
@@ -142,16 +144,16 @@
             // btnGiris
             // 
             this.btnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGiris.ImageOptions.Image")));
-            this.btnGiris.Location = new System.Drawing.Point(188, 195);
+            this.btnGiris.Location = new System.Drawing.Point(270, 140);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(89, 38);
+            this.btnGiris.Size = new System.Drawing.Size(71, 32);
             this.btnGiris.TabIndex = 0;
             this.btnGiris.Text = "GİRİŞ";
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // toggHatirla
             // 
-            this.toggHatirla.Location = new System.Drawing.Point(281, 159);
+            this.toggHatirla.Location = new System.Drawing.Point(143, 144);
             this.toggHatirla.Name = "toggHatirla";
             this.toggHatirla.Properties.OffText = "Hayır";
             this.toggHatirla.Properties.OnText = "Evet";
@@ -163,12 +165,10 @@
             // 
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Appearance.Options.UseTextOptions = true;
-            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(26, 158);
+            this.labelControl4.Location = new System.Drawing.Point(26, 143);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(249, 25);
+            this.labelControl4.Size = new System.Drawing.Size(110, 25);
             this.labelControl4.TabIndex = 11;
             this.labelControl4.Text = "Kullanıcı adımı hatırla";
             // 
@@ -192,7 +192,7 @@
             this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(403, 27);
+            this.ribbonControl1.Size = new System.Drawing.Size(461, 27);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
@@ -211,7 +211,7 @@
             // barStaticItem3
             // 
             this.barStaticItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem3.Caption = "dotnetmcy.com";
+            this.barStaticItem3.Caption = "BarduckCRM.com";
             this.barStaticItem3.Id = 9;
             this.barStaticItem3.Name = "barStaticItem3";
             // 
@@ -225,26 +225,26 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.barStaticItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.barStaticVersiyon, true);
             this.ribbonStatusBar1.ItemLinks.Add(this.barStaticItem3);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 247);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 201);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(403, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(461, 31);
             // 
             // MasterGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 278);
+            this.ClientSize = new System.Drawing.Size(461, 232);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.toggHatirla);
-            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.txtParola);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.btnGiris);
+            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.cmbSirket);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

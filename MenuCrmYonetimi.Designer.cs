@@ -126,25 +126,30 @@
     "";
             galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItem3.Value = "15";
+            galleryItem3.Visible = false;
             galleryItem4.Caption = "Sadakat Yönetimi";
             galleryItem4.Description = "Hem bireysel ve hem de kurumsal müşterileriniz için tasarlanmış başarılı bir sada" +
     "kat programının oluşturulması için gereken tüm araçları sunar.";
             galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             galleryItem4.Value = "49";
+            galleryItem4.Visible = false;
             galleryItem5.Caption = "Kampanya Yönetimi";
             galleryItem5.Description = "Çeşitli kampanyalar tanımlayabileceğiniz ve bunları yönetebileceğinizi ekran.";
             galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             galleryItem5.Value = "22";
+            galleryItem5.Visible = false;
             galleryItem6.Caption = "Tanımlamalar";
             galleryItem6.Description = "Çeşitli dinamik alanların verilerini ve içeriklerini tanımlaya bilirsiniz. İhtiya" +
     "çlarınız doğrultusunda kategoriler yaratabilirsiniz.";
             galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             galleryItem6.Value = "16";
+            galleryItem6.Visible = false;
             galleryItem7.Caption = "Raporlar";
             galleryItem7.Description = "CRM verilerine özgü detaylı raporlar ve hareket bilgileri alabilirsiniz. Kendi fi" +
     "ltrelerinizi kaydedip, kendi raporlarınızı yapabilirsiniz.";
             galleryItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             galleryItem7.Value = "17";
+            galleryItem7.Visible = false;
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -163,7 +168,7 @@
             this.galleryControl1.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControl1_Gallery_ItemClick);
             this.galleryControl1.Location = new System.Drawing.Point(20, 58);
             this.galleryControl1.Name = "galleryControl1";
-            this.galleryControl1.Size = new System.Drawing.Size(374, 450);
+            this.galleryControl1.Size = new System.Drawing.Size(374, 130);
             this.galleryControl1.TabIndex = 1;
             this.galleryControl1.Text = "galleryControl1";
             this.galleryControl1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.galleryControl1_MouseUp);

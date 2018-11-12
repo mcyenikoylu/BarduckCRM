@@ -37,7 +37,8 @@ namespace BarduckCRM
         private void btnKaydet_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             data.IUD_Ofis(false, 1, kayitid, -1, txtOfisKodu.Text, txtOfisAdi.Text, Convert.ToInt32( cmbUlke.EditValue),
-                txtSehir.Text, txtSemt.Text, txtAdres.Text, Convert.ToInt32( cmbYetkiliPersonel.EditValue), Convert.ToInt32( cmbKarsilamaPersoneli.EditValue), Convert.ToBoolean(toggAktif.Checked),
+                txtSehir.Text, txtSemt.Text, txtAdres.Text, Convert.ToInt32( cmbYetkiliPersonel.EditValue), 
+                Convert.ToInt32( cmbKarsilamaPersoneli.EditValue), Convert.ToBoolean(toggAktif.Checked),
                 DateTime.Now.Date, 1, DateTime.Now, -1, null);
             Mesaj.MesajVer("Ofis Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
         }
@@ -51,7 +52,14 @@ namespace BarduckCRM
 
         private void btnTemizle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            txtOfisKodu.Text = "";
+            txtOfisAdi.Text = "";
+            cmbUlke.EditValue = -1;
+            txtSehir.Text = "";
+            txtSemt.Text = "";
+            txtAdres.Text = "";
+            cmbYetkiliPersonel.EditValue = -1;
+            cmbKarsilamaPersoneli.EditValue = -1;
         }
 
         private void btnSil_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

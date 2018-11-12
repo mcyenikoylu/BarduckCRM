@@ -339,200 +339,6 @@ namespace BarduckCRM
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Firma_Result>("IUD_Firma", silParameter, iDParameter, firmaAdiParameter, firmaKoduParameter, aktifParameter, aktifKullaniciIDParameter);
         }
     
-        public virtual ObjectResult<IUD_Ofis_Result> IUD_Ofis(Nullable<bool> sil, Nullable<int> kullaniciID, Nullable<int> iD, Nullable<int> firmaID, string ofisKodu, string ofisAdi, Nullable<int> ulkeID, string sehir, string semt, string adres, Nullable<int> yetkiliPersonelID, Nullable<int> karsilamaPersoneliID, Nullable<bool> aktif, Nullable<System.DateTime> tarih, Nullable<int> olusturanKullaniciID, Nullable<System.DateTime> olusturanTarih, Nullable<int> degistirenKullaniciID, Nullable<System.DateTime> degistirenTarih)
-        {
-            var silParameter = sil.HasValue ?
-                new ObjectParameter("Sil", sil) :
-                new ObjectParameter("Sil", typeof(bool));
-    
-            var kullaniciIDParameter = kullaniciID.HasValue ?
-                new ObjectParameter("KullaniciID", kullaniciID) :
-                new ObjectParameter("KullaniciID", typeof(int));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var firmaIDParameter = firmaID.HasValue ?
-                new ObjectParameter("FirmaID", firmaID) :
-                new ObjectParameter("FirmaID", typeof(int));
-    
-            var ofisKoduParameter = ofisKodu != null ?
-                new ObjectParameter("OfisKodu", ofisKodu) :
-                new ObjectParameter("OfisKodu", typeof(string));
-    
-            var ofisAdiParameter = ofisAdi != null ?
-                new ObjectParameter("OfisAdi", ofisAdi) :
-                new ObjectParameter("OfisAdi", typeof(string));
-    
-            var ulkeIDParameter = ulkeID.HasValue ?
-                new ObjectParameter("UlkeID", ulkeID) :
-                new ObjectParameter("UlkeID", typeof(int));
-    
-            var sehirParameter = sehir != null ?
-                new ObjectParameter("Sehir", sehir) :
-                new ObjectParameter("Sehir", typeof(string));
-    
-            var semtParameter = semt != null ?
-                new ObjectParameter("Semt", semt) :
-                new ObjectParameter("Semt", typeof(string));
-    
-            var adresParameter = adres != null ?
-                new ObjectParameter("Adres", adres) :
-                new ObjectParameter("Adres", typeof(string));
-    
-            var yetkiliPersonelIDParameter = yetkiliPersonelID.HasValue ?
-                new ObjectParameter("YetkiliPersonelID", yetkiliPersonelID) :
-                new ObjectParameter("YetkiliPersonelID", typeof(int));
-    
-            var karsilamaPersoneliIDParameter = karsilamaPersoneliID.HasValue ?
-                new ObjectParameter("KarsilamaPersoneliID", karsilamaPersoneliID) :
-                new ObjectParameter("KarsilamaPersoneliID", typeof(int));
-    
-            var aktifParameter = aktif.HasValue ?
-                new ObjectParameter("Aktif", aktif) :
-                new ObjectParameter("Aktif", typeof(bool));
-    
-            var tarihParameter = tarih.HasValue ?
-                new ObjectParameter("Tarih", tarih) :
-                new ObjectParameter("Tarih", typeof(System.DateTime));
-    
-            var olusturanKullaniciIDParameter = olusturanKullaniciID.HasValue ?
-                new ObjectParameter("OlusturanKullaniciID", olusturanKullaniciID) :
-                new ObjectParameter("OlusturanKullaniciID", typeof(int));
-    
-            var olusturanTarihParameter = olusturanTarih.HasValue ?
-                new ObjectParameter("OlusturanTarih", olusturanTarih) :
-                new ObjectParameter("OlusturanTarih", typeof(System.DateTime));
-    
-            var degistirenKullaniciIDParameter = degistirenKullaniciID.HasValue ?
-                new ObjectParameter("DegistirenKullaniciID", degistirenKullaniciID) :
-                new ObjectParameter("DegistirenKullaniciID", typeof(int));
-    
-            var degistirenTarihParameter = degistirenTarih.HasValue ?
-                new ObjectParameter("DegistirenTarih", degistirenTarih) :
-                new ObjectParameter("DegistirenTarih", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Ofis_Result>("IUD_Ofis", silParameter, kullaniciIDParameter, iDParameter, firmaIDParameter, ofisKoduParameter, ofisAdiParameter, ulkeIDParameter, sehirParameter, semtParameter, adresParameter, yetkiliPersonelIDParameter, karsilamaPersoneliIDParameter, aktifParameter, tarihParameter, olusturanKullaniciIDParameter, olusturanTarihParameter, degistirenKullaniciIDParameter, degistirenTarihParameter);
-        }
-    
-        public virtual ObjectResult<IUD_Personel_Result> IUD_Personel(Nullable<bool> sil, Nullable<int> iD, string adi, Nullable<int> departman_TipID1, string adres, string sehir, Nullable<int> ulkeID, string cepTel, string evTel, Nullable<System.DateTime> tarih, string email, Nullable<bool> aktif, string skype, string soyadi, Nullable<int> cinsiyeti_TipID72, Nullable<System.DateTime> dogumTarihi, Nullable<int> olusturanKullaniciID, Nullable<System.DateTime> olusturanTarih, Nullable<int> degistirenKullaniciID, Nullable<System.DateTime> degistirenTarih, string unvan, Nullable<int> onekID, string semt, string postaKodu, Nullable<int> ofisID, Nullable<int> personelTakimID, Nullable<System.DateTime> iseBanlangicTarihi, Nullable<System.DateTime> istenAyrilisTarihi)
-        {
-            var silParameter = sil.HasValue ?
-                new ObjectParameter("Sil", sil) :
-                new ObjectParameter("Sil", typeof(bool));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var adiParameter = adi != null ?
-                new ObjectParameter("Adi", adi) :
-                new ObjectParameter("Adi", typeof(string));
-    
-            var departman_TipID1Parameter = departman_TipID1.HasValue ?
-                new ObjectParameter("Departman_TipID1", departman_TipID1) :
-                new ObjectParameter("Departman_TipID1", typeof(int));
-    
-            var adresParameter = adres != null ?
-                new ObjectParameter("Adres", adres) :
-                new ObjectParameter("Adres", typeof(string));
-    
-            var sehirParameter = sehir != null ?
-                new ObjectParameter("Sehir", sehir) :
-                new ObjectParameter("Sehir", typeof(string));
-    
-            var ulkeIDParameter = ulkeID.HasValue ?
-                new ObjectParameter("UlkeID", ulkeID) :
-                new ObjectParameter("UlkeID", typeof(int));
-    
-            var cepTelParameter = cepTel != null ?
-                new ObjectParameter("CepTel", cepTel) :
-                new ObjectParameter("CepTel", typeof(string));
-    
-            var evTelParameter = evTel != null ?
-                new ObjectParameter("EvTel", evTel) :
-                new ObjectParameter("EvTel", typeof(string));
-    
-            var tarihParameter = tarih.HasValue ?
-                new ObjectParameter("Tarih", tarih) :
-                new ObjectParameter("Tarih", typeof(System.DateTime));
-    
-            var emailParameter = email != null ?
-                new ObjectParameter("Email", email) :
-                new ObjectParameter("Email", typeof(string));
-    
-            var aktifParameter = aktif.HasValue ?
-                new ObjectParameter("Aktif", aktif) :
-                new ObjectParameter("Aktif", typeof(bool));
-    
-            var skypeParameter = skype != null ?
-                new ObjectParameter("Skype", skype) :
-                new ObjectParameter("Skype", typeof(string));
-    
-            var soyadiParameter = soyadi != null ?
-                new ObjectParameter("Soyadi", soyadi) :
-                new ObjectParameter("Soyadi", typeof(string));
-    
-            var cinsiyeti_TipID72Parameter = cinsiyeti_TipID72.HasValue ?
-                new ObjectParameter("Cinsiyeti_TipID72", cinsiyeti_TipID72) :
-                new ObjectParameter("Cinsiyeti_TipID72", typeof(int));
-    
-            var dogumTarihiParameter = dogumTarihi.HasValue ?
-                new ObjectParameter("DogumTarihi", dogumTarihi) :
-                new ObjectParameter("DogumTarihi", typeof(System.DateTime));
-    
-            var olusturanKullaniciIDParameter = olusturanKullaniciID.HasValue ?
-                new ObjectParameter("OlusturanKullaniciID", olusturanKullaniciID) :
-                new ObjectParameter("OlusturanKullaniciID", typeof(int));
-    
-            var olusturanTarihParameter = olusturanTarih.HasValue ?
-                new ObjectParameter("OlusturanTarih", olusturanTarih) :
-                new ObjectParameter("OlusturanTarih", typeof(System.DateTime));
-    
-            var degistirenKullaniciIDParameter = degistirenKullaniciID.HasValue ?
-                new ObjectParameter("DegistirenKullaniciID", degistirenKullaniciID) :
-                new ObjectParameter("DegistirenKullaniciID", typeof(int));
-    
-            var degistirenTarihParameter = degistirenTarih.HasValue ?
-                new ObjectParameter("DegistirenTarih", degistirenTarih) :
-                new ObjectParameter("DegistirenTarih", typeof(System.DateTime));
-    
-            var unvanParameter = unvan != null ?
-                new ObjectParameter("Unvan", unvan) :
-                new ObjectParameter("Unvan", typeof(string));
-    
-            var onekIDParameter = onekID.HasValue ?
-                new ObjectParameter("OnekID", onekID) :
-                new ObjectParameter("OnekID", typeof(int));
-    
-            var semtParameter = semt != null ?
-                new ObjectParameter("Semt", semt) :
-                new ObjectParameter("Semt", typeof(string));
-    
-            var postaKoduParameter = postaKodu != null ?
-                new ObjectParameter("PostaKodu", postaKodu) :
-                new ObjectParameter("PostaKodu", typeof(string));
-    
-            var ofisIDParameter = ofisID.HasValue ?
-                new ObjectParameter("OfisID", ofisID) :
-                new ObjectParameter("OfisID", typeof(int));
-    
-            var personelTakimIDParameter = personelTakimID.HasValue ?
-                new ObjectParameter("PersonelTakimID", personelTakimID) :
-                new ObjectParameter("PersonelTakimID", typeof(int));
-    
-            var iseBanlangicTarihiParameter = iseBanlangicTarihi.HasValue ?
-                new ObjectParameter("IseBanlangicTarihi", iseBanlangicTarihi) :
-                new ObjectParameter("IseBanlangicTarihi", typeof(System.DateTime));
-    
-            var istenAyrilisTarihiParameter = istenAyrilisTarihi.HasValue ?
-                new ObjectParameter("IstenAyrilisTarihi", istenAyrilisTarihi) :
-                new ObjectParameter("IstenAyrilisTarihi", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Personel_Result>("IUD_Personel", silParameter, iDParameter, adiParameter, departman_TipID1Parameter, adresParameter, sehirParameter, ulkeIDParameter, cepTelParameter, evTelParameter, tarihParameter, emailParameter, aktifParameter, skypeParameter, soyadiParameter, cinsiyeti_TipID72Parameter, dogumTarihiParameter, olusturanKullaniciIDParameter, olusturanTarihParameter, degistirenKullaniciIDParameter, degistirenTarihParameter, unvanParameter, onekIDParameter, semtParameter, postaKoduParameter, ofisIDParameter, personelTakimIDParameter, iseBanlangicTarihiParameter, istenAyrilisTarihiParameter);
-        }
-    
         public virtual ObjectResult<IUD_Vaziyet_Result> IUD_Vaziyet(Nullable<bool> sil, Nullable<int> iD, Nullable<int> projeID, string adres, Nullable<decimal> metrekare, string paftaNo, string ciltNo, string sehir, string ilce, string mahalle, string koy, string bucak, string sokak, string adaNo, string yevmiyeNo, string sahifeNo, string siraNo, string haritaEnlem, string haritaBoylam, string vaziyetAdi, string vaziyetKodu, string yapiAdedi, string kapiAdedi, Nullable<decimal> yesilAlan, Nullable<int> vaziyetResimID, Nullable<System.DateTime> tarih, Nullable<bool> aktif, Nullable<System.DateTime> olusturanTarih, Nullable<int> olusturanKullaniciID, Nullable<System.DateTime> degistirenTarih, Nullable<int> degistirenKullaniciID)
         {
             var silParameter = sil.HasValue ?
@@ -1461,6 +1267,200 @@ namespace BarduckCRM
                 new ObjectParameter("Tarih", typeof(System.DateTime));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Takim_Result>("IUD_Takim", aktifParameter, degistirenKullaniciIDParameter, degistirenKullaniciTarihParameter, iDParameter, kullaniciIDParameter, olusturanKullaniciIDParameter, olusturanKullaniciTarihParameter, silParameter, takimAdiParameter, takimKoduParameter, tarihParameter);
+        }
+    
+        public virtual ObjectResult<IUD_Ofis_Result> IUD_Ofis(Nullable<bool> sil, Nullable<int> kullaniciID, Nullable<int> iD, Nullable<int> firmaID, string ofisKodu, string ofisAdi, Nullable<int> ulkeID, string sehir, string semt, string adres, Nullable<int> yetkiliPersonelID, Nullable<int> karsilamaPersoneliID, Nullable<bool> aktif, Nullable<System.DateTime> tarih, Nullable<int> olusturanKullaniciID, Nullable<System.DateTime> olusturanTarih, Nullable<int> degistirenKullaniciID, Nullable<System.DateTime> degistirenTarih)
+        {
+            var silParameter = sil.HasValue ?
+                new ObjectParameter("Sil", sil) :
+                new ObjectParameter("Sil", typeof(bool));
+    
+            var kullaniciIDParameter = kullaniciID.HasValue ?
+                new ObjectParameter("KullaniciID", kullaniciID) :
+                new ObjectParameter("KullaniciID", typeof(int));
+    
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var firmaIDParameter = firmaID.HasValue ?
+                new ObjectParameter("FirmaID", firmaID) :
+                new ObjectParameter("FirmaID", typeof(int));
+    
+            var ofisKoduParameter = ofisKodu != null ?
+                new ObjectParameter("OfisKodu", ofisKodu) :
+                new ObjectParameter("OfisKodu", typeof(string));
+    
+            var ofisAdiParameter = ofisAdi != null ?
+                new ObjectParameter("OfisAdi", ofisAdi) :
+                new ObjectParameter("OfisAdi", typeof(string));
+    
+            var ulkeIDParameter = ulkeID.HasValue ?
+                new ObjectParameter("UlkeID", ulkeID) :
+                new ObjectParameter("UlkeID", typeof(int));
+    
+            var sehirParameter = sehir != null ?
+                new ObjectParameter("Sehir", sehir) :
+                new ObjectParameter("Sehir", typeof(string));
+    
+            var semtParameter = semt != null ?
+                new ObjectParameter("Semt", semt) :
+                new ObjectParameter("Semt", typeof(string));
+    
+            var adresParameter = adres != null ?
+                new ObjectParameter("Adres", adres) :
+                new ObjectParameter("Adres", typeof(string));
+    
+            var yetkiliPersonelIDParameter = yetkiliPersonelID.HasValue ?
+                new ObjectParameter("YetkiliPersonelID", yetkiliPersonelID) :
+                new ObjectParameter("YetkiliPersonelID", typeof(int));
+    
+            var karsilamaPersoneliIDParameter = karsilamaPersoneliID.HasValue ?
+                new ObjectParameter("KarsilamaPersoneliID", karsilamaPersoneliID) :
+                new ObjectParameter("KarsilamaPersoneliID", typeof(int));
+    
+            var aktifParameter = aktif.HasValue ?
+                new ObjectParameter("Aktif", aktif) :
+                new ObjectParameter("Aktif", typeof(bool));
+    
+            var tarihParameter = tarih.HasValue ?
+                new ObjectParameter("Tarih", tarih) :
+                new ObjectParameter("Tarih", typeof(System.DateTime));
+    
+            var olusturanKullaniciIDParameter = olusturanKullaniciID.HasValue ?
+                new ObjectParameter("OlusturanKullaniciID", olusturanKullaniciID) :
+                new ObjectParameter("OlusturanKullaniciID", typeof(int));
+    
+            var olusturanTarihParameter = olusturanTarih.HasValue ?
+                new ObjectParameter("OlusturanTarih", olusturanTarih) :
+                new ObjectParameter("OlusturanTarih", typeof(System.DateTime));
+    
+            var degistirenKullaniciIDParameter = degistirenKullaniciID.HasValue ?
+                new ObjectParameter("DegistirenKullaniciID", degistirenKullaniciID) :
+                new ObjectParameter("DegistirenKullaniciID", typeof(int));
+    
+            var degistirenTarihParameter = degistirenTarih.HasValue ?
+                new ObjectParameter("DegistirenTarih", degistirenTarih) :
+                new ObjectParameter("DegistirenTarih", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Ofis_Result>("IUD_Ofis", silParameter, kullaniciIDParameter, iDParameter, firmaIDParameter, ofisKoduParameter, ofisAdiParameter, ulkeIDParameter, sehirParameter, semtParameter, adresParameter, yetkiliPersonelIDParameter, karsilamaPersoneliIDParameter, aktifParameter, tarihParameter, olusturanKullaniciIDParameter, olusturanTarihParameter, degistirenKullaniciIDParameter, degistirenTarihParameter);
+        }
+    
+        public virtual ObjectResult<IUD_Personel_Result> IUD_Personel(Nullable<bool> sil, Nullable<int> iD, string adi, Nullable<int> departman_TipID1, string adres, string sehir, Nullable<int> ulkeID, string cepTel, string evTel, Nullable<System.DateTime> tarih, string email, Nullable<bool> aktif, string skype, string soyadi, Nullable<int> cinsiyeti_TipID72, Nullable<System.DateTime> dogumTarihi, Nullable<int> olusturanKullaniciID, Nullable<System.DateTime> olusturanTarih, Nullable<int> degistirenKullaniciID, Nullable<System.DateTime> degistirenTarih, string unvan, Nullable<int> onekID, string semt, string postaKodu, Nullable<int> ofisID, Nullable<int> personelTakimID, Nullable<System.DateTime> iseBanlangicTarihi, Nullable<System.DateTime> istenAyrilisTarihi)
+        {
+            var silParameter = sil.HasValue ?
+                new ObjectParameter("Sil", sil) :
+                new ObjectParameter("Sil", typeof(bool));
+    
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var adiParameter = adi != null ?
+                new ObjectParameter("Adi", adi) :
+                new ObjectParameter("Adi", typeof(string));
+    
+            var departman_TipID1Parameter = departman_TipID1.HasValue ?
+                new ObjectParameter("Departman_TipID1", departman_TipID1) :
+                new ObjectParameter("Departman_TipID1", typeof(int));
+    
+            var adresParameter = adres != null ?
+                new ObjectParameter("Adres", adres) :
+                new ObjectParameter("Adres", typeof(string));
+    
+            var sehirParameter = sehir != null ?
+                new ObjectParameter("Sehir", sehir) :
+                new ObjectParameter("Sehir", typeof(string));
+    
+            var ulkeIDParameter = ulkeID.HasValue ?
+                new ObjectParameter("UlkeID", ulkeID) :
+                new ObjectParameter("UlkeID", typeof(int));
+    
+            var cepTelParameter = cepTel != null ?
+                new ObjectParameter("CepTel", cepTel) :
+                new ObjectParameter("CepTel", typeof(string));
+    
+            var evTelParameter = evTel != null ?
+                new ObjectParameter("EvTel", evTel) :
+                new ObjectParameter("EvTel", typeof(string));
+    
+            var tarihParameter = tarih.HasValue ?
+                new ObjectParameter("Tarih", tarih) :
+                new ObjectParameter("Tarih", typeof(System.DateTime));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var aktifParameter = aktif.HasValue ?
+                new ObjectParameter("Aktif", aktif) :
+                new ObjectParameter("Aktif", typeof(bool));
+    
+            var skypeParameter = skype != null ?
+                new ObjectParameter("Skype", skype) :
+                new ObjectParameter("Skype", typeof(string));
+    
+            var soyadiParameter = soyadi != null ?
+                new ObjectParameter("Soyadi", soyadi) :
+                new ObjectParameter("Soyadi", typeof(string));
+    
+            var cinsiyeti_TipID72Parameter = cinsiyeti_TipID72.HasValue ?
+                new ObjectParameter("Cinsiyeti_TipID72", cinsiyeti_TipID72) :
+                new ObjectParameter("Cinsiyeti_TipID72", typeof(int));
+    
+            var dogumTarihiParameter = dogumTarihi.HasValue ?
+                new ObjectParameter("DogumTarihi", dogumTarihi) :
+                new ObjectParameter("DogumTarihi", typeof(System.DateTime));
+    
+            var olusturanKullaniciIDParameter = olusturanKullaniciID.HasValue ?
+                new ObjectParameter("OlusturanKullaniciID", olusturanKullaniciID) :
+                new ObjectParameter("OlusturanKullaniciID", typeof(int));
+    
+            var olusturanTarihParameter = olusturanTarih.HasValue ?
+                new ObjectParameter("OlusturanTarih", olusturanTarih) :
+                new ObjectParameter("OlusturanTarih", typeof(System.DateTime));
+    
+            var degistirenKullaniciIDParameter = degistirenKullaniciID.HasValue ?
+                new ObjectParameter("DegistirenKullaniciID", degistirenKullaniciID) :
+                new ObjectParameter("DegistirenKullaniciID", typeof(int));
+    
+            var degistirenTarihParameter = degistirenTarih.HasValue ?
+                new ObjectParameter("DegistirenTarih", degistirenTarih) :
+                new ObjectParameter("DegistirenTarih", typeof(System.DateTime));
+    
+            var unvanParameter = unvan != null ?
+                new ObjectParameter("Unvan", unvan) :
+                new ObjectParameter("Unvan", typeof(string));
+    
+            var onekIDParameter = onekID.HasValue ?
+                new ObjectParameter("OnekID", onekID) :
+                new ObjectParameter("OnekID", typeof(int));
+    
+            var semtParameter = semt != null ?
+                new ObjectParameter("Semt", semt) :
+                new ObjectParameter("Semt", typeof(string));
+    
+            var postaKoduParameter = postaKodu != null ?
+                new ObjectParameter("PostaKodu", postaKodu) :
+                new ObjectParameter("PostaKodu", typeof(string));
+    
+            var ofisIDParameter = ofisID.HasValue ?
+                new ObjectParameter("OfisID", ofisID) :
+                new ObjectParameter("OfisID", typeof(int));
+    
+            var personelTakimIDParameter = personelTakimID.HasValue ?
+                new ObjectParameter("PersonelTakimID", personelTakimID) :
+                new ObjectParameter("PersonelTakimID", typeof(int));
+    
+            var iseBanlangicTarihiParameter = iseBanlangicTarihi.HasValue ?
+                new ObjectParameter("IseBanlangicTarihi", iseBanlangicTarihi) :
+                new ObjectParameter("IseBanlangicTarihi", typeof(System.DateTime));
+    
+            var istenAyrilisTarihiParameter = istenAyrilisTarihi.HasValue ?
+                new ObjectParameter("IstenAyrilisTarihi", istenAyrilisTarihi) :
+                new ObjectParameter("IstenAyrilisTarihi", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Personel_Result>("IUD_Personel", silParameter, iDParameter, adiParameter, departman_TipID1Parameter, adresParameter, sehirParameter, ulkeIDParameter, cepTelParameter, evTelParameter, tarihParameter, emailParameter, aktifParameter, skypeParameter, soyadiParameter, cinsiyeti_TipID72Parameter, dogumTarihiParameter, olusturanKullaniciIDParameter, olusturanTarihParameter, degistirenKullaniciIDParameter, degistirenTarihParameter, unvanParameter, onekIDParameter, semtParameter, postaKoduParameter, ofisIDParameter, personelTakimIDParameter, iseBanlangicTarihiParameter, istenAyrilisTarihiParameter);
         }
     }
 }

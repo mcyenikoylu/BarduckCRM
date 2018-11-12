@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaglantiHareketiKarti));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -59,14 +58,27 @@
             this.gaugeControl_HareketSuresi = new DevExpress.XtraGauges.Win.GaugeControl();
             this.digitalGauge1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
-            this.sBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.lblMeslek = new DevExpress.XtraEditors.LabelControl();
             this.lblAdiSoyadi = new DevExpress.XtraEditors.LabelControl();
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.grdHareket = new DevExpress.XtraGrid.GridControl();
-            this.gvHareket = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.grdHareketler = new DevExpress.XtraGrid.GridControl();
+            this.gvHareketler = new DevExpress.XtraGrid.Views.BandedGrid.AdvBandedGridView();
+            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            this.colID1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colTarih1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colPersonelID = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.cmbPersonelID = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.sPersonelResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.colHareketTipi_TipID17 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.sTipResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.colAciklamaNotu = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.memoAciklamaNotu = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
+            this.colBaglantiID = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colHareketDurumTipi_Tip26 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -126,19 +138,19 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmbHareketDurumu = new DevExpress.XtraEditors.LookUpEdit();
-            this.sTipResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbDurdurulacakHareket = new DevExpress.XtraEditors.LookUpEdit();
-            this.sDurdurulacakBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sDurdurulacakBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.cmbPersonel = new DevExpress.XtraEditors.LookUpEdit();
-            this.sPersonelResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbOfis = new DevExpress.XtraEditors.LookUpEdit();
-            this.sOfisResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sOfisResultBindingSource = new System.Windows.Forms.BindingSource();
             this.cmbHareketTipi = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbHareketKaynagi = new DevExpress.XtraEditors.LookUpEdit();
-            this.timerSure = new System.Windows.Forms.Timer(this.components);
+            this.timerSure = new System.Windows.Forms.Timer();
             this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketTarihi.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketTarihi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketSaati.Properties)).BeginInit();
@@ -149,8 +161,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdHareket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvHareket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdHareketler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvHareketler)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonelID)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sPersonelResultBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sTipResultBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoAciklamaNotu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemAppointmentResource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemAppointmentLabel1)).BeginInit();
@@ -168,17 +185,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketDurumu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sTipResultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDurdurulacakHareket.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sDurdurulacakBaglantiHareketleriResultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sPersonelResultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOfis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOfisResultBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketTipi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketKaynagi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelControl4
@@ -280,6 +299,7 @@
             // lblMeslek
             // 
             this.lblMeslek.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lblMeslek.Appearance.Options.UseFont = true;
             this.lblMeslek.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblMeslek.Location = new System.Drawing.Point(142, 100);
             this.lblMeslek.Name = "lblMeslek";
@@ -290,6 +310,7 @@
             // lblAdiSoyadi
             // 
             this.lblAdiSoyadi.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
+            this.lblAdiSoyadi.Appearance.Options.UseFont = true;
             this.lblAdiSoyadi.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblAdiSoyadi.Location = new System.Drawing.Point(142, 69);
             this.lblAdiSoyadi.Name = "lblAdiSoyadi";
@@ -299,6 +320,7 @@
             // 
             // tabPane1
             // 
+            this.tabPane1.AllowCollapse = DevExpress.Utils.DefaultBoolean.Default;
             this.tabPane1.Controls.Add(this.tabNavigationPage1);
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             this.tabPane1.Controls.Add(this.tabNavigationPage3);
@@ -309,47 +331,181 @@
             this.tabNavigationPage1,
             this.tabNavigationPage2,
             this.tabNavigationPage3});
-            this.tabPane1.RegularSize = new System.Drawing.Size(396, 337);
+            this.tabPane1.RegularSize = new System.Drawing.Size(370, 337);
             this.tabPane1.SelectedPage = this.tabNavigationPage2;
-            this.tabPane1.Size = new System.Drawing.Size(396, 337);
+            this.tabPane1.Size = new System.Drawing.Size(370, 337);
             this.tabPane1.TabIndex = 43;
             this.tabPane1.Text = "tabPane1";
             // 
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = "Son 10 Hareketi";
-            this.tabNavigationPage1.Controls.Add(this.grdHareket);
+            this.tabNavigationPage1.Controls.Add(this.grdHareketler);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(378, 292);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(370, 310);
             // 
-            // grdHareket
+            // grdHareketler
             // 
-            this.grdHareket.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdHareket.Location = new System.Drawing.Point(0, 0);
-            this.grdHareket.MainView = this.gvHareket;
-            this.grdHareket.Name = "grdHareket";
-            this.grdHareket.Size = new System.Drawing.Size(378, 292);
-            this.grdHareket.TabIndex = 43;
-            this.grdHareket.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvHareket});
+            this.grdHareketler.DataSource = this.sBaglantiHareketleriResultBindingSource;
+            this.grdHareketler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdHareketler.Location = new System.Drawing.Point(0, 0);
+            this.grdHareketler.MainView = this.gvHareketler;
+            this.grdHareketler.Name = "grdHareketler";
+            this.grdHareketler.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.cmbPersonelID,
+            this.repositoryItemLookUpEdit1,
+            this.memoAciklamaNotu});
+            this.grdHareketler.Size = new System.Drawing.Size(370, 310);
+            this.grdHareketler.TabIndex = 1;
+            this.grdHareketler.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvHareketler});
             // 
-            // gvHareket
+            // gvHareketler
             // 
-            this.gvHareket.GridControl = this.grdHareket;
-            this.gvHareket.Name = "gvHareket";
-            this.gvHareket.OptionsView.ShowGroupPanel = false;
+            this.gvHareketler.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand1});
+            this.gvHareketler.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gvHareketler.ColumnPanelRowHeight = 0;
+            this.gvHareketler.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
+            this.colID1,
+            this.colBaglantiID,
+            this.colPersonelID,
+            this.colTarih1,
+            this.colHareketTipi_TipID17,
+            this.colAciklamaNotu,
+            this.colHareketDurumTipi_Tip26});
+            this.gvHareketler.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
+            this.gvHareketler.GridControl = this.grdHareketler;
+            this.gvHareketler.Name = "gvHareketler";
+            this.gvHareketler.OptionsBehavior.Editable = false;
+            this.gvHareketler.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gvHareketler.OptionsView.ColumnAutoWidth = true;
+            this.gvHareketler.OptionsView.ShowBands = false;
+            this.gvHareketler.OptionsView.ShowColumnHeaders = false;
+            this.gvHareketler.OptionsView.ShowGroupPanel = false;
+            this.gvHareketler.OptionsView.ShowHorizontalLines = DevExpress.Utils.DefaultBoolean.False;
+            this.gvHareketler.OptionsView.ShowIndicator = false;
+            this.gvHareketler.OptionsView.ShowVerticalLines = DevExpress.Utils.DefaultBoolean.False;
+            // 
+            // gridBand1
+            // 
+            this.gridBand1.Caption = "gridBand1";
+            this.gridBand1.Columns.Add(this.colID1);
+            this.gridBand1.Columns.Add(this.colTarih1);
+            this.gridBand1.Columns.Add(this.colPersonelID);
+            this.gridBand1.Columns.Add(this.colHareketTipi_TipID17);
+            this.gridBand1.Columns.Add(this.colAciklamaNotu);
+            this.gridBand1.Name = "gridBand1";
+            this.gridBand1.OptionsBand.ShowCaption = false;
+            this.gridBand1.VisibleIndex = 0;
+            this.gridBand1.Width = 414;
+            // 
+            // colID1
+            // 
+            this.colID1.FieldName = "ID";
+            this.colID1.Name = "colID1";
+            // 
+            // colTarih1
+            // 
+            this.colTarih1.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.colTarih1.AppearanceCell.Options.UseFont = true;
+            this.colTarih1.FieldName = "Tarih";
+            this.colTarih1.Name = "colTarih1";
+            this.colTarih1.Visible = true;
+            this.colTarih1.Width = 134;
+            // 
+            // colPersonelID
+            // 
+            this.colPersonelID.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.colPersonelID.AppearanceCell.Options.UseFont = true;
+            this.colPersonelID.ColumnEdit = this.cmbPersonelID;
+            this.colPersonelID.FieldName = "PersonelID";
+            this.colPersonelID.Name = "colPersonelID";
+            this.colPersonelID.Visible = true;
+            this.colPersonelID.Width = 134;
+            // 
+            // cmbPersonelID
+            // 
+            this.cmbPersonelID.AutoHeight = false;
+            this.cmbPersonelID.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPersonelID.DataSource = this.sPersonelResultBindingSource;
+            this.cmbPersonelID.DisplayMember = "AdiSoyadi";
+            this.cmbPersonelID.Name = "cmbPersonelID";
+            this.cmbPersonelID.ShowFooter = false;
+            this.cmbPersonelID.ShowHeader = false;
+            this.cmbPersonelID.ValueMember = "ID";
+            // 
+            // sPersonelResultBindingSource
+            // 
+            this.sPersonelResultBindingSource.DataSource = typeof(BarduckCRM.S_Personel_Result);
+            // 
+            // colHareketTipi_TipID17
+            // 
+            this.colHareketTipi_TipID17.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.colHareketTipi_TipID17.AppearanceCell.Options.UseFont = true;
+            this.colHareketTipi_TipID17.ColumnEdit = this.repositoryItemLookUpEdit1;
+            this.colHareketTipi_TipID17.FieldName = "HareketTipi_TipID17";
+            this.colHareketTipi_TipID17.Name = "colHareketTipi_TipID17";
+            this.colHareketTipi_TipID17.Visible = true;
+            this.colHareketTipi_TipID17.Width = 146;
+            // 
+            // repositoryItemLookUpEdit1
+            // 
+            this.repositoryItemLookUpEdit1.AutoHeight = false;
+            this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit1.DataSource = this.sTipResultBindingSource;
+            this.repositoryItemLookUpEdit1.DisplayMember = "Ad";
+            this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
+            this.repositoryItemLookUpEdit1.ShowFooter = false;
+            this.repositoryItemLookUpEdit1.ShowHeader = false;
+            this.repositoryItemLookUpEdit1.ValueMember = "ID";
+            // 
+            // sTipResultBindingSource
+            // 
+            this.sTipResultBindingSource.DataSource = typeof(BarduckCRM.S_Tip_Result);
+            // 
+            // colAciklamaNotu
+            // 
+            this.colAciklamaNotu.AppearanceCell.Options.UseTextOptions = true;
+            this.colAciklamaNotu.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Top;
+            this.colAciklamaNotu.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.colAciklamaNotu.ColumnEdit = this.memoAciklamaNotu;
+            this.colAciklamaNotu.FieldName = "AciklamaNotu";
+            this.colAciklamaNotu.Name = "colAciklamaNotu";
+            this.colAciklamaNotu.RowCount = 3;
+            this.colAciklamaNotu.RowIndex = 1;
+            this.colAciklamaNotu.Visible = true;
+            this.colAciklamaNotu.Width = 414;
+            // 
+            // memoAciklamaNotu
+            // 
+            this.memoAciklamaNotu.Name = "memoAciklamaNotu";
+            // 
+            // colBaglantiID
+            // 
+            this.colBaglantiID.FieldName = "BaglantiID";
+            this.colBaglantiID.Name = "colBaglantiID";
+            // 
+            // colHareketDurumTipi_Tip26
+            // 
+            this.colHareketDurumTipi_Tip26.FieldName = "HareketDurumTipi_Tip26";
+            this.colHareketDurumTipi_Tip26.Name = "colHareketDurumTipi_Tip26";
             // 
             // tabNavigationPage2
             // 
             this.tabNavigationPage2.Caption = "Son 10 Siparişi";
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(378, 292);
+            this.tabNavigationPage2.PageVisible = false;
+            this.tabNavigationPage2.Size = new System.Drawing.Size(370, 310);
             // 
             // tabNavigationPage3
             // 
             this.tabNavigationPage3.Caption = "Son 10 Satış";
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(378, 292);
+            this.tabNavigationPage3.PageVisible = false;
+            this.tabNavigationPage3.Size = new System.Drawing.Size(396, 337);
             // 
             // ribbonControl1
             // 
@@ -387,52 +543,52 @@
             this.repositoryItemAppointmentLabel1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(966, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(937, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // btnKaydet
             // 
             this.btnKaydet.Caption = "Kaydet";
-            this.btnKaydet.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.Glyph")));
             this.btnKaydet.Id = 1;
-            this.btnKaydet.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.LargeGlyph")));
+            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
+            this.btnKaydet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.LargeImage")));
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydet_ItemClick);
             // 
             // btnKaydetVeKapat
             // 
             this.btnKaydetVeKapat.Caption = "Kaydet ve Kapat";
-            this.btnKaydetVeKapat.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.Glyph")));
             this.btnKaydetVeKapat.Id = 2;
-            this.btnKaydetVeKapat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.LargeGlyph")));
+            this.btnKaydetVeKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.ImageOptions.Image")));
+            this.btnKaydetVeKapat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.ImageOptions.LargeImage")));
             this.btnKaydetVeKapat.Name = "btnKaydetVeKapat";
             this.btnKaydetVeKapat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydetVeKapat_ItemClick);
             // 
             // btnDuzenle
             // 
             this.btnDuzenle.Caption = "Düzenle";
-            this.btnDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Glyph")));
             this.btnDuzenle.Id = 4;
-            this.btnDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.LargeGlyph")));
+            this.btnDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.Image")));
+            this.btnDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.LargeImage")));
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnTemizle
             // 
             this.btnTemizle.Caption = "Temizle";
-            this.btnTemizle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Glyph")));
             this.btnTemizle.Id = 5;
-            this.btnTemizle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.LargeGlyph")));
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.LargeImage")));
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTemizle_ItemClick);
             // 
             // btnSil
             // 
             this.btnSil.Caption = "Sil";
-            this.btnSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSil.Glyph")));
             this.btnSil.Id = 6;
-            this.btnSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSil.LargeGlyph")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
             this.btnSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSil_ItemClick);
             // 
@@ -441,26 +597,29 @@
             this.btnYazdir.ActAsDropDown = true;
             this.btnYazdir.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.btnYazdir.Caption = "Yazdır";
-            this.btnYazdir.Glyph = ((System.Drawing.Image)(resources.GetObject("btnYazdir.Glyph")));
             this.btnYazdir.Id = 7;
-            this.btnYazdir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnYazdir.LargeGlyph")));
+            this.btnYazdir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.Image")));
+            this.btnYazdir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.LargeImage")));
             this.btnYazdir.Name = "btnYazdir";
+            this.btnYazdir.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnRandevu
             // 
             this.btnRandevu.Caption = "Randevu";
-            this.btnRandevu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnRandevu.Glyph")));
             this.btnRandevu.Id = 8;
-            this.btnRandevu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnRandevu.LargeGlyph")));
+            this.btnRandevu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRandevu.ImageOptions.Image")));
+            this.btnRandevu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRandevu.ImageOptions.LargeImage")));
             this.btnRandevu.Name = "btnRandevu";
+            this.btnRandevu.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnHatirlatma
             // 
             this.btnHatirlatma.Caption = "Hatırlatma";
-            this.btnHatirlatma.Glyph = ((System.Drawing.Image)(resources.GetObject("btnHatirlatma.Glyph")));
             this.btnHatirlatma.Id = 9;
-            this.btnHatirlatma.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHatirlatma.LargeGlyph")));
+            this.btnHatirlatma.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHatirlatma.ImageOptions.Image")));
+            this.btnHatirlatma.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHatirlatma.ImageOptions.LargeImage")));
             this.btnHatirlatma.Name = "btnHatirlatma";
+            this.btnHatirlatma.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // ribbonGalleryBarItem1
             // 
@@ -471,13 +630,13 @@
             galleryItemGroup1.Caption = "Group5";
             galleryItem1.Caption = "Stok Yetkiler";
             galleryItem1.Description = "Stok Yetkiler";
-            galleryItem1.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem1.Image")));
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem2.Caption = "CRM Yetkileri";
             galleryItem2.Description = "CRM Yetkileri";
-            galleryItem2.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem2.Image")));
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             galleryItem3.Caption = "Personel Yetkileri";
             galleryItem3.Description = "Personel Yetkileri";
-            galleryItem3.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem3.Image")));
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -529,34 +688,34 @@
             // btnKapat
             // 
             this.btnKapat.Caption = "Kapat";
-            this.btnKapat.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKapat.Glyph")));
             this.btnKapat.Id = 1;
-            this.btnKapat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKapat.LargeGlyph")));
+            this.btnKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKapat.ImageOptions.Image")));
+            this.btnKapat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKapat.ImageOptions.LargeImage")));
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKapat_ItemClick);
             // 
             // btnYardim
             // 
             this.btnYardim.Caption = "Yardım";
-            this.btnYardim.Glyph = ((System.Drawing.Image)(resources.GetObject("btnYardim.Glyph")));
             this.btnYardim.Id = 2;
-            this.btnYardim.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnYardim.LargeGlyph")));
+            this.btnYardim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYardim.ImageOptions.Image")));
+            this.btnYardim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYardim.ImageOptions.LargeImage")));
             this.btnYardim.Name = "btnYardim";
             // 
             // btnBilgi
             // 
             this.btnBilgi.Caption = "Bilgi";
-            this.btnBilgi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnBilgi.Glyph")));
             this.btnBilgi.Id = 3;
-            this.btnBilgi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBilgi.LargeGlyph")));
+            this.btnBilgi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBilgi.ImageOptions.Image")));
+            this.btnBilgi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBilgi.ImageOptions.LargeImage")));
             this.btnBilgi.Name = "btnBilgi";
             // 
             // btnDestekTalebi
             // 
             this.btnDestekTalebi.Caption = "Destek Talebi";
-            this.btnDestekTalebi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.Glyph")));
             this.btnDestekTalebi.Id = 4;
-            this.btnDestekTalebi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.LargeGlyph")));
+            this.btnDestekTalebi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.ImageOptions.Image")));
+            this.btnDestekTalebi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.ImageOptions.LargeImage")));
             this.btnDestekTalebi.Name = "btnDestekTalebi";
             // 
             // toggAktif
@@ -570,42 +729,41 @@
             // btnBaglantiKarti
             // 
             this.btnBaglantiKarti.Caption = "Bağlantı Kartı";
-            this.btnBaglantiKarti.Glyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiKarti.Glyph")));
             this.btnBaglantiKarti.Id = 6;
-            this.btnBaglantiKarti.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiKarti.LargeGlyph")));
+            this.btnBaglantiKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaglantiKarti.ImageOptions.Image")));
+            this.btnBaglantiKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaglantiKarti.ImageOptions.LargeImage")));
             this.btnBaglantiKarti.Name = "btnBaglantiKarti";
+            this.btnBaglantiKarti.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnTanitim
             // 
             this.btnTanitim.Caption = "Kampanya Tanıtımı";
-            this.btnTanitim.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTanitim.Glyph")));
             this.btnTanitim.Id = 7;
-            this.btnTanitim.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTanitim.LargeGlyph")));
+            this.btnTanitim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTanitim.ImageOptions.Image")));
+            this.btnTanitim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTanitim.ImageOptions.LargeImage")));
             this.btnTanitim.Name = "btnTanitim";
+            this.btnTanitim.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // barLblKayitID
             // 
             this.barLblKayitID.Caption = "KayitID";
             this.barLblKayitID.Description = "KayitID";
-            this.barLblKayitID.Glyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.Glyph")));
             this.barLblKayitID.Id = 12;
-            this.barLblKayitID.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.LargeGlyph")));
+            this.barLblKayitID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.ImageOptions.Image")));
+            this.barLblKayitID.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.ImageOptions.LargeImage")));
             this.barLblKayitID.Name = "barLblKayitID";
-            this.barLblKayitID.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barStaticItem2
             // 
             this.barStaticItem2.Caption = "barStaticItem2";
             this.barStaticItem2.Id = 13;
             this.barStaticItem2.Name = "barStaticItem2";
-            this.barStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barStaticItem3
             // 
             this.barStaticItem3.Caption = "barStaticItem3";
             this.barStaticItem3.Id = 14;
             this.barStaticItem3.Name = "barStaticItem3";
-            this.barStaticItem3.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage1
             // 
@@ -636,6 +794,7 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "Düzenle";
+            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonPageGroup3
             // 
@@ -700,35 +859,33 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 629);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(966, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(937, 31);
             // 
             // barLblKayitTarihi
             // 
             this.barLblKayitTarihi.Caption = "KayitTarihi";
             this.barLblKayitTarihi.Description = "KayitTarihi";
-            this.barLblKayitTarihi.Glyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.Glyph")));
             this.barLblKayitTarihi.Id = 20;
-            this.barLblKayitTarihi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.LargeGlyph")));
+            this.barLblKayitTarihi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.ImageOptions.Image")));
+            this.barLblKayitTarihi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.ImageOptions.LargeImage")));
             this.barLblKayitTarihi.Name = "barLblKayitTarihi";
-            this.barLblKayitTarihi.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barLblKayitAktifPasif
             // 
             this.barLblKayitAktifPasif.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barLblKayitAktifPasif.Caption = "KayitAktifPasif";
             this.barLblKayitAktifPasif.Description = "KayitAktifPasif";
-            this.barLblKayitAktifPasif.GlyphDisabled = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.GlyphDisabled")));
             this.barLblKayitAktifPasif.Id = 21;
-            this.barLblKayitAktifPasif.LargeGlyphDisabled = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.LargeGlyphDisabled")));
+            this.barLblKayitAktifPasif.ImageOptions.DisabledImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.ImageOptions.DisabledImage")));
+            this.barLblKayitAktifPasif.ImageOptions.DisabledLargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.ImageOptions.DisabledLargeImage")));
             this.barLblKayitAktifPasif.Name = "barLblKayitAktifPasif";
-            this.barLblKayitAktifPasif.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barButtonItem9
             // 
             this.barButtonItem9.Caption = "E-Posta Senkronize";
-            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
             this.barButtonItem9.Id = 10;
-            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
+            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
+            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
             this.barButtonItem9.Name = "barButtonItem9";
             // 
             // panelControl1
@@ -738,10 +895,10 @@
             this.panelControl1.Controls.Add(this.lblAdiSoyadi);
             this.panelControl1.Controls.Add(this.tabPane1);
             this.panelControl1.Controls.Add(this.lblMeslek);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl1.Location = new System.Drawing.Point(566, 143);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(400, 486);
+            this.panelControl1.Size = new System.Drawing.Size(374, 486);
             this.panelControl1.TabIndex = 47;
             // 
             // memoNotu
@@ -874,6 +1031,7 @@
             this.labelControl12.Size = new System.Drawing.Size(151, 22);
             this.labelControl12.TabIndex = 67;
             this.labelControl12.Text = "Devam edecek olan hareket";
+            this.labelControl12.Visible = false;
             // 
             // toggDevamEdecekHareket
             // 
@@ -884,6 +1042,7 @@
             this.toggDevamEdecekHareket.Properties.OnText = "Evet";
             this.toggDevamEdecekHareket.Size = new System.Drawing.Size(95, 24);
             this.toggDevamEdecekHareket.TabIndex = 66;
+            this.toggDevamEdecekHareket.Visible = false;
             // 
             // groupControl1
             // 
@@ -893,7 +1052,7 @@
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.toggTelefon);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Location = new System.Drawing.Point(382, 147);
+            this.groupControl1.Location = new System.Drawing.Point(375, 6);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(175, 116);
             this.groupControl1.TabIndex = 68;
@@ -907,6 +1066,7 @@
             this.labelControl8.Size = new System.Drawing.Size(151, 22);
             this.labelControl8.TabIndex = 69;
             this.labelControl8.Text = "Durdurulacak olan hareket";
+            this.labelControl8.Visible = false;
             // 
             // groupControl2
             // 
@@ -923,7 +1083,7 @@
             this.groupControl2.Controls.Add(this.trackBarControl_HareketPuani);
             this.groupControl2.Controls.Add(this.cmbHareketDurumu);
             this.groupControl2.Controls.Add(this.cmbDurdurulacakHareket);
-            this.groupControl2.Location = new System.Drawing.Point(12, 311);
+            this.groupControl2.Location = new System.Drawing.Point(5, 170);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(545, 311);
             this.groupControl2.TabIndex = 71;
@@ -931,8 +1091,8 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.simpleButton2.Location = new System.Drawing.Point(499, 102);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(32, 32);
@@ -943,8 +1103,8 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
-            this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.simpleButton3.Location = new System.Drawing.Point(499, 64);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(32, 32);
@@ -955,8 +1115,8 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.simpleButton1.Location = new System.Drawing.Point(499, 26);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(32, 32);
@@ -972,8 +1132,8 @@
             this.cmbHareketDurumu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbHareketDurumu.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbHareketDurumu.Properties.DataSource = this.sTipResultBindingSource;
             this.cmbHareketDurumu.Properties.DisplayFormat.FormatString = "d";
             this.cmbHareketDurumu.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -985,10 +1145,6 @@
             this.cmbHareketDurumu.Size = new System.Drawing.Size(254, 20);
             this.cmbHareketDurumu.TabIndex = 51;
             // 
-            // sTipResultBindingSource
-            // 
-            this.sTipResultBindingSource.DataSource = typeof(BarduckCRM.S_Tip_Result);
-            // 
             // cmbDurdurulacakHareket
             // 
             this.cmbDurdurulacakHareket.Location = new System.Drawing.Point(166, 281);
@@ -996,9 +1152,9 @@
             this.cmbDurdurulacakHareket.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDurdurulacakHareket.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tarih", "Tarih", 34, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Saat", "Saat", 32, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Tarih", "Tarih", 34, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Saat", "Saat", 32, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbDurdurulacakHareket.Properties.DataSource = this.sDurdurulacakBaglantiHareketleriResultBindingSource;
             this.cmbDurdurulacakHareket.Properties.DisplayFormat.FormatString = "d";
             this.cmbDurdurulacakHareket.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -1009,6 +1165,7 @@
             this.cmbDurdurulacakHareket.Properties.ValueMember = "ID";
             this.cmbDurdurulacakHareket.Size = new System.Drawing.Size(157, 20);
             this.cmbDurdurulacakHareket.TabIndex = 70;
+            this.cmbDurdurulacakHareket.Visible = false;
             // 
             // sDurdurulacakBaglantiHareketleriResultBindingSource
             // 
@@ -1027,7 +1184,7 @@
             this.groupControl3.Controls.Add(this.cmbOfis);
             this.groupControl3.Controls.Add(this.cmbHareketTipi);
             this.groupControl3.Controls.Add(this.cmbHareketKaynagi);
-            this.groupControl3.Location = new System.Drawing.Point(12, 147);
+            this.groupControl3.Location = new System.Drawing.Point(5, 6);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(364, 158);
             this.groupControl3.TabIndex = 72;
@@ -1049,9 +1206,9 @@
             this.cmbPersonel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbPersonel.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Adi", "Adi", 25, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Soyadi", "Soyadi", 42, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Adi", "Adi", 25, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Soyadi", "Soyadi", 42, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbPersonel.Properties.DataSource = this.sPersonelResultBindingSource;
             this.cmbPersonel.Properties.DisplayFormat.FormatString = "d";
             this.cmbPersonel.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -1063,10 +1220,6 @@
             this.cmbPersonel.Size = new System.Drawing.Size(254, 20);
             this.cmbPersonel.TabIndex = 35;
             // 
-            // sPersonelResultBindingSource
-            // 
-            this.sPersonelResultBindingSource.DataSource = typeof(BarduckCRM.S_Personel_Result);
-            // 
             // cmbOfis
             // 
             this.cmbOfis.Location = new System.Drawing.Point(101, 76);
@@ -1074,11 +1227,11 @@
             this.cmbOfis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbOfis.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FirmaID", "Firma ID", 50, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FirmaAdi", 45, "Firma Adı"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("OfisKodu", "Ofis Kodu", 45, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("OfisAdi", "Ofis Adi", 45, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FirmaID", "Firma ID", 50, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("FirmaAdi", "Firma Adı", 45, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("OfisKodu", "Ofis Kodu", 45, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("OfisAdi", "Ofis Adi", 45, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbOfis.Properties.DataSource = this.sOfisResultBindingSource;
             this.cmbOfis.Properties.DisplayFormat.FormatString = "d";
             this.cmbOfis.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -1101,8 +1254,8 @@
             this.cmbHareketTipi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbHareketTipi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbHareketTipi.Properties.DataSource = this.sTipResultBindingSource;
             this.cmbHareketTipi.Properties.DisplayFormat.FormatString = "d";
             this.cmbHareketTipi.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -1121,8 +1274,8 @@
             this.cmbHareketKaynagi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbHareketKaynagi.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Ad", "Ad", 23, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbHareketKaynagi.Properties.DataSource = this.sTipResultBindingSource;
             this.cmbHareketKaynagi.Properties.DisplayFormat.FormatString = "d";
             this.cmbHareketKaynagi.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
@@ -1143,24 +1296,44 @@
             // 
             this.barStaticItem4.Caption = "KayitID";
             this.barStaticItem4.Description = "KayitID";
-            this.barStaticItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barStaticItem4.Glyph")));
             this.barStaticItem4.Id = 19;
-            this.barStaticItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barStaticItem4.LargeGlyph")));
+            this.barStaticItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barStaticItem4.ImageOptions.Image")));
+            this.barStaticItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStaticItem4.ImageOptions.LargeImage")));
             this.barStaticItem4.Name = "barStaticItem4";
-            this.barStaticItem4.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // splitContainerControl1
+            // 
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 143);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.panelControl2);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Controls.Add(this.panelControl1);
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(937, 486);
+            this.splitContainerControl1.SplitterPosition = 558;
+            this.splitContainerControl1.TabIndex = 75;
+            this.splitContainerControl1.Text = "splitContainerControl1";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.groupControl3);
+            this.panelControl2.Controls.Add(this.groupControl2);
+            this.panelControl2.Controls.Add(this.groupControl1);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(558, 486);
+            this.panelControl2.TabIndex = 73;
             // 
             // BaglantiHareketiKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 660);
-            this.Controls.Add(this.groupControl3);
-            this.Controls.Add(this.groupControl2);
-            this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.panelControl1);
+            this.ClientSize = new System.Drawing.Size(937, 660);
+            this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BaglantiHareketiKarti";
             this.Ribbon = this.ribbonControl1;
@@ -1179,8 +1352,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdHareket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvHareket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdHareketler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvHareketler)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPersonelID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sPersonelResultBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sTipResultBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoAciklamaNotu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemAppointmentResource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemAppointmentLabel1)).EndInit();
@@ -1199,17 +1377,19 @@
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketDurumu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sTipResultBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDurdurulacakHareket.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sDurdurulacakBaglantiHareketleriResultBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbPersonel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sPersonelResultBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOfis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOfisResultBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketTipi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbHareketKaynagi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1253,8 +1433,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraGrid.GridControl grdHareket;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvHareket;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraEditors.PanelControl panelControl1;
@@ -1305,5 +1483,20 @@
         private DevExpress.XtraBars.BarStaticItem barStaticItem2;
         private DevExpress.XtraBars.BarStaticItem barStaticItem3;
         private DevExpress.XtraBars.BarStaticItem barStaticItem4;
+        private DevExpress.XtraGrid.GridControl grdHareketler;
+        private DevExpress.XtraGrid.Views.BandedGrid.AdvBandedGridView gvHareketler;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colID1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTarih1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPersonelID;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit cmbPersonelID;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colHareketTipi_TipID17;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colAciklamaNotu;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit memoAciklamaNotu;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colBaglantiID;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colHareketDurumTipi_Tip26;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
     }
 }

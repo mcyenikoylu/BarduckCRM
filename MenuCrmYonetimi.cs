@@ -309,7 +309,12 @@ namespace BarduckCRM
 
         private void MenuCrmYonetimi_Load(object sender, EventArgs e)
         {
-            
+            //DevExpress.XtraBars.Ribbon.GalleryItem rgi = new GalleryItem();
+            //if(rgi.Value.ToString() == "15")
+            //{
+            // bu butonların value değerlerini yakalama şansım olmadığı iiçin design den false ediyorum.
+            //açarken glary in sağ üstündeki kuçuk play oku ile run desing e girip oradan visable ları true etmek gerekiyor.
+            //}
         }
     }
 }

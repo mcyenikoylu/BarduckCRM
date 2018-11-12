@@ -1,1 +1,3 @@
-Client Name; .; CRM
+Zorlu Gayrimenkul;.;CRM
+Zorlu Tekstil;.;CRM2
+Zorlu Holding;.;CRM

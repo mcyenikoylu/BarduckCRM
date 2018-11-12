@@ -66,57 +66,57 @@
             this.ribbonPage1});
             this.ribbon.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(462, 143);
+            this.ribbon.Size = new System.Drawing.Size(598, 143);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             // 
             // btnKaydet
             // 
             this.btnKaydet.Caption = "Kaydet";
-            this.btnKaydet.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.Glyph")));
             this.btnKaydet.Id = 1;
-            this.btnKaydet.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.LargeGlyph")));
+            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
+            this.btnKaydet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.LargeImage")));
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydet_ItemClick);
             // 
             // btnKaydetKapat
             // 
             this.btnKaydetKapat.Caption = "Kaydet ve Kapat";
-            this.btnKaydetKapat.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetKapat.Glyph")));
             this.btnKaydetKapat.Id = 2;
-            this.btnKaydetKapat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetKapat.LargeGlyph")));
+            this.btnKaydetKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydetKapat.ImageOptions.Image")));
+            this.btnKaydetKapat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydetKapat.ImageOptions.LargeImage")));
             this.btnKaydetKapat.Name = "btnKaydetKapat";
             // 
             // btnDuzenle
             // 
             this.btnDuzenle.Caption = "Düzenle";
-            this.btnDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Glyph")));
             this.btnDuzenle.Id = 4;
-            this.btnDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.LargeGlyph")));
+            this.btnDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.Image")));
+            this.btnDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.LargeImage")));
             this.btnDuzenle.Name = "btnDuzenle";
             // 
             // btnTemizle
             // 
             this.btnTemizle.Caption = "Temizle";
-            this.btnTemizle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Glyph")));
             this.btnTemizle.Id = 5;
-            this.btnTemizle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.LargeGlyph")));
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.LargeImage")));
             this.btnTemizle.Name = "btnTemizle";
             // 
             // btnSil
             // 
             this.btnSil.Caption = "Sil";
-            this.btnSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSil.Glyph")));
             this.btnSil.Id = 6;
-            this.btnSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSil.LargeGlyph")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
             // 
             // btnTasarim
             // 
             this.btnTasarim.Caption = "Tasarım";
-            this.btnTasarim.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTasarim.Glyph")));
             this.btnTasarim.Id = 7;
-            this.btnTasarim.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTasarim.LargeGlyph")));
+            this.btnTasarim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTasarim.ImageOptions.Image")));
+            this.btnTasarim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTasarim.ImageOptions.LargeImage")));
             this.btnTasarim.Name = "btnTasarim";
             this.btnTasarim.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTasarim_ItemClick);
             // 
@@ -169,7 +169,7 @@
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 323);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(462, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(598, 31);
             // 
             // labelControl1
             // 
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 354);
+            this.ClientSize = new System.Drawing.Size(598, 354);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.txtAdi);
             this.Controls.Add(this.ribbonStatusBar);

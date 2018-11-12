@@ -340,6 +340,7 @@
             // 
             // tabPane1
             // 
+            this.tabPane1.AllowCollapse = DevExpress.Utils.DefaultBoolean.Default;
             this.tabPane1.Controls.Add(this.tabNavigationPage1);
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             resources.ApplyResources(this.tabPane1, "tabPane1");
@@ -352,10 +353,9 @@
             // 
             // tabNavigationPage1
             // 
-            this.tabNavigationPage1.Caption = "Bağlantı Hareketleri";
+            resources.ApplyResources(this.tabNavigationPage1, "tabNavigationPage1");
             this.tabNavigationPage1.Controls.Add(this.grdHareketler);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            resources.ApplyResources(this.tabNavigationPage1, "tabNavigationPage1");
             // 
             // grdHareketler
             // 
@@ -500,9 +500,9 @@
             // 
             // tabNavigationPage2
             // 
-            this.tabNavigationPage2.Caption = "Satış Hareketleri";
-            this.tabNavigationPage2.Name = "tabNavigationPage2";
             resources.ApplyResources(this.tabNavigationPage2, "tabNavigationPage2");
+            this.tabNavigationPage2.Name = "tabNavigationPage2";
+            this.tabNavigationPage2.PageVisible = false;
             // 
             // panelControl1
             // 
@@ -526,41 +526,43 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             resources.ApplyResources(this.simpleButton1, "simpleButton1");
             this.simpleButton1.Name = "simpleButton1";
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             resources.ApplyResources(this.simpleButton2, "simpleButton2");
             this.simpleButton2.Name = "simpleButton2";
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
-            this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             resources.ApplyResources(this.simpleButton3, "simpleButton3");
             this.simpleButton3.Name = "simpleButton3";
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
-            this.simpleButton4.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             resources.ApplyResources(this.simpleButton4, "simpleButton4");
             this.simpleButton4.Name = "simpleButton4";
             // 
             // lblMeslek
             // 
             this.lblMeslek.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lblMeslek.Appearance.Font")));
+            this.lblMeslek.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.lblMeslek, "lblMeslek");
             this.lblMeslek.Name = "lblMeslek";
             // 
             // lblAdiSoyadi
             // 
             this.lblAdiSoyadi.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("lblAdiSoyadi.Appearance.Font")));
+            this.lblAdiSoyadi.Appearance.Options.UseFont = true;
             resources.ApplyResources(this.lblAdiSoyadi, "lblAdiSoyadi");
             this.lblAdiSoyadi.Name = "lblAdiSoyadi";
             // 
@@ -610,45 +612,45 @@
             // btnHareketEkle
             // 
             resources.ApplyResources(this.btnHareketEkle, "btnHareketEkle");
-            this.btnHareketEkle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnHareketEkle.Glyph")));
             this.btnHareketEkle.Id = 1;
-            this.btnHareketEkle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHareketEkle.LargeGlyph")));
+            this.btnHareketEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHareketEkle.ImageOptions.Image")));
+            this.btnHareketEkle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHareketEkle.ImageOptions.LargeImage")));
             this.btnHareketEkle.Name = "btnHareketEkle";
             this.btnHareketEkle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHareketEkle_ItemClick);
             // 
             // btnHareketDuzenle
             // 
             resources.ApplyResources(this.btnHareketDuzenle, "btnHareketDuzenle");
-            this.btnHareketDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnHareketDuzenle.Glyph")));
             this.btnHareketDuzenle.Id = 2;
-            this.btnHareketDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHareketDuzenle.LargeGlyph")));
+            this.btnHareketDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHareketDuzenle.ImageOptions.Image")));
+            this.btnHareketDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHareketDuzenle.ImageOptions.LargeImage")));
             this.btnHareketDuzenle.Name = "btnHareketDuzenle";
             this.btnHareketDuzenle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHareketDuzenle_ItemClick);
             // 
             // btnHareketSil
             // 
             resources.ApplyResources(this.btnHareketSil, "btnHareketSil");
-            this.btnHareketSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnHareketSil.Glyph")));
             this.btnHareketSil.Id = 3;
-            this.btnHareketSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHareketSil.LargeGlyph")));
+            this.btnHareketSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHareketSil.ImageOptions.Image")));
+            this.btnHareketSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHareketSil.ImageOptions.LargeImage")));
             this.btnHareketSil.Name = "btnHareketSil";
             this.btnHareketSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHareketSil_ItemClick);
             // 
             // btnBaglantiEkle
             // 
             resources.ApplyResources(this.btnBaglantiEkle, "btnBaglantiEkle");
-            this.btnBaglantiEkle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiEkle.Glyph")));
             this.btnBaglantiEkle.Id = 4;
-            this.btnBaglantiEkle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiEkle.LargeGlyph")));
+            this.btnBaglantiEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaglantiEkle.ImageOptions.Image")));
+            this.btnBaglantiEkle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaglantiEkle.ImageOptions.LargeImage")));
             this.btnBaglantiEkle.Name = "btnBaglantiEkle";
             this.btnBaglantiEkle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaglantiEkle_ItemClick);
             // 
             // btnBaglantiDuzenle
             // 
             resources.ApplyResources(this.btnBaglantiDuzenle, "btnBaglantiDuzenle");
-            this.btnBaglantiDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiDuzenle.Glyph")));
             this.btnBaglantiDuzenle.Id = 5;
-            this.btnBaglantiDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBaglantiDuzenle.LargeGlyph")));
+            this.btnBaglantiDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaglantiDuzenle.ImageOptions.Image")));
+            this.btnBaglantiDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBaglantiDuzenle.ImageOptions.LargeImage")));
             this.btnBaglantiDuzenle.Name = "btnBaglantiDuzenle";
             this.btnBaglantiDuzenle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaglantiDuzenle_ItemClick);
             // 

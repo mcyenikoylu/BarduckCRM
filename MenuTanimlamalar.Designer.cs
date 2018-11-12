@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup33 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem113 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuTanimlamalar));
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem114 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem115 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem116 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup34 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem117 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem118 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem119 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem120 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem121 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup35 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem122 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem123 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup36 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem124 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem125 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem126 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem8 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem9 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup4 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem14 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem15 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.galleryControl2 = new DevExpress.XtraBars.Ribbon.GalleryControl();
             this.galleryControlClient2 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
@@ -63,14 +64,14 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -136,42 +137,53 @@
             this.galleryControl2.Gallery.ColumnCount = 1;
             this.galleryControl2.Gallery.DistanceItemImageToText = 20;
             this.galleryControl2.Gallery.DrawImageBackground = false;
-            galleryItemGroup33.Caption = "Group1";
-            galleryItem113.Caption = "Bağlantı Kaynakları";
-            galleryItem113.Description = "Bağlantılarınızın hangi kaynaklardan geldiğini, hangi mecralar aracılığıyla geldi" +
+            galleryItemGroup1.Caption = "Group1";
+            galleryItem1.Caption = "Bağlantı Kaynakları";
+            galleryItem1.Description = "Bağlantılarınızın hangi kaynaklardan geldiğini, hangi mecralar aracılığıyla geldi" +
     "ğini tanılayıp yönetin.";
-            galleryItem113.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem113.Image")));
-            galleryItem113.Value = 31;
-            galleryItem114.Caption = "Hareket Tip Tanımları";
-            galleryItem114.Description = "Bağlantılarınıza olan hareketleri tanımlayın ve onları yönetin. İşlem sonra rapor" +
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            galleryItem1.Value = 31;
+            galleryItem1.Visible = false;
+            galleryItem2.Caption = "Hareket Tip Tanımları";
+            galleryItem2.Description = "Bağlantılarınıza olan hareketleri tanımlayın ve onları yönetin. İşlem sonra rapor" +
     "lar için bu tiplemeler çok önemlidir.";
-            galleryItem114.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem114.Image")));
-            galleryItem114.ImageIndex = 1;
-            galleryItem114.Value = 32;
-            galleryItem115.Caption = "Puan Tanımları";
-            galleryItem115.Description = "Bağlantılarınıza puan verin ve sizin için olan önem derecelerini belirleyin. Rapo" +
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem2.ImageOptions.ImageIndex = 1;
+            galleryItem2.Value = 32;
+            galleryItem2.Visible = false;
+            galleryItem3.Caption = "Puan Tanımları";
+            galleryItem3.Description = "Bağlantılarınıza puan verin ve sizin için olan önem derecelerini belirleyin. Rapo" +
     "rlamalarda çok önemlidir.";
-            galleryItem115.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem115.Image")));
-            galleryItem115.Value = 33;
-            galleryItem116.Caption = "Yetki Tanımları";
-            galleryItem116.Description = "Personelinizin CRM üzerindeki yetkilerini belirleyip yönetin.";
-            galleryItem116.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem116.Image")));
-            galleryItem116.Value = 34;
-            galleryItemGroup33.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem113,
-            galleryItem114,
-            galleryItem115,
-            galleryItem116});
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            galleryItem3.Value = 33;
+            galleryItem3.Visible = false;
+            galleryItem4.Caption = "Yetki Tanımları";
+            galleryItem4.Description = "Personelinizin CRM üzerindeki yetkilerini belirleyip yönetin.";
+            galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            galleryItem4.Value = 34;
+            galleryItem4.Visible = false;
+            galleryItem5.Caption = "Hareket Bağlantı Kaynakları";
+            galleryItem5.Description = "Bağlantılarınızın her bir hareketi farklı kaynaklardan gelebilir. Doğru raporlar " +
+    "elde etmek için sektörünüze göre bunları düzenleyin.";
+            galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            galleryItem5.Value = "35";
+            galleryItem5.Visible = false;
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1,
+            galleryItem2,
+            galleryItem3,
+            galleryItem4,
+            galleryItem5});
             this.galleryControl2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup33});
+            galleryItemGroup1});
             this.galleryControl2.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
             this.galleryControl2.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
             this.galleryControl2.Gallery.ShowGroupCaption = false;
             this.galleryControl2.Gallery.ShowItemText = true;
             this.galleryControl2.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
-            this.galleryControl2.Location = new System.Drawing.Point(20, 353);
+            this.galleryControl2.Location = new System.Drawing.Point(20, 149);
             this.galleryControl2.Name = "galleryControl2";
-            this.galleryControl2.Size = new System.Drawing.Size(374, 206);
+            this.galleryControl2.Size = new System.Drawing.Size(374, 18);
             this.galleryControl2.TabIndex = 3;
             this.galleryControl2.Text = "galleryControl2";
             // 
@@ -184,16 +196,18 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl3.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.labelControl3.LineVisible = true;
-            this.labelControl3.Location = new System.Drawing.Point(20, 315);
+            this.labelControl3.Location = new System.Drawing.Point(20, 111);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.ShowLineShadow = false;
             this.labelControl3.Size = new System.Drawing.Size(374, 38);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "CRM Modülü Tanımlamaları";
+            this.labelControl3.Visible = false;
             // 
             // galleryControl1_Tanimlamalar
             // 
@@ -216,40 +230,44 @@
             this.galleryControl1_Tanimlamalar.Gallery.ColumnCount = 1;
             this.galleryControl1_Tanimlamalar.Gallery.DistanceItemImageToText = 20;
             this.galleryControl1_Tanimlamalar.Gallery.DrawImageBackground = false;
-            galleryItemGroup34.Caption = "Group1";
-            galleryItem117.Caption = "Kullanıcı Tanımları";
-            galleryItem117.Description = "Personellerinizin kullanmakta olduğu kullanıcı giriş bilgilerini ve yetkilerini t" +
+            galleryItemGroup2.Caption = "Group1";
+            galleryItem6.Caption = "Kullanıcı Tanımları";
+            galleryItem6.Description = "Personellerinizin kullanmakta olduğu kullanıcı giriş bilgilerini ve yetkilerini t" +
     "anımlayıp yönetin.";
-            galleryItem117.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem117.Image")));
-            galleryItem117.ImageIndex = 1;
-            galleryItem117.Value = 26;
-            galleryItem118.Caption = "Esnek Tip Tanımlamaları";
-            galleryItem118.Description = "Programda ihtiyacınız olan yeni tipleri tanımlayın. Bir çok ekranı destekler.";
-            galleryItem118.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem118.Image")));
-            galleryItem118.Value = 27;
-            galleryItem119.Caption = "Zorunlu Alan Tanımları";
-            galleryItem119.Description = "Veri girişi yaptığınız alanları zorunlu hale getirerek personelinizin atlamaması " +
+            galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            galleryItem6.ImageOptions.ImageIndex = 1;
+            galleryItem6.Value = 26;
+            galleryItem7.Caption = "Esnek Tip Tanımlamaları";
+            galleryItem7.Description = "Programda ihtiyacınız olan yeni tipleri tanımlayın. Bir çok ekranı destekler.";
+            galleryItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            galleryItem7.Value = 27;
+            galleryItem7.Visible = false;
+            galleryItem8.Caption = "Zorunlu Alan Tanımları";
+            galleryItem8.Description = "Veri girişi yaptığınız alanları zorunlu hale getirerek personelinizin atlamaması " +
     "gereken alanları zorunlu kılarsınız.";
-            galleryItem119.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem119.Image")));
-            galleryItem119.Value = 28;
-            galleryItem120.Caption = "Log Tutulacak Alan Tanımları";
-            galleryItem120.Description = "Her hareketi log altında tutun. Eski ve yeni verileri saklayın. Yanlış değişiklik" +
+            galleryItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            galleryItem8.Value = 28;
+            galleryItem8.Visible = false;
+            galleryItem9.Caption = "Log Tutulacak Alan Tanımları";
+            galleryItem9.Description = "Her hareketi log altında tutun. Eski ve yeni verileri saklayın. Yanlış değişiklik" +
     "leri ve hataları önleyin.";
-            galleryItem120.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem120.Image")));
-            galleryItem120.Value = 29;
-            galleryItem121.Caption = "Dashboard Tasarımı";
-            galleryItem121.Description = "Kullanıcı bazında yada takımlar, profiller için farklı farklı dashboard raporları" +
+            galleryItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            galleryItem9.Value = 29;
+            galleryItem9.Visible = false;
+            galleryItem10.Caption = "Dashboard Tasarımı";
+            galleryItem10.Description = "Kullanıcı bazında yada takımlar, profiller için farklı farklı dashboard raporları" +
     " yapabilirsiniz.";
-            galleryItem121.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem121.Image")));
-            galleryItem121.Value = 30;
-            galleryItemGroup34.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem117,
-            galleryItem118,
-            galleryItem119,
-            galleryItem120,
-            galleryItem121});
+            galleryItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            galleryItem10.Value = 30;
+            galleryItem10.Visible = false;
+            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem6,
+            galleryItem7,
+            galleryItem8,
+            galleryItem9,
+            galleryItem10});
             this.galleryControl1_Tanimlamalar.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup34});
+            galleryItemGroup2});
             this.galleryControl1_Tanimlamalar.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
             this.galleryControl1_Tanimlamalar.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
             this.galleryControl1_Tanimlamalar.Gallery.ShowGroupCaption = false;
@@ -258,7 +276,7 @@
             this.galleryControl1_Tanimlamalar.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControl1_Gallery_ItemClick);
             this.galleryControl1_Tanimlamalar.Location = new System.Drawing.Point(20, 58);
             this.galleryControl1_Tanimlamalar.Name = "galleryControl1_Tanimlamalar";
-            this.galleryControl1_Tanimlamalar.Size = new System.Drawing.Size(374, 257);
+            this.galleryControl1_Tanimlamalar.Size = new System.Drawing.Size(374, 53);
             this.galleryControl1_Tanimlamalar.TabIndex = 1;
             this.galleryControl1_Tanimlamalar.Text = "galleryControl1";
             this.galleryControl1_Tanimlamalar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.galleryControl1_Tanimlamalar_MouseUp);
@@ -272,6 +290,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
@@ -304,29 +323,31 @@
             this.galleryControl4.Gallery.ColumnCount = 1;
             this.galleryControl4.Gallery.DistanceItemImageToText = 20;
             this.galleryControl4.Gallery.DrawImageBackground = false;
-            galleryItemGroup35.Caption = "Group1";
-            galleryItem122.Caption = "Banka Hesapları";
-            galleryItem122.Description = "Banka hesaplarınızı tanımlayıp satışlarınızı hangi hesaplar üzerinden olduğunu yö" +
+            galleryItemGroup3.Caption = "Group1";
+            galleryItem11.Caption = "Banka Hesapları";
+            galleryItem11.Description = "Banka hesaplarınızı tanımlayıp satışlarınızı hangi hesaplar üzerinden olduğunu yö" +
     "netin.";
-            galleryItem122.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem122.Image")));
-            galleryItem122.Value = 38;
-            galleryItem123.Caption = "Döviz Tanımları";
-            galleryItem123.Description = "Merkez bankasından alınan verilerle güncel tutulan döviz kurlarınız.";
-            galleryItem123.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem123.Image")));
-            galleryItem123.Value = 39;
-            galleryItemGroup35.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem122,
-            galleryItem123});
+            galleryItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            galleryItem11.Value = 38;
+            galleryItem11.Visible = false;
+            galleryItem12.Caption = "Döviz Tanımları";
+            galleryItem12.Description = "Merkez bankasından alınan verilerle güncel tutulan döviz kurlarınız.";
+            galleryItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            galleryItem12.Value = 39;
+            galleryItem12.Visible = false;
+            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem11,
+            galleryItem12});
             this.galleryControl4.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup35});
+            galleryItemGroup3});
             this.galleryControl4.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
             this.galleryControl4.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
             this.galleryControl4.Gallery.ShowGroupCaption = false;
             this.galleryControl4.Gallery.ShowItemText = true;
             this.galleryControl4.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
-            this.galleryControl4.Location = new System.Drawing.Point(4, 251);
+            this.galleryControl4.Location = new System.Drawing.Point(4, 114);
             this.galleryControl4.Name = "galleryControl4";
-            this.galleryControl4.Size = new System.Drawing.Size(400, 104);
+            this.galleryControl4.Size = new System.Drawing.Size(400, 18);
             this.galleryControl4.TabIndex = 6;
             this.galleryControl4.Text = "galleryControl4";
             // 
@@ -339,17 +360,19 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl5.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
             this.labelControl5.LineVisible = true;
-            this.labelControl5.Location = new System.Drawing.Point(4, 213);
+            this.labelControl5.Location = new System.Drawing.Point(4, 76);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.labelControl5.ShowLineShadow = false;
             this.labelControl5.Size = new System.Drawing.Size(400, 38);
             this.labelControl5.TabIndex = 5;
             this.labelControl5.Text = "Finans Tanımlamaları";
+            this.labelControl5.Visible = false;
             // 
             // galleryControl3
             // 
@@ -372,27 +395,30 @@
             this.galleryControl3.Gallery.ColumnCount = 1;
             this.galleryControl3.Gallery.DistanceItemImageToText = 20;
             this.galleryControl3.Gallery.DrawImageBackground = false;
-            galleryItemGroup36.Caption = "Group1";
-            galleryItem124.Caption = "Gayrimenkul Kat Tanımlamaları";
-            galleryItem124.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz.";
-            galleryItem124.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem124.Image")));
-            galleryItem124.Value = 35;
-            galleryItem125.Caption = "Proje Tip Tanımları";
-            galleryItem125.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz.";
-            galleryItem125.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem125.Image")));
-            galleryItem125.ImageIndex = 1;
-            galleryItem125.Value = 36;
-            galleryItem126.Caption = "Yapı Tipi Tanımları";
-            galleryItem126.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz. Yapı tanımlaması yapıp, rapor" +
+            galleryItemGroup4.Caption = "Group1";
+            galleryItem13.Caption = "Gayrimenkul Kat Tanımlamaları";
+            galleryItem13.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz.";
+            galleryItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
+            galleryItem13.Value = 35;
+            galleryItem13.Visible = false;
+            galleryItem14.Caption = "Proje Tip Tanımları";
+            galleryItem14.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz.";
+            galleryItem14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
+            galleryItem14.ImageOptions.ImageIndex = 1;
+            galleryItem14.Value = 36;
+            galleryItem14.Visible = false;
+            galleryItem15.Caption = "Yapı Tipi Tanımları";
+            galleryItem15.Description = "Modülünüzdeki tanımlamaları yapıp yönetebilirsiniz. Yapı tanımlaması yapıp, rapor" +
     "larda detaylı filrelemesi elde edin.";
-            galleryItem126.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem126.Image")));
-            galleryItem126.Value = 37;
-            galleryItemGroup36.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem124,
-            galleryItem125,
-            galleryItem126});
+            galleryItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
+            galleryItem15.Value = 37;
+            galleryItem15.Visible = false;
+            galleryItemGroup4.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem13,
+            galleryItem14,
+            galleryItem15});
             this.galleryControl3.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup36});
+            galleryItemGroup4});
             this.galleryControl3.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.ZoomInside;
             this.galleryControl3.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
             this.galleryControl3.Gallery.ShowGroupCaption = false;
@@ -400,7 +426,7 @@
             this.galleryControl3.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
             this.galleryControl3.Location = new System.Drawing.Point(4, 58);
             this.galleryControl3.Name = "galleryControl3";
-            this.galleryControl3.Size = new System.Drawing.Size(400, 155);
+            this.galleryControl3.Size = new System.Drawing.Size(400, 18);
             this.galleryControl3.TabIndex = 4;
             this.galleryControl3.Text = "galleryControl3";
             // 
@@ -413,6 +439,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl4.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
@@ -424,6 +451,7 @@
             this.labelControl4.Size = new System.Drawing.Size(400, 38);
             this.labelControl4.TabIndex = 1;
             this.labelControl4.Text = "Gayrimenkul Modülü Tanımlamaları";
+            this.labelControl4.Visible = false;
             // 
             // labelControl1
             // 
@@ -447,6 +475,22 @@
             this.popupMenu1.Popup += new System.EventHandler(this.popupMenu1_Popup);
             this.popupMenu1.BeforePopup += new System.ComponentModel.CancelEventHandler(this.popupMenu1_BeforePopup);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Sık Kullanılanlara Ekle";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Sık Kullanılanlardan Çıkart";
+            this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
             // barManager1
             // 
             this.barManager1.DockControls.Add(this.barDockControlTop);
@@ -464,6 +508,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Size = new System.Drawing.Size(842, 0);
             // 
             // barDockControlBottom
@@ -471,6 +516,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 612);
+            this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(842, 0);
             // 
             // barDockControlLeft
@@ -478,6 +524,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 612);
             // 
             // barDockControlRight
@@ -485,27 +532,12 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(842, 0);
+            this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 612);
             // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = null;
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Sık Kullanılanlara Ekle";
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Sık Kullanılanlardan Çıkart";
-            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // MenuTanimlamalar
             // 

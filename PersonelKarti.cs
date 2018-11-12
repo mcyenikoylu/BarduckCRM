@@ -12,7 +12,7 @@ using BarduckCRM;
 
 namespace BarduckCRM
 {
-    public partial class PersonelKarti : DevExpress.XtraEditors.XtraForm
+    public partial class PersonelKarti : DevExpress.XtraBars.Ribbon.RibbonForm 
     {
         BarduckCRMEntities data = new BarduckCRMEntities();
         int kayitid = -1;
@@ -50,12 +50,27 @@ namespace BarduckCRM
 
         private void btnKaydet_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            data.IUD_Personel(false, kayitid, txtAd.Text, Convert.ToInt32( cmbDepartman.EditValue), txtAdres.Text, txtSehir.Text, Convert.ToInt32(cmbUlke.EditValue), txtTelCep.Text, txtTelEv.Text, DateTime.Now.Date, 
+            try
+            {
+                data.IUD_Personel(false, kayitid, txtAd.Text, Convert.ToInt32(cmbDepartman.EditValue),
+                txtAdres.Text, txtSehir.Text, Convert.ToInt32(cmbUlke.EditValue), txtTelCep.Text,
+                txtTelEv.Text, DateTime.Now.Date,
                 txtEPosta.Text, Convert.ToBoolean(toggAktif.Checked),
-                txtSkype.Text, txtSoyad.Text, Convert.ToInt32(cmbCinsiyet.EditValue), Convert.ToDateTime(cmbDogumTarihi.EditValue), 1, DateTime.Now, 1, DateTime.Now, txtUnvan.Text, Convert.ToInt32(cmbOnek.EditValue), 
-                txtSemt.Text, txtPostaKodu.Text, Convert.ToInt32(cmbOfis.EditValue), Convert.ToInt32(cmbPersonelTakimi.EditValue),
-               Convert.ToDateTime(cmbIseBanlangicTarihi.EditValue), Convert.ToDateTime(cmbIstenAyrilmaTarihi.EditValue));
-            Mesaj.MesajVer("Ofis Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
+                txtSkype.Text, txtSoyad.Text, Convert.ToInt32(cmbCinsiyet.EditValue),
+                Convert.ToDateTime(cmbDogumTarihi.EditValue), 1, DateTime.Now, 1,
+                DateTime.Now, txtUnvan.Text, Convert.ToInt32(cmbOnek.EditValue),
+                txtSemt.Text, txtPostaKodu.Text, Convert.ToInt32(cmbOfis.EditValue),
+                Convert.ToInt32(cmbPersonelTakimi.EditValue),
+               Convert.ToDateTime(cmbIseBanlangicTarihi.EditValue),
+               Convert.ToDateTime(cmbIstenAyrilmaTarihi.EditValue));
+                Mesaj.MesajVer("Personel Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
         private void btnKaydetVeKapat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -116,6 +131,10 @@ namespace BarduckCRM
             }
         }
 
-
+        private void btnKapat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

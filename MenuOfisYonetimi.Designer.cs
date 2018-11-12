@@ -107,24 +107,26 @@
             galleryItem1.Caption = "Ofis Tanımları";
             galleryItem1.Description = "İşletmenizin, farklı lokasyonlardaki ofisterini tanımlamanızı ve ofis hakkında de" +
     "taylı bilgileri barındırmanızı sağlar.";
-            galleryItem1.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem1.Image")));
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.Value = "8";
             galleryItem2.Caption = "Personel Tanımları";
             galleryItem2.Description = "Ofislerde çalışmakta olan personellerinizi tanımlayın, kişisel bilgilerini girin " +
     "ve onları yönetin.";
-            galleryItem2.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem2.Image")));
-            galleryItem2.ImageIndex = 1;
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem2.ImageOptions.ImageIndex = 1;
             galleryItem2.Value = "9";
             galleryItem3.Caption = "Personel Takımları";
             galleryItem3.Description = "Eğer takımlar halinde çalışmakta olan bir oluşumunuz varsa personellerinizi takım" +
     "lara alıp yönetebilirsiniz.";
-            galleryItem3.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem3.Image")));
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItem3.Value = "10";
+            galleryItem3.Visible = false;
             galleryItem4.Caption = "Takım Yetkileri";
             galleryItem4.Description = "Her takımın kendine özgü yetkileri ve sınırları vardır. Bunları kolayce belirleyi" +
     "p yönete bilirsiniz.";
-            galleryItem4.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem4.Image")));
+            galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             galleryItem4.Value = "11";
+            galleryItem4.Visible = false;
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -140,7 +142,7 @@
             this.galleryControl1.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControl1_Gallery_ItemClick);
             this.galleryControl1.Location = new System.Drawing.Point(20, 58);
             this.galleryControl1.Name = "galleryControl1";
-            this.galleryControl1.Size = new System.Drawing.Size(374, 206);
+            this.galleryControl1.Size = new System.Drawing.Size(374, 104);
             this.galleryControl1.TabIndex = 1;
             this.galleryControl1.Text = "galleryControl1";
             this.galleryControl1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.galleryControl1_MouseUp);
@@ -154,6 +156,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
@@ -198,16 +201,16 @@
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Sık Kullanılanlara Ekle";
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
             this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "Sık Kullanılanlardan Çıkart";
-            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
             this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
@@ -228,6 +231,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Size = new System.Drawing.Size(821, 0);
             // 
             // barDockControlBottom
@@ -235,6 +239,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 620);
+            this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(821, 0);
             // 
             // barDockControlLeft
@@ -242,6 +247,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 620);
             // 
             // barDockControlRight
@@ -249,6 +255,7 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(821, 0);
+            this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 620);
             // 
             // xtraTabbedMdiManager1

@@ -122,6 +122,56 @@
           <Parameter Name="DashboardSuresi" Type="int" Mode="In" />
           <Parameter Name="HangiEkrandanIslemYapidi" Type="int" Mode="In" />
         </Function>
+        <Function Name="IUD_Ofis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Sil" Type="bit" Mode="In" />
+          <Parameter Name="KullaniciID" Type="int" Mode="In" />
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="FirmaID" Type="int" Mode="In" />
+          <Parameter Name="OfisKodu" Type="nvarchar" Mode="In" />
+          <Parameter Name="OfisAdi" Type="nvarchar" Mode="In" />
+          <Parameter Name="UlkeID" Type="int" Mode="In" />
+          <Parameter Name="Sehir" Type="nvarchar" Mode="In" />
+          <Parameter Name="Semt" Type="nvarchar" Mode="In" />
+          <Parameter Name="Adres" Type="nvarchar" Mode="In" />
+          <Parameter Name="YetkiliPersonelID" Type="int" Mode="In" />
+          <Parameter Name="KarsilamaPersoneliID" Type="int" Mode="In" />
+          <Parameter Name="Aktif" Type="bit" Mode="In" />
+          <Parameter Name="Tarih" Type="datetime" Mode="In" />
+          <Parameter Name="OlusturanKullaniciID" Type="int" Mode="In" />
+          <Parameter Name="OlusturanTarih" Type="datetime" Mode="In" />
+          <Parameter Name="DegistirenKullaniciID" Type="int" Mode="In" />
+          <Parameter Name="DegistirenTarih" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="IUD_Personel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Sil" Type="bit" Mode="In" />
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Adi" Type="nvarchar" Mode="In" />
+          <Parameter Name="Departman_TipID1" Type="int" Mode="In" />
+          <Parameter Name="Adres" Type="nvarchar" Mode="In" />
+          <Parameter Name="Sehir" Type="nvarchar" Mode="In" />
+          <Parameter Name="UlkeID" Type="int" Mode="In" />
+          <Parameter Name="CepTel" Type="nvarchar" Mode="In" />
+          <Parameter Name="EvTel" Type="nvarchar" Mode="In" />
+          <Parameter Name="Tarih" Type="datetime" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="Aktif" Type="bit" Mode="In" />
+          <Parameter Name="Skype" Type="nvarchar" Mode="In" />
+          <Parameter Name="Soyadi" Type="nvarchar" Mode="In" />
+          <Parameter Name="Cinsiyeti_TipID72" Type="int" Mode="In" />
+          <Parameter Name="DogumTarihi" Type="datetime" Mode="In" />
+          <Parameter Name="OlusturanKullaniciID" Type="int" Mode="In" />
+          <Parameter Name="OlusturanTarih" Type="datetime" Mode="In" />
+          <Parameter Name="DegistirenKullaniciID" Type="int" Mode="In" />
+          <Parameter Name="DegistirenTarih" Type="datetime" Mode="In" />
+          <Parameter Name="Unvan" Type="nvarchar" Mode="In" />
+          <Parameter Name="OnekID" Type="int" Mode="In" />
+          <Parameter Name="Semt" Type="nvarchar" Mode="In" />
+          <Parameter Name="PostaKodu" Type="nvarchar" Mode="In" />
+          <Parameter Name="OfisID" Type="int" Mode="In" />
+          <Parameter Name="PersonelTakimID" Type="int" Mode="In" />
+          <Parameter Name="IseBanlangicTarihi" Type="datetime" Mode="In" />
+          <Parameter Name="IstenAyrilisTarihi" Type="datetime" Mode="In" />
+        </Function>
         <Function Name="IUD_Takim" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="Aktif" Type="bit" Mode="In" />
           <Parameter Name="DegistirenKullaniciID" Type="int" Mode="In" />
@@ -319,56 +369,6 @@
             <Parameter Name="FirmaKodu" Mode="In" Type="String" />
             <Parameter Name="Aktif" Mode="In" Type="Boolean" />
             <Parameter Name="AktifKullaniciID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="IUD_Ofis" ReturnType="Collection(BarduckCRMModel.IUD_Ofis_Result)">
-            <Parameter Name="Sil" Mode="In" Type="Boolean" />
-            <Parameter Name="KullaniciID" Mode="In" Type="Int32" />
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="FirmaID" Mode="In" Type="Int32" />
-            <Parameter Name="OfisKodu" Mode="In" Type="String" />
-            <Parameter Name="OfisAdi" Mode="In" Type="String" />
-            <Parameter Name="UlkeID" Mode="In" Type="Int32" />
-            <Parameter Name="Sehir" Mode="In" Type="String" />
-            <Parameter Name="Semt" Mode="In" Type="String" />
-            <Parameter Name="Adres" Mode="In" Type="String" />
-            <Parameter Name="YetkiliPersonelID" Mode="In" Type="Int32" />
-            <Parameter Name="KarsilamaPersoneliID" Mode="In" Type="Int32" />
-            <Parameter Name="Aktif" Mode="In" Type="Boolean" />
-            <Parameter Name="Tarih" Mode="In" Type="DateTime" />
-            <Parameter Name="OlusturanKullaniciID" Mode="In" Type="Int32" />
-            <Parameter Name="OlusturanTarih" Mode="In" Type="DateTime" />
-            <Parameter Name="DegistirenKullaniciID" Mode="In" Type="Int32" />
-            <Parameter Name="DegistirenTarih" Mode="In" Type="DateTime" />
-          </FunctionImport>
-          <FunctionImport Name="IUD_Personel" ReturnType="Collection(BarduckCRMModel.IUD_Personel_Result)">
-            <Parameter Name="Sil" Mode="In" Type="Boolean" />
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="Adi" Mode="In" Type="String" />
-            <Parameter Name="Departman_TipID1" Mode="In" Type="Int32" />
-            <Parameter Name="Adres" Mode="In" Type="String" />
-            <Parameter Name="Sehir" Mode="In" Type="String" />
-            <Parameter Name="UlkeID" Mode="In" Type="Int32" />
-            <Parameter Name="CepTel" Mode="In" Type="String" />
-            <Parameter Name="EvTel" Mode="In" Type="String" />
-            <Parameter Name="Tarih" Mode="In" Type="DateTime" />
-            <Parameter Name="Email" Mode="In" Type="String" />
-            <Parameter Name="Aktif" Mode="In" Type="Boolean" />
-            <Parameter Name="Skype" Mode="In" Type="String" />
-            <Parameter Name="Soyadi" Mode="In" Type="String" />
-            <Parameter Name="Cinsiyeti_TipID72" Mode="In" Type="Int32" />
-            <Parameter Name="DogumTarihi" Mode="In" Type="DateTime" />
-            <Parameter Name="OlusturanKullaniciID" Mode="In" Type="Int32" />
-            <Parameter Name="OlusturanTarih" Mode="In" Type="DateTime" />
-            <Parameter Name="DegistirenKullaniciID" Mode="In" Type="Int32" />
-            <Parameter Name="DegistirenTarih" Mode="In" Type="DateTime" />
-            <Parameter Name="Unvan" Mode="In" Type="String" />
-            <Parameter Name="OnekID" Mode="In" Type="Int32" />
-            <Parameter Name="Semt" Mode="In" Type="String" />
-            <Parameter Name="PostaKodu" Mode="In" Type="String" />
-            <Parameter Name="OfisID" Mode="In" Type="Int32" />
-            <Parameter Name="PersonelTakimID" Mode="In" Type="Int32" />
-            <Parameter Name="IseBanlangicTarihi" Mode="In" Type="DateTime" />
-            <Parameter Name="IstenAyrilisTarihi" Mode="In" Type="DateTime" />
           </FunctionImport>
           <FunctionImport Name="IUD_Vaziyet" ReturnType="Collection(BarduckCRMModel.IUD_Vaziyet_Result)">
             <Parameter Name="Sil" Mode="In" Type="Boolean" />
@@ -625,6 +625,56 @@
             <Parameter Name="TakimKodu" Mode="In" Type="String" />
             <Parameter Name="Tarih" Mode="In" Type="DateTime" />
           </FunctionImport>
+          <FunctionImport Name="IUD_Ofis" ReturnType="Collection(BarduckCRMModel.IUD_Ofis_Result)">
+            <Parameter Name="Sil" Mode="In" Type="Boolean" />
+            <Parameter Name="KullaniciID" Mode="In" Type="Int32" />
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="FirmaID" Mode="In" Type="Int32" />
+            <Parameter Name="OfisKodu" Mode="In" Type="String" />
+            <Parameter Name="OfisAdi" Mode="In" Type="String" />
+            <Parameter Name="UlkeID" Mode="In" Type="Int32" />
+            <Parameter Name="Sehir" Mode="In" Type="String" />
+            <Parameter Name="Semt" Mode="In" Type="String" />
+            <Parameter Name="Adres" Mode="In" Type="String" />
+            <Parameter Name="YetkiliPersonelID" Mode="In" Type="Int32" />
+            <Parameter Name="KarsilamaPersoneliID" Mode="In" Type="Int32" />
+            <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+            <Parameter Name="Tarih" Mode="In" Type="DateTime" />
+            <Parameter Name="OlusturanKullaniciID" Mode="In" Type="Int32" />
+            <Parameter Name="OlusturanTarih" Mode="In" Type="DateTime" />
+            <Parameter Name="DegistirenKullaniciID" Mode="In" Type="Int32" />
+            <Parameter Name="DegistirenTarih" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="IUD_Personel" ReturnType="Collection(BarduckCRMModel.IUD_Personel_Result)">
+            <Parameter Name="Sil" Mode="In" Type="Boolean" />
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Adi" Mode="In" Type="String" />
+            <Parameter Name="Departman_TipID1" Mode="In" Type="Int32" />
+            <Parameter Name="Adres" Mode="In" Type="String" />
+            <Parameter Name="Sehir" Mode="In" Type="String" />
+            <Parameter Name="UlkeID" Mode="In" Type="Int32" />
+            <Parameter Name="CepTel" Mode="In" Type="String" />
+            <Parameter Name="EvTel" Mode="In" Type="String" />
+            <Parameter Name="Tarih" Mode="In" Type="DateTime" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="Aktif" Mode="In" Type="Boolean" />
+            <Parameter Name="Skype" Mode="In" Type="String" />
+            <Parameter Name="Soyadi" Mode="In" Type="String" />
+            <Parameter Name="Cinsiyeti_TipID72" Mode="In" Type="Int32" />
+            <Parameter Name="DogumTarihi" Mode="In" Type="DateTime" />
+            <Parameter Name="OlusturanKullaniciID" Mode="In" Type="Int32" />
+            <Parameter Name="OlusturanTarih" Mode="In" Type="DateTime" />
+            <Parameter Name="DegistirenKullaniciID" Mode="In" Type="Int32" />
+            <Parameter Name="DegistirenTarih" Mode="In" Type="DateTime" />
+            <Parameter Name="Unvan" Mode="In" Type="String" />
+            <Parameter Name="OnekID" Mode="In" Type="Int32" />
+            <Parameter Name="Semt" Mode="In" Type="String" />
+            <Parameter Name="PostaKodu" Mode="In" Type="String" />
+            <Parameter Name="OfisID" Mode="In" Type="Int32" />
+            <Parameter Name="PersonelTakimID" Mode="In" Type="Int32" />
+            <Parameter Name="IseBanlangicTarihi" Mode="In" Type="DateTime" />
+            <Parameter Name="IstenAyrilisTarihi" Mode="In" Type="DateTime" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="S_Kullanici_Result">
           <Property Type="Int32" Name="ID" Nullable="false" />
@@ -748,18 +798,6 @@
           <Property Type="DateTime" Name="Tarih" Nullable="false" Precision="23" />
         </ComplexType>
         <ComplexType Name="IUD_Firma_Result">
-          <Property Type="Int32" Name="Sonuc" Nullable="false" />
-          <Property Type="Int32" Name="ID" Nullable="true" />
-          <Property Type="Boolean" Name="Aktif" Nullable="true" />
-          <Property Type="DateTime" Name="Tarih" Nullable="false" Precision="23" />
-        </ComplexType>
-        <ComplexType Name="IUD_Ofis_Result">
-          <Property Type="Int32" Name="Sonuc" Nullable="false" />
-          <Property Type="Int32" Name="ID" Nullable="true" />
-          <Property Type="Boolean" Name="Aktif" Nullable="true" />
-          <Property Type="DateTime" Name="Tarih" Nullable="false" Precision="23" />
-        </ComplexType>
-        <ComplexType Name="IUD_Personel_Result">
           <Property Type="Int32" Name="Sonuc" Nullable="false" />
           <Property Type="Int32" Name="ID" Nullable="true" />
           <Property Type="Boolean" Name="Aktif" Nullable="true" />
@@ -1073,6 +1111,18 @@
         </ComplexType>
         <ComplexType Name="IUD_Takim_Result">
           <Property Type="Int32" Name="ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="IUD_Ofis_Result">
+          <Property Type="Int32" Name="Aktif" Nullable="false" />
+          <Property Type="Int32" Name="ID" Nullable="true" />
+          <Property Type="Int32" Name="Sonuc" Nullable="false" />
+          <Property Type="Int32" Name="Tarih" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="IUD_Personel_Result">
+          <Property Type="Int32" Name="Aktif" Nullable="false" />
+          <Property Type="Int32" Name="ID" Nullable="true" />
+          <Property Type="Int32" Name="Sonuc" Nullable="false" />
+          <Property Type="Int32" Name="Tarih" Nullable="true" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1484,6 +1534,26 @@
             <ResultMapping>
               <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Takim_Result">
                 <ScalarProperty Name="ID" ColumnName="ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="IUD_Ofis" FunctionName="BarduckCRMModel.Store.IUD_Ofis">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Ofis_Result">
+                <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="IUD_Personel" FunctionName="BarduckCRMModel.Store.IUD_Personel">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BarduckCRMModel.IUD_Personel_Result">
+                <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

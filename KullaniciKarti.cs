@@ -63,5 +63,11 @@ namespace BarduckCRM
                 Convert.ToInt32(txtDashboardYenilenmeSuresi.EditValue),1);
             this.Close();
         }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

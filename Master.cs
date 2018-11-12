@@ -124,17 +124,17 @@ namespace BarduckCRM
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //Form AcikFormlar = Application.OpenForms["Dashboard"];
-            //if (AcikFormlar != null)
-            //{
-            //    XtraMdiTabPage page = FindPageByText("Dashboard");
-            //    xtraTabbedMdiManager1.SelectedPage = page;
-            //    ribbonControl1.HideApplicationButtonContentControl();
-            //    return;
-            //}
-            //Dashboard frm = new Dashboard();
-            //frm.MdiParent = this;
-            //frm.Show();
+            Form AcikFormlar = Application.OpenForms["DashboardForm"];
+            if (AcikFormlar != null)
+            {
+                XtraMdiTabPage page = FindPageByText("Dashboard");
+                xtraTabbedMdiManager1.SelectedPage = page;
+                ribbonControl1.HideApplicationButtonContentControl();
+                return;
+            }
+            DashboardForm frm = new DashboardForm(4);
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private XtraMdiTabPage FindPageByText(string pageText)
@@ -177,9 +177,9 @@ namespace BarduckCRM
             bFormYuklendiMi = true;
 
             //yapım aşamasındaki menüleri gizliyorum.
-            //backstageViewControl1.SelectedTab = backstageViewTabItem1; //ana menü açıldığında her zaman ofis tanımları olarak açar.
-            backstageViewControl1.SelectedTab = backstageViewTabItem2;
-            backstageViewTabItem1.Visible = false;
+            backstageViewControl1.SelectedTab = backstageViewTabItem1; //ana menü açıldığında her zaman ofis tanımları olarak açar.
+            //backstageViewControl1.SelectedTab = backstageViewTabItem2; //crm olarak açar
+            backstageViewTabItem1.Visible = true; //ofis tanımları
             backstageViewTabItem6.Visible = false;
             backstageViewTabItem10.Visible = false;
             backstageViewTabItem14.Visible = false;
@@ -417,7 +417,7 @@ namespace BarduckCRM
 
                 //F_EvraklarDashboardGoster frmdashboardgoster = new F_EvraklarDashboardGoster(Genel.AktifKullanici_DashboardID, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, null);
 
-                Dashboard frm = new Dashboard(Genel.AktifKullanici_DashboardID); //Genel.AktifKullanici_DashboardID
+                DashboardForm frm = new DashboardForm(Genel.AktifKullanici_DashboardID); //Genel.AktifKullanici_DashboardID
                 if (MDIFormAcikMi(frm))
                 {
                     XtraMdiTabPage page = FindPageByText(frm.Text);

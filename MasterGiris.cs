@@ -101,7 +101,7 @@ namespace BarduckCRM
                 toggHatirla.EditValue = BeniHatirla;
             }
 
-            SirketCombosuOlustur();
+            //SirketCombosuOlustur();
 
         }
 
