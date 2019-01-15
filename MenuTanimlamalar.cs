@@ -76,7 +76,7 @@ namespace BarduckCRM
                 frm.Show();
 
             }
-            if (value == 26)
+            if (value == 26) //kullanıcı tanımları
             {
                 Kullanici frm = new Kullanici();
                 frm.MdiParent = Master.ActiveForm;

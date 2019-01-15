@@ -1475,5 +1475,43 @@ namespace BarduckCRM
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("U_KullaniciParola", iDParameter, yeniparolaParameter);
         }
+    
+        public virtual ObjectResult<Nullable<int>> IUD_Kullanici(Nullable<bool> sil, Nullable<int> iD, string kullaniciAdi, string parola, string email, Nullable<int> personelID)
+        {
+            var silParameter = sil.HasValue ?
+                new ObjectParameter("Sil", sil) :
+                new ObjectParameter("Sil", typeof(bool));
+    
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var kullaniciAdiParameter = kullaniciAdi != null ?
+                new ObjectParameter("KullaniciAdi", kullaniciAdi) :
+                new ObjectParameter("KullaniciAdi", typeof(string));
+    
+            var parolaParameter = parola != null ?
+                new ObjectParameter("Parola", parola) :
+                new ObjectParameter("Parola", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            var personelIDParameter = personelID.HasValue ?
+                new ObjectParameter("PersonelID", personelID) :
+                new ObjectParameter("PersonelID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("IUD_Kullanici", silParameter, iDParameter, kullaniciAdiParameter, parolaParameter, emailParameter, personelIDParameter);
+        }
+    
+        public virtual ObjectResult<S_KullaniciKontrol_Result> S_KullaniciKontrol(string kullaniciAdi)
+        {
+            var kullaniciAdiParameter = kullaniciAdi != null ?
+                new ObjectParameter("KullaniciAdi", kullaniciAdi) :
+                new ObjectParameter("KullaniciAdi", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<S_KullaniciKontrol_Result>("S_KullaniciKontrol", kullaniciAdiParameter);
+        }
     }
 }

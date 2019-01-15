@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Ribbon;
 
-namespace DXApplication2
+namespace BarduckCRM
 {
     public partial class MenuStokYonetimi : DevExpress.XtraEditors.XtraUserControl
     {

@@ -42,7 +42,6 @@
           <ScalarProperty Name="OnekID" ColumnName="OnekID" />
           <ScalarProperty Name="Kurumsal" ColumnName="Kurumsal" />
           <ScalarProperty Name="MedeniHali_TipID44_STR" ColumnName="MedeniHali_TipID44_STR" />
-          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
           <ScalarProperty Name="UlkeKodu" ColumnName="UlkeKodu" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -425,6 +424,15 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="U_KullaniciParola" FunctionName="BarduckCRMModel.Store.U_KullaniciParola" />
+    <FunctionImportMapping FunctionImportName="IUD_Kullanici" FunctionName="BarduckCRMModel.Store.IUD_Kullanici" />
+    <FunctionImportMapping FunctionImportName="S_KullaniciKontrol" FunctionName="BarduckCRMModel.Store.S_KullaniciKontrol">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BarduckCRMModel.S_KullaniciKontrol_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

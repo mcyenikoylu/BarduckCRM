@@ -212,7 +212,7 @@ namespace BarduckCRM
             backstageViewTabItem13.Visible = false;
             backstageViewTabItem4.Visible = false;
             backstageViewTabItem3.Visible = false;
-            backstageViewTabItem7.Visible = false; //tanımlar
+            backstageViewTabItem7.Visible = true; //tanımlar
             backstageViewButtonItem1.Visible = false; //destek
             backstageViewButtonItem2.Visible = false; //yardım
             //yapım aşamasındaki menüleri gizliyorum.

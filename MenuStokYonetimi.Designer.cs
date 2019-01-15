@@ -1,4 +1,4 @@
-﻿namespace DXApplication2
+﻿namespace BarduckCRM
 {
     partial class MenuStokYonetimi
     {
@@ -75,8 +75,6 @@
             // 
             this.galleryControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.galleryControl1.Controls.Add(this.galleryControlClient1);
-            this.galleryControl1.DesignGalleryGroupIndex = 0;
-            this.galleryControl1.DesignGalleryItemIndex = 0;
             this.galleryControl1.Dock = System.Windows.Forms.DockStyle.Top;
             // 
             // 
@@ -96,42 +94,42 @@
             galleryItem1.Caption = "Proje Kartları";
             galleryItem1.Description = "Gayrimenkullerinizin hangi projelerde oladuğunu ve derinlemesine detaylarnı barın" +
     "dıran, durum ve hareketlerini göreceğiniz ekranlar.";
-            galleryItem1.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem1.Image")));
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem1.Value = "18";
             galleryItem2.Caption = "Vaziyet Planı";
             galleryItem2.Description = "Projeniz hakkında detaylı bilgiler girebilirsiniz ve vaziyet olarak projenizi det" +
     "aylandırırsınız.";
-            galleryItem2.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem2.Image")));
-            galleryItem2.ImageIndex = 1;
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            galleryItem2.ImageOptions.ImageIndex = 1;
             galleryItem2.Value = "19";
             galleryItem3.Caption = "Gayrimenkul Kartları";
             galleryItem3.Description = "Bütün detaylarıyla gayrimenkul bilgilerini girip hızlıca satışa hazırlayabilirsin" +
     "iz.";
-            galleryItem3.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem3.Image")));
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItem3.Value = "20";
             galleryItem4.Caption = "Fiyat Listeleri";
             galleryItem4.Description = "Gayrimenkul fiyatlarını tanımlayabileceğiniz ve farklı satış listeleri oluşturabi" +
     "lirsiniz.";
-            galleryItem4.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem4.Image")));
+            galleryItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             galleryItem4.Value = "21";
             galleryItem5.Caption = "Kampanya Yönetimi";
             galleryItem5.Description = "Çeşitli kampanyalar tanımlayabileceğiniz ve bunları yönetebileceğinizi ekran.";
-            galleryItem5.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem5.Image")));
+            galleryItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             galleryItem5.Value = "22";
             galleryItem6.Caption = "İçeri Aktarımlar";
             galleryItem6.Description = "Excel üzerinde olan gayrimenkul bilgilerinizi sistem içerisine aktarımını sağlar." +
     "";
-            galleryItem6.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem6.Image")));
+            galleryItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             galleryItem6.Value = "23";
             galleryItem7.Caption = "Raporlar";
             galleryItem7.Description = "Stok verilerine özgü detaylı raporlar ve hareket bilgileri alabilirsiniz. Kendi f" +
     "iltrelerinizi kaydedip, kendi raporlarınızı yapabilirsiniz.";
-            galleryItem7.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem7.Image")));
+            galleryItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             galleryItem7.Value = "24";
             galleryItem8.Caption = "Tanımlamalar";
             galleryItem8.Description = "Çeşitli dinamik alanların verilerini ve içeriklerini tanımlaya bilirsiniz. İhtiya" +
     "çlarınız doğrultusunda kategoriler yaratabilirsiniz.";
-            galleryItem8.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem8.Image")));
+            galleryItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
             galleryItem8.Value = "25";
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
@@ -165,6 +163,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelControl2.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;

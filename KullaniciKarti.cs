@@ -33,13 +33,23 @@ namespace BarduckCRM
             if (dashlist.Count > 0)
                 cmbDashboard.Properties.DataSource = dashlist;
 
-            var list = data.S_Kullanici(KullaniciID).ToList();
-            if(list.Count>0)
+            if(KullaniciID>0)
             {
-                txtKullaniciAdi.Text = list.FirstOrDefault().KullaniciAdi;
-                txtParola.Text = list.FirstOrDefault().Parola;
-                txtEPosta.Text = list.FirstOrDefault().EPosta;
-                cmbPersonel.EditValue = list.FirstOrDefault().PersonelID;
+                var list = data.S_Kullanici(KullaniciID).ToList();
+                if (list.Count > 0)
+                {
+                    txtKullaniciAdi.Text = list.FirstOrDefault().KullaniciAdi;
+                    txtParola.Text = list.FirstOrDefault().Parola;
+                    txtEPosta.Text = list.FirstOrDefault().EPosta;
+                    cmbPersonel.EditValue = list.FirstOrDefault().PersonelID;
+                }
+            }
+            else
+            {
+                txtKullaniciAdi.Text = "";
+                txtParola.Text = "";
+                txtEPosta.Text = "";
+                cmbPersonel.EditValue = -1;
             }
 
             var ayarlist = data.S_KullaniciAyarlari(KullaniciID).ToList();
@@ -53,18 +63,53 @@ namespace BarduckCRM
 
         private void btnKaydet_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            data.IUD_KullaniciAyarlari(KullaniciID, "", "", null, "", false, 0, Convert.ToInt32( cmbDashboard.EditValue), Convert.ToBoolean( toggDashboardOtomatikYenilensin.EditValue), 
-                Convert.ToInt32(txtDashboardYenilenmeSuresi.EditValue),1);
+            var list = data.S_KullaniciKontrol(txtKullaniciAdi.Text).ToList();
+            if(list.FirstOrDefault().ID>0)
+            {
+                XtraMessageBox.Show("Kullanıcı Adi daha önce kayıt edilmiştir.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                data.IUD_Kullanici(false,
+                KullaniciID,
+                txtKullaniciAdi.Text,
+                txtParola.Text,
+                txtEPosta.Text,
+                Convert.ToInt32(cmbPersonel.EditValue));
+                data.IUD_KullaniciAyarlari(KullaniciID, "", "", null, "", false, 0,
+                    Convert.ToInt32(cmbDashboard.EditValue), Convert.ToBoolean(toggDashboardOtomatikYenilensin.EditValue),
+                    Convert.ToInt32(txtDashboardYenilenmeSuresi.EditValue), 1);
+                Mesaj.MesajVer("Kullanıcı Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
+
+            }
         }
 
         private void btnKaydetveKapat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            data.IUD_KullaniciAyarlari(KullaniciID, "", "", null, "", false, 0, Convert.ToInt32( cmbDashboard.EditValue), Convert.ToBoolean( toggDashboardOtomatikYenilensin.EditValue), 
+            data.IUD_Kullanici(false,
+                KullaniciID,
+                txtKullaniciAdi.Text,
+                txtParola.Text,
+                txtEPosta.Text,
+                Convert.ToInt32(cmbPersonel.EditValue));
+            data.IUD_KullaniciAyarlari(KullaniciID, "", "", null, "", false, 0, 
+                Convert.ToInt32( cmbDashboard.EditValue), 
+                Convert.ToBoolean( toggDashboardOtomatikYenilensin.EditValue), 
                 Convert.ToInt32(txtDashboardYenilenmeSuresi.EditValue),1);
+            Mesaj.MesajVer("Kullanıcı Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
+
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        private void KullaniciKarti_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             this.Close();

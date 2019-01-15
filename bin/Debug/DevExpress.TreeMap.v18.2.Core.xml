@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.TreeMap.v18.2.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.TreeMap.ITreeMapItem">
+
+            <summary>
+                <para>The interface that should be implemented by a class which can be used as a tree map item.
+
+</para>
+            </summary>
+
+        </member>
+    </members>
+</doc>

@@ -104,6 +104,14 @@
     <Parameter Name="Aktif" Type="bit" Mode="In" />
     <Parameter Name="AktifKullaniciID" Type="int" Mode="In" />
   </Function>
+  <Function Name="IUD_Kullanici" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Sil" Type="bit" Mode="In" />
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
+    <Parameter Name="Parola" Type="nvarchar" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar" Mode="In" />
+    <Parameter Name="PersonelID" Type="int" Mode="In" />
+  </Function>
   <Function Name="IUD_KullaniciAyarlari" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="KullaniciID" Type="int" Mode="In" />
     <Parameter Name="Tema" Type="nvarchar" Mode="In" />
@@ -252,6 +260,9 @@
     <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
     <Parameter Name="Parola" Type="nvarchar" Mode="In" />
   </Function>
+  <Function Name="S_KullaniciKontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
+  </Function>
   <Function Name="S_Menu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ID" Type="int" Mode="In" />
   </Function>
@@ -272,6 +283,10 @@
   </Function>
   <Function Name="S_Ulke" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="U_KullaniciParola" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="yeniparola" Type="nvarchar" Mode="In" />
   </Function>
   <EntityContainer Name="BarduckCRMModelStoreContainer" />
 </Schema>

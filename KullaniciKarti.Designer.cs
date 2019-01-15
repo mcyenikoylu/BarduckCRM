@@ -346,6 +346,7 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.ShowCaptionButton = false;
             this.ribbonPageGroup4.Text = "İşlemler";
+            this.ribbonPageGroup4.Visible = false;
             // 
             // ribbonPageGroup6
             // 
@@ -357,10 +358,11 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Barduck CRM";
+            this.ribbonPageGroup6.Visible = false;
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 327);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 289);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(522, 31);
@@ -448,7 +450,6 @@
             // 
             // tabPane1
             // 
-            this.tabPane1.AllowCollapse = DevExpress.Utils.DefaultBoolean.Default;
             this.tabPane1.Controls.Add(this.tabAyarlar);
             this.tabPane1.Controls.Add(this.tabGenelBilgiler);
             this.tabPane1.Controls.Add(this.tabYetkiler);
@@ -459,9 +460,9 @@
             this.tabYetkiler,
             this.tabAyarlar,
             this.tabGenelBilgiler});
-            this.tabPane1.RegularSize = new System.Drawing.Size(522, 184);
+            this.tabPane1.RegularSize = new System.Drawing.Size(522, 146);
             this.tabPane1.SelectedPage = this.tabAyarlar;
-            this.tabPane1.Size = new System.Drawing.Size(522, 184);
+            this.tabPane1.Size = new System.Drawing.Size(522, 146);
             this.tabPane1.TabIndex = 34;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -476,7 +477,7 @@
             this.tabAyarlar.Controls.Add(this.txtDashboardYenilenmeSuresi);
             this.tabAyarlar.Name = "tabAyarlar";
             this.tabAyarlar.PageVisible = false;
-            this.tabAyarlar.Size = new System.Drawing.Size(522, 184);
+            this.tabAyarlar.Size = new System.Drawing.Size(522, 119);
             // 
             // labelControl5
             // 
@@ -567,7 +568,7 @@
             this.tabGenelBilgiler.Controls.Add(this.txtParola);
             this.tabGenelBilgiler.Controls.Add(this.labelControl2);
             this.tabGenelBilgiler.Name = "tabGenelBilgiler";
-            this.tabGenelBilgiler.Size = new System.Drawing.Size(522, 157);
+            this.tabGenelBilgiler.Size = new System.Drawing.Size(522, 119);
             // 
             // tabYetkiler
             // 
@@ -580,7 +581,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 358);
+            this.ClientSize = new System.Drawing.Size(522, 320);
             this.Controls.Add(this.tabPane1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
@@ -591,6 +592,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Kullanıcı Kartı";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.KullaniciKarti_FormClosing);
             this.Load += new System.EventHandler(this.KullaniciKarti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();

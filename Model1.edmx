@@ -109,6 +109,14 @@
           <Parameter Name="Aktif" Type="bit" Mode="In" />
           <Parameter Name="AktifKullaniciID" Type="int" Mode="In" />
         </Function>
+        <Function Name="IUD_Kullanici" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Sil" Type="bit" Mode="In" />
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
+          <Parameter Name="Parola" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="PersonelID" Type="int" Mode="In" />
+        </Function>
         <Function Name="IUD_KullaniciAyarlari" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="KullaniciID" Type="int" Mode="In" />
           <Parameter Name="Tema" Type="nvarchar" Mode="In" />
@@ -256,6 +264,9 @@
         <Function Name="S_KullaniciGirisKontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
           <Parameter Name="Parola" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="S_KullaniciKontrol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="KullaniciAdi" Type="nvarchar" Mode="In" />
         </Function>
         <Function Name="S_Menu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ID" Type="int" Mode="In" />
@@ -682,6 +693,17 @@
           <FunctionImport Name="U_KullaniciParola">
             <Parameter Name="ID" Mode="In" Type="Int32" />
             <Parameter Name="yeniparola" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="IUD_Kullanici" ReturnType="Collection(Int32)">
+            <Parameter Name="Sil" Mode="In" Type="Boolean" />
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="KullaniciAdi" Mode="In" Type="String" />
+            <Parameter Name="Parola" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PersonelID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="S_KullaniciKontrol" ReturnType="Collection(BarduckCRMModel.S_KullaniciKontrol_Result)">
+            <Parameter Name="KullaniciAdi" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="S_Kullanici_Result">
@@ -1131,6 +1153,9 @@
           <Property Type="Int32" Name="Sonuc" Nullable="false" />
           <Property Type="Int32" Name="Tarih" Nullable="true" />
         </ComplexType>
+        <ComplexType Name="S_KullaniciKontrol_Result">
+          <Property Type="Int32" Name="ID" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1564,6 +1589,14 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="U_KullaniciParola" FunctionName="BarduckCRMModel.Store.U_KullaniciParola" />
+          <FunctionImportMapping FunctionImportName="IUD_Kullanici" FunctionName="BarduckCRMModel.Store.IUD_Kullanici" />
+          <FunctionImportMapping FunctionImportName="S_KullaniciKontrol" FunctionName="BarduckCRMModel.Store.S_KullaniciKontrol" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BarduckCRMModel.S_KullaniciKontrol_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -392,6 +392,21 @@
       <Parameter Name="IseBanlangicTarihi" Mode="In" Type="DateTime" />
       <Parameter Name="IstenAyrilisTarihi" Mode="In" Type="DateTime" />
     </FunctionImport>
+    <FunctionImport Name="U_KullaniciParola">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="yeniparola" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="IUD_Kullanici" ReturnType="Collection(Int32)">
+      <Parameter Name="Sil" Mode="In" Type="Boolean" />
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+      <Parameter Name="KullaniciAdi" Mode="In" Type="String" />
+      <Parameter Name="Parola" Mode="In" Type="String" />
+      <Parameter Name="Email" Mode="In" Type="String" />
+      <Parameter Name="PersonelID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="S_KullaniciKontrol" ReturnType="Collection(BarduckCRMModel.S_KullaniciKontrol_Result)">
+      <Parameter Name="KullaniciAdi" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="S_Kullanici_Result">
     <Property Type="Int32" Name="ID" Nullable="false" />
@@ -442,7 +457,6 @@
     <Property Type="Int32" Name="OnekID" Nullable="true" />
     <Property Type="Boolean" Name="Kurumsal" Nullable="true" />
     <Property Type="String" Name="MedeniHali_TipID44_STR" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="FirmaAdi" Nullable="true" MaxLength="150" />
     <Property Type="String" Name="UlkeKodu" Nullable="true" MaxLength="50" />
   </ComplexType>
   <ComplexType Name="S_Tip_Result">
@@ -840,5 +854,8 @@
     <Property Type="Int32" Name="ID" Nullable="true" />
     <Property Type="Int32" Name="Sonuc" Nullable="false" />
     <Property Type="Int32" Name="Tarih" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="S_KullaniciKontrol_Result">
+    <Property Type="Int32" Name="ID" Nullable="true" />
   </ComplexType>
 </Schema>

@@ -302,6 +302,12 @@
     <Compile Include="KullaniciKarti.Designer.cs">
       <DependentUpon>KullaniciKarti.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuStokYonetimi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuStokYonetimi.Designer.cs">
+      <DependentUpon>MenuStokYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuTelekomunikasyonYonetimi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -450,6 +456,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="S_KullaniciGirisKontrol_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="S_KullaniciKontrol_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="S_Kullanici_Result.cs">
@@ -631,6 +640,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciKarti.resx">
       <DependentUpon>KullaniciKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStokYonetimi.resx">
+      <DependentUpon>MenuStokYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuTelekomunikasyonYonetimi.resx">
       <DependentUpon>MenuTelekomunikasyonYonetimi.cs</DependentUpon>

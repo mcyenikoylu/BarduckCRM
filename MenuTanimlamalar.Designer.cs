@@ -120,8 +120,6 @@
             // 
             this.galleryControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.galleryControl2.Controls.Add(this.galleryControlClient2);
-            this.galleryControl2.DesignGalleryGroupIndex = 0;
-            this.galleryControl2.DesignGalleryItemIndex = 0;
             this.galleryControl2.Dock = System.Windows.Forms.DockStyle.Top;
             // 
             // 
@@ -213,8 +211,6 @@
             // 
             this.galleryControl1_Tanimlamalar.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.galleryControl1_Tanimlamalar.Controls.Add(this.galleryControlClient1);
-            this.galleryControl1_Tanimlamalar.DesignGalleryGroupIndex = 0;
-            this.galleryControl1_Tanimlamalar.DesignGalleryItemIndex = 0;
             this.galleryControl1_Tanimlamalar.Dock = System.Windows.Forms.DockStyle.Top;
             // 
             // 
@@ -306,8 +302,6 @@
             // 
             this.galleryControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.galleryControl4.Controls.Add(this.galleryControlClient4);
-            this.galleryControl4.DesignGalleryGroupIndex = 0;
-            this.galleryControl4.DesignGalleryItemIndex = 0;
             this.galleryControl4.Dock = System.Windows.Forms.DockStyle.Top;
             // 
             // 
@@ -378,8 +372,6 @@
             // 
             this.galleryControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.galleryControl3.Controls.Add(this.galleryControlClient3);
-            this.galleryControl3.DesignGalleryGroupIndex = 0;
-            this.galleryControl3.DesignGalleryItemIndex = 0;
             this.galleryControl3.Dock = System.Windows.Forms.DockStyle.Top;
             // 
             // 
