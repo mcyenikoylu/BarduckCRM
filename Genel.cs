@@ -38,6 +38,11 @@ namespace BarduckCRM
         public static int AktifKullaniciID = -1;
 
         /// <summary>
+        /// Sistemde login olan aktif kullanıcı id.
+        /// </summary>
+        public static string AktifKullaniciAdi = "";
+
+        /// <summary>
         /// Program çalışma dizini
         /// </summary>
         public static string ProgramYolu = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\";

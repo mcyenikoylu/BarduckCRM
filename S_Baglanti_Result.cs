@@ -51,7 +51,6 @@ namespace BarduckCRM
         public Nullable<int> OnekID { get; set; }
         public Nullable<bool> Kurumsal { get; set; }
         public string MedeniHali_TipID44_STR { get; set; }
-        public string FirmaAdi { get; set; }
         public string UlkeKodu { get; set; }
     }
 }

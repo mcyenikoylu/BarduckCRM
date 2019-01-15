@@ -81,6 +81,8 @@ namespace BarduckCRM
             var list = data.S_Ofis(-1).ToList();
             if (list.Count > 0)
                 grdOfis.DataSource = list;
+            else
+                grdOfis.DataSource = null;
         }
 
     }

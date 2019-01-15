@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baglanti));
             this.grdBaglanti = new DevExpress.XtraGrid.GridControl();
-            this.sBaglantiResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sBaglantiResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvBaglanti = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOnek = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pictureOnek = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.colAdiSoyadi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFirmaAdi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMeslek_TipID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbMeslek = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.colTarih = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -119,7 +119,6 @@
             this.colID,
             this.colOnek,
             this.colAdiSoyadi,
-            this.colFirmaAdi,
             this.colMeslek_TipID2,
             this.colTarih,
             this.colPuan,
@@ -167,15 +166,6 @@
             this.colAdiSoyadi.VisibleIndex = 1;
             this.colAdiSoyadi.Width = 150;
             // 
-            // colFirmaAdi
-            // 
-            this.colFirmaAdi.Caption = "FİRMA ADI";
-            this.colFirmaAdi.FieldName = "FirmaAdi";
-            this.colFirmaAdi.Name = "colFirmaAdi";
-            this.colFirmaAdi.Visible = true;
-            this.colFirmaAdi.VisibleIndex = 2;
-            this.colFirmaAdi.Width = 150;
-            // 
             // colMeslek_TipID2
             // 
             this.colMeslek_TipID2.Caption = "MESLEK";
@@ -183,7 +173,7 @@
             this.colMeslek_TipID2.FieldName = "Meslek_TipID2";
             this.colMeslek_TipID2.Name = "colMeslek_TipID2";
             this.colMeslek_TipID2.Visible = true;
-            this.colMeslek_TipID2.VisibleIndex = 3;
+            this.colMeslek_TipID2.VisibleIndex = 2;
             this.colMeslek_TipID2.Width = 150;
             // 
             // cmbMeslek
@@ -203,7 +193,7 @@
             this.colTarih.FieldName = "Tarih";
             this.colTarih.Name = "colTarih";
             this.colTarih.Visible = true;
-            this.colTarih.VisibleIndex = 4;
+            this.colTarih.VisibleIndex = 3;
             this.colTarih.Width = 150;
             // 
             // colPuan
@@ -213,7 +203,7 @@
             this.colPuan.FieldName = "Puan";
             this.colPuan.Name = "colPuan";
             this.colPuan.Visible = true;
-            this.colPuan.VisibleIndex = 5;
+            this.colPuan.VisibleIndex = 4;
             this.colPuan.Width = 150;
             // 
             // repositoryItemProgressBar1
@@ -227,7 +217,7 @@
             this.colUlke.FieldName = "Ulke";
             this.colUlke.Name = "colUlke";
             this.colUlke.Visible = true;
-            this.colUlke.VisibleIndex = 6;
+            this.colUlke.VisibleIndex = 5;
             this.colUlke.Width = 150;
             // 
             // colSehir
@@ -236,7 +226,7 @@
             this.colSehir.FieldName = "Sehir";
             this.colSehir.Name = "colSehir";
             this.colSehir.Visible = true;
-            this.colSehir.VisibleIndex = 7;
+            this.colSehir.VisibleIndex = 6;
             this.colSehir.Width = 150;
             // 
             // colAdres
@@ -245,7 +235,7 @@
             this.colAdres.FieldName = "Adres";
             this.colAdres.Name = "colAdres";
             this.colAdres.Visible = true;
-            this.colAdres.VisibleIndex = 8;
+            this.colAdres.VisibleIndex = 7;
             this.colAdres.Width = 300;
             // 
             // colCepTel
@@ -254,7 +244,7 @@
             this.colCepTel.FieldName = "CepTel";
             this.colCepTel.Name = "colCepTel";
             this.colCepTel.Visible = true;
-            this.colCepTel.VisibleIndex = 9;
+            this.colCepTel.VisibleIndex = 8;
             this.colCepTel.Width = 150;
             // 
             // colEvTel
@@ -263,7 +253,7 @@
             this.colEvTel.FieldName = "EvTel";
             this.colEvTel.Name = "colEvTel";
             this.colEvTel.Visible = true;
-            this.colEvTel.VisibleIndex = 12;
+            this.colEvTel.VisibleIndex = 11;
             this.colEvTel.Width = 150;
             // 
             // colIsTel
@@ -272,7 +262,7 @@
             this.colIsTel.FieldName = "IsTel";
             this.colIsTel.Name = "colIsTel";
             this.colIsTel.Visible = true;
-            this.colIsTel.VisibleIndex = 11;
+            this.colIsTel.VisibleIndex = 10;
             this.colIsTel.Width = 150;
             // 
             // colEmail
@@ -281,7 +271,7 @@
             this.colEmail.FieldName = "Email";
             this.colEmail.Name = "colEmail";
             this.colEmail.Visible = true;
-            this.colEmail.VisibleIndex = 10;
+            this.colEmail.VisibleIndex = 9;
             this.colEmail.Width = 150;
             // 
             // colAktif
@@ -341,7 +331,7 @@
             this.btnGridAyar_DisaAktar,
             this.btnGridAyar_GridAyarKaydet});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 18;
+            this.ribbonControl1.MaxItemId = 32;
             this.ribbonControl1.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -354,35 +344,108 @@
             // btnEkle
             // 
             this.btnEkle.Caption = "Ekle";
-            this.btnEkle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnEkle.Glyph")));
             this.btnEkle.Id = 1;
-            this.btnEkle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnEkle.LargeGlyph")));
+            this.btnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.Image")));
+            this.btnEkle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEkle.ImageOptions.LargeImage")));
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEkle_ItemClick);
             // 
             // btnDuzenle
             // 
             this.btnDuzenle.Caption = "Düzenle";
-            this.btnDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Glyph")));
             this.btnDuzenle.Id = 2;
-            this.btnDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.LargeGlyph")));
+            this.btnDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.Image")));
+            this.btnDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.LargeImage")));
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDuzenle_ItemClick);
             // 
             // btnSil
             // 
             this.btnSil.Caption = "Sil";
-            this.btnSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSil.Glyph")));
             this.btnSil.Id = 3;
-            this.btnSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSil.LargeGlyph")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
             this.btnSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSil_ItemClick);
             // 
             // barToggleSwitchItem1
             // 
+            this.barToggleSwitchItem1.BindableChecked = true;
             this.barToggleSwitchItem1.Caption = "Aktif";
+            this.barToggleSwitchItem1.Checked = true;
             this.barToggleSwitchItem1.Id = 1;
-            this.barToggleSwitchItem1.Name = "barToggleSwitchItem1"; 
+            this.barToggleSwitchItem1.Name = "barToggleSwitchItem1";
+            this.barToggleSwitchItem1.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barToggleSwitchItem1_CheckedChanged);
+            // 
+            // btnGridAyar_KolonEkle
+            // 
+            this.btnGridAyar_KolonEkle.Id = 18;
+            this.btnGridAyar_KolonEkle.Name = "btnGridAyar_KolonEkle";
+            // 
+            // btnGridAyar_Gruplama
+            // 
+            this.btnGridAyar_Gruplama.Id = 19;
+            this.btnGridAyar_Gruplama.Name = "btnGridAyar_Gruplama";
+            // 
+            // btnGridAyar_Altbilgi
+            // 
+            this.btnGridAyar_Altbilgi.Id = 20;
+            this.btnGridAyar_Altbilgi.Name = "btnGridAyar_Altbilgi";
+            // 
+            // btnGridAyar_Gosterge
+            // 
+            this.btnGridAyar_Gosterge.Id = 21;
+            this.btnGridAyar_Gosterge.Name = "btnGridAyar_Gosterge";
+            // 
+            // btnGridAyar_Filtre
+            // 
+            this.btnGridAyar_Filtre.Id = 22;
+            this.btnGridAyar_Filtre.Name = "btnGridAyar_Filtre";
+            // 
+            // btnGridAyar_SutunCizgileri
+            // 
+            this.btnGridAyar_SutunCizgileri.Id = 23;
+            this.btnGridAyar_SutunCizgileri.Name = "btnGridAyar_SutunCizgileri";
+            // 
+            // btnGridAyar_SatirCizgileri
+            // 
+            this.btnGridAyar_SatirCizgileri.Id = 24;
+            this.btnGridAyar_SatirCizgileri.Name = "btnGridAyar_SatirCizgileri";
+            // 
+            // btnGridAyar_KolonlariHizala
+            // 
+            this.btnGridAyar_KolonlariHizala.Id = 25;
+            this.btnGridAyar_KolonlariHizala.Name = "btnGridAyar_KolonlariHizala";
+            // 
+            // btnGridAyar_KolonFiltreTipi
+            // 
+            this.btnGridAyar_KolonFiltreTipi.Id = 26;
+            this.btnGridAyar_KolonFiltreTipi.Name = "btnGridAyar_KolonFiltreTipi";
+            // 
+            // btnGridAyar_GruplamalariAc
+            // 
+            this.btnGridAyar_GruplamalariAc.Id = 27;
+            this.btnGridAyar_GruplamalariAc.Name = "btnGridAyar_GruplamalariAc";
+            // 
+            // btnGridAyar_GruplamalariKapat
+            // 
+            this.btnGridAyar_GruplamalariKapat.Id = 28;
+            this.btnGridAyar_GruplamalariKapat.Name = "btnGridAyar_GruplamalariKapat";
+            // 
+            // btnGridAyar_SayfaOnizleme
+            // 
+            this.btnGridAyar_SayfaOnizleme.Id = 29;
+            this.btnGridAyar_SayfaOnizleme.Name = "btnGridAyar_SayfaOnizleme";
+            // 
+            // btnGridAyar_DisaAktar
+            // 
+            this.btnGridAyar_DisaAktar.Id = 30;
+            this.btnGridAyar_DisaAktar.Name = "btnGridAyar_DisaAktar";
+            // 
+            // btnGridAyar_GridAyarKaydet
+            // 
+            this.btnGridAyar_GridAyarKaydet.Id = 31;
+            this.btnGridAyar_GridAyarKaydet.Name = "btnGridAyar_GridAyarKaydet";
             // 
             // ribbonPage1
             // 
@@ -409,6 +472,7 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "Bağlantı Detayları";
+            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonStatusBar1
             // 
@@ -496,6 +560,5 @@
         private DevExpress.XtraBars.BarButtonItem btnGridAyar_DisaAktar;
         private DevExpress.XtraBars.BarButtonItem btnGridAyar_GridAyarKaydet;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
-        private DevExpress.XtraGrid.Columns.GridColumn colFirmaAdi;
     }
 }

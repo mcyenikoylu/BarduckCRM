@@ -31,9 +31,11 @@ namespace BarduckCRM
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //BaglantiHareketi frm = new BaglantiHareketi();
+            //şifre değiştir buttonu
+
+            SifremiDegistir frm = new SifremiDegistir();
             //frm.MdiParent = this;
-            //frm.Show();
+            frm.Show();
 
            
         }
@@ -94,8 +96,29 @@ namespace BarduckCRM
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //BaglantiKarti frm = new BaglantiKarti();
-            //frm.Show();
+            //kapat buttonu
+            try
+            {
+                //if (e == null || e.CloseReason == CloseReason.UserClosing)
+                //{
+                    if (XtraMessageBox.Show("Programı kapatmak istediğinizden eminmisiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        GorunumKaydet();
+
+                        //Genel.PrmDb.SEDS_KullaniciOturum(2, Genel.KullaniciOturumID, -1, -1, "", "", "", "", Genel.AktifKullaniciID, Genel.Versiyon);
+
+
+                        Application.Exit();
+                    }
+                //    else if (e != null)
+                //        e.Cancel = true;
+                //}
+            }
+            catch (Exception Hata)
+            {
+                //Genel.LogErrorYaz(iFormID, Hata);
+                //XtraMessageBox.Show(Genel.DilGetirMesaj(1034) + "\n\n" + Hata.Message, Genel.DilGetirMesaj(2), MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -189,6 +212,9 @@ namespace BarduckCRM
             backstageViewTabItem13.Visible = false;
             backstageViewTabItem4.Visible = false;
             backstageViewTabItem3.Visible = false;
+            backstageViewTabItem7.Visible = false; //tanımlar
+            backstageViewButtonItem1.Visible = false; //destek
+            backstageViewButtonItem2.Visible = false; //yardım
             //yapım aşamasındaki menüleri gizliyorum.
 
             var kullaniciAyarlariList = data.S_KullaniciAyarlari(Genel.AktifKullaniciID).ToList();

@@ -41,8 +41,8 @@ namespace BarduckCRM
             var departman = data.S_Tip(1).ToList();
             cmbDepartman.Properties.DataSource = departman;
 
-            var personeltakimi = data.S_Tip(3).ToList();
-            cmbPersonelTakimi.Properties.DataSource = personeltakimi;
+            //var personeltakimi = data.S_Tip(3).ToList();
+            //cmbPersonelTakimi.Properties.DataSource = personeltakimi;
 
             if (kayitid > 0)
                 DataGetir(kayitid);
@@ -52,18 +52,35 @@ namespace BarduckCRM
         {
             try
             {
-                data.IUD_Personel(false, kayitid, txtAd.Text, Convert.ToInt32(cmbDepartman.EditValue),
-                txtAdres.Text, txtSehir.Text, Convert.ToInt32(cmbUlke.EditValue), txtTelCep.Text,
-                txtTelEv.Text, DateTime.Now.Date,
-                txtEPosta.Text, Convert.ToBoolean(toggAktif.Checked),
-                txtSkype.Text, txtSoyad.Text, Convert.ToInt32(cmbCinsiyet.EditValue),
-                Convert.ToDateTime(cmbDogumTarihi.EditValue), 1, DateTime.Now, 1,
-                DateTime.Now, txtUnvan.Text, Convert.ToInt32(cmbOnek.EditValue),
-                txtSemt.Text, txtPostaKodu.Text, Convert.ToInt32(cmbOfis.EditValue),
-                Convert.ToInt32(cmbPersonelTakimi.EditValue),
-               Convert.ToDateTime(cmbIseBanlangicTarihi.EditValue),
-               Convert.ToDateTime(cmbIstenAyrilmaTarihi.EditValue));
-                Mesaj.MesajVer("Personel Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
+                data.IUD_Personel(false, kayitid,
+                    txtAd.Text,
+                    Convert.ToInt32(cmbDepartman.EditValue == null ? -1 : cmbDepartman.EditValue),
+                    txtAdres.Text,
+                    txtSehir.Text,
+                    Convert.ToInt32(cmbUlke.EditValue == null ? -1 : cmbUlke.EditValue),
+                    txtTelCep.Text,
+                    txtTelEv.Text,
+                    DateTime.Now.Date,
+                    txtEPosta.Text,
+                    Convert.ToBoolean(toggAktif.Checked),
+                    "",//txtSkype.Text, 
+                    txtSoyad.Text,
+                    Convert.ToInt32(cmbCinsiyet.EditValue == null ? -1 : cmbCinsiyet.EditValue),
+                    null,//cmbDogumTarihi.EditValue != null ? Convert.ToDateTime(cmbDogumTarihi.EditValue) : DateTime.Parse("0001.01.01"),
+                    1,
+                    DateTime.Now,
+                    1,
+                    DateTime.Now,
+                    txtUnvan.Text,
+                    Convert.ToInt32(cmbOnek.EditValue == null ? -1 : cmbOnek.EditValue),
+                    txtSemt.Text,
+                    txtPostaKodu.Text,
+                    Convert.ToInt32(cmbOfis.EditValue == null ? -1 : cmbOfis.EditValue),
+                    -1,//Convert.ToInt32(cmbPersonelTakimi.EditValue),
+                    null,//Convert.ToDateTime(cmbIseBanlangicTarihi.EditValue),
+                    null);//Convert.ToDateTime(cmbIstenAyrilmaTarihi.EditValue));
+
+                    Mesaj.MesajVer("Personel Kartı başarılı şekilde kayıt edilmiştir.", Mesaj.MesajTipi.Bilgi, this);
             }
             catch (Exception)
             {
@@ -110,7 +127,7 @@ namespace BarduckCRM
                 txtAd.Text = list.FirstOrDefault().Adi;
                 txtSoyad.Text = list.FirstOrDefault().Soyadi;
                 cmbCinsiyet.EditValue = list.FirstOrDefault().Cinsiyeti_TipID72;
-                cmbDogumTarihi.EditValue = list.FirstOrDefault().DogumTarihi;
+                //cmbDogumTarihi.EditValue = list.FirstOrDefault().DogumTarihi;
                 txtUnvan.Text = list.FirstOrDefault().Unvan;
                 cmbOnek.EditValue = list.FirstOrDefault().OnekID;
                 txtAdres.Text = list.FirstOrDefault().Adres;
@@ -121,12 +138,12 @@ namespace BarduckCRM
                 txtTelEv.Text = list.FirstOrDefault().EvTel;
                 txtTelCep.Text = list.FirstOrDefault().CepTel;
                 txtEPosta.Text = list.FirstOrDefault().Email;
-                txtSkype.Text = list.FirstOrDefault().Skype;
+                //txtSkype.Text = list.FirstOrDefault().Skype;
                 cmbOfis.EditValue = list.FirstOrDefault().OfisID;
                 cmbDepartman.EditValue = list.FirstOrDefault().Departman_TipID1;
-                cmbPersonelTakimi.EditValue = list.FirstOrDefault().PersonelTakimID;
-                cmbIseBanlangicTarihi.EditValue = list.FirstOrDefault().IseBaslangicTarihi;
-                cmbIstenAyrilmaTarihi.EditValue = list.FirstOrDefault().IstenAyrilisTarihi;
+                //cmbPersonelTakimi.EditValue = list.FirstOrDefault().PersonelTakimID;
+                //cmbIseBanlangicTarihi.EditValue = list.FirstOrDefault().IseBaslangicTarihi;
+                //cmbIstenAyrilmaTarihi.EditValue = list.FirstOrDefault().IstenAyrilisTarihi;
 
             }
         }

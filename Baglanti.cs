@@ -41,7 +41,11 @@ namespace BarduckCRM
         private void DataGetir(int id)
         {
             var baglanti = data.S_Baglanti(id).ToList();
-            grdBaglanti.DataSource = baglanti;
+            if(baglanti.Count>0)
+                grdBaglanti.DataSource = baglanti;
+            else
+                grdBaglanti.DataSource = null;
+
         }
 
         private void btnEkle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -75,7 +79,7 @@ namespace BarduckCRM
                 int id = Convert.ToInt32(gvBaglanti.GetFocusedRowCellValue("ID"));
                 data.IUD_Baglanti(true, id, "", "", "",false,false,"",1,"",null,"","",1,"",1,false,1,1,"",1,"",1,1,"","","",false,false,false,false,null,"",1,"",1);
                 DataGetir(-1);
-                MesajVer("Kayıt silinmiştir.", MesajTipi.Hata, this);
+                MesajVer("Kayıt silinmiştir.", MesajTipi.Uyari, this);
             }
         }
 
@@ -162,6 +166,11 @@ namespace BarduckCRM
                     DataGetir(-1);
                 }
             }
+        }
+
+        private void barToggleSwitchItem1_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string item = e.Item.ToString();
         }
     }
 }

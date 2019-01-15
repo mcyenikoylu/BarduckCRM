@@ -280,6 +280,7 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.barToggleSwitchItem1);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Bağlantı Detayları";
+            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonStatusBar1
             // 

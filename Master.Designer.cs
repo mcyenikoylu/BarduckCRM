@@ -33,25 +33,25 @@
             this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl9 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuOfisYonetimi1 = new BarduckCRM.MenuOfisYonetimi();
+            this.backstageViewClientControl9 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuCRMYonetimi1 = new BarduckCRM.MenuCrmYonetimi();
             this.backstageViewClientControl6 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuGayrimenkulYonetimi1 = new BarduckCRM.MenuGayrimenkulYonetimi();
             this.backstageViewClientControl10 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuTelekomunikasyonYonetimi1 = new BarduckCRM.MenuTelekomunikasyonYonetimi();
+            this.backstageViewClientControl14 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl11 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl5 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuSatisSiparisYonetimi1 = new BarduckCRM.MenuSatisVeSiparisYonetimi();
             this.backstageViewClientControl12 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewClientControl13 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuRaporlar1 = new BarduckCRM.MenuRaporlar();
             this.backstageViewClientControl7 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.menuTanimlamalar1 = new BarduckCRM.MenuTanimlamalar();
-            this.backstageViewClientControl13 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewClientControl14 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl8 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewTabItem9 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
@@ -119,13 +119,12 @@
             // 
             // barAndDockingController1
             // 
-            this.barAndDockingController1.PropertiesBar.DefaultGlyphSize = new System.Drawing.Size(16, 16);
-            this.barAndDockingController1.PropertiesBar.DefaultLargeGlyphSize = new System.Drawing.Size(32, 32);
+            this.barAndDockingController1.PropertiesDocking.ViewStyle = DevExpress.XtraBars.Docking2010.Views.DockingViewStyle.Classic;
             // 
             // ribbonControl1
             // 
             this.ribbonControl1.ApplicationButtonDropDownControl = this.backstageViewControl1;
-            resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
+            this.ribbonControl1.ApplicationButtonImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonControl1.ApplicationButtonImageOptions.Image")));
             this.ribbonControl1.Controller = this.barAndDockingController1;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -139,6 +138,7 @@
             this.barButtonItem5,
             this.barButtonItem8,
             this.btnQueryBuilder});
+            resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
             this.ribbonControl1.MaxItemId = 1;
             this.ribbonControl1.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.OnlyWhenMaximized;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -160,10 +160,9 @@
             // 
             // backstageViewControl1
             // 
-            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
             this.backstageViewControl1.Controller = this.barAndDockingController1;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl9);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl9);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl6);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl10);
@@ -197,14 +196,9 @@
             this.backstageViewControl1.Items.Add(this.backstageViewButtonItem_Cikis);
             resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
             this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.Ribbon = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem10;
-            this.backstageViewControl1.SelectedTabIndex = 5;
-            // 
-            // backstageViewClientControl9
-            // 
-            resources.ApplyResources(this.backstageViewClientControl9, "backstageViewClientControl9");
-            this.backstageViewClientControl9.Name = "backstageViewClientControl9";
+            this.backstageViewControl1.OwnerControl = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem1;
+            this.backstageViewControl1.SelectedTabIndex = 2;
             // 
             // backstageViewClientControl1
             // 
@@ -217,6 +211,11 @@
             resources.ApplyResources(this.menuOfisYonetimi1, "menuOfisYonetimi1");
             this.menuOfisYonetimi1.Name = "menuOfisYonetimi1";
             this.menuOfisYonetimi1.Ribbon = null;
+            // 
+            // backstageViewClientControl9
+            // 
+            resources.ApplyResources(this.backstageViewClientControl9, "backstageViewClientControl9");
+            this.backstageViewClientControl9.Name = "backstageViewClientControl9";
             // 
             // backstageViewClientControl2
             // 
@@ -254,6 +253,11 @@
             this.menuTelekomunikasyonYonetimi1.Name = "menuTelekomunikasyonYonetimi1";
             this.menuTelekomunikasyonYonetimi1.Ribbon = null;
             // 
+            // backstageViewClientControl14
+            // 
+            resources.ApplyResources(this.backstageViewClientControl14, "backstageViewClientControl14");
+            this.backstageViewClientControl14.Name = "backstageViewClientControl14";
+            // 
             // backstageViewClientControl11
             // 
             resources.ApplyResources(this.backstageViewClientControl11, "backstageViewClientControl11");
@@ -275,6 +279,11 @@
             // 
             resources.ApplyResources(this.backstageViewClientControl12, "backstageViewClientControl12");
             this.backstageViewClientControl12.Name = "backstageViewClientControl12";
+            // 
+            // backstageViewClientControl13
+            // 
+            resources.ApplyResources(this.backstageViewClientControl13, "backstageViewClientControl13");
+            this.backstageViewClientControl13.Name = "backstageViewClientControl13";
             // 
             // backstageViewClientControl4
             // 
@@ -300,16 +309,6 @@
             this.menuTanimlamalar1.Name = "menuTanimlamalar1";
             this.menuTanimlamalar1.Ribbon = null;
             // 
-            // backstageViewClientControl13
-            // 
-            resources.ApplyResources(this.backstageViewClientControl13, "backstageViewClientControl13");
-            this.backstageViewClientControl13.Name = "backstageViewClientControl13";
-            // 
-            // backstageViewClientControl14
-            // 
-            resources.ApplyResources(this.backstageViewClientControl14, "backstageViewClientControl14");
-            this.backstageViewClientControl14.Name = "backstageViewClientControl14";
-            // 
             // backstageViewClientControl3
             // 
             resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
@@ -324,9 +323,8 @@
             // 
             resources.ApplyResources(this.backstageViewTabItem9, "backstageViewTabItem9");
             this.backstageViewTabItem9.ContentControl = this.backstageViewClientControl9;
-            this.backstageViewTabItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem9.Glyph")));
+            this.backstageViewTabItem9.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem9.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem9.Name = "backstageViewTabItem9";
-            this.backstageViewTabItem9.Selected = false;
             // 
             // backstageViewItemSeparator2
             // 
@@ -336,101 +334,90 @@
             // 
             resources.ApplyResources(this.backstageViewTabItem1, "backstageViewTabItem1");
             this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
-            this.backstageViewTabItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem1.Glyph")));
+            this.backstageViewTabItem1.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem1.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem1.Name = "backstageViewTabItem1";
-            this.backstageViewTabItem1.Selected = false;
+            this.backstageViewTabItem1.Selected = true;
             this.backstageViewTabItem1.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewTabItem1_SelectedChanged);
             // 
             // backstageViewTabItem2
             // 
             resources.ApplyResources(this.backstageViewTabItem2, "backstageViewTabItem2");
             this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
-            this.backstageViewTabItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem2.Glyph")));
+            this.backstageViewTabItem2.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem2.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem2.Name = "backstageViewTabItem2";
-            this.backstageViewTabItem2.Selected = false;
             this.backstageViewTabItem2.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewTabItem2_SelectedChanged);
             // 
             // backstageViewTabItem6
             // 
             resources.ApplyResources(this.backstageViewTabItem6, "backstageViewTabItem6");
             this.backstageViewTabItem6.ContentControl = this.backstageViewClientControl6;
-            this.backstageViewTabItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem6.Glyph")));
+            this.backstageViewTabItem6.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem6.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem6.Name = "backstageViewTabItem6";
-            this.backstageViewTabItem6.Selected = false;
             this.backstageViewTabItem6.Visible = false;
             // 
             // backstageViewTabItem10
             // 
             resources.ApplyResources(this.backstageViewTabItem10, "backstageViewTabItem10");
             this.backstageViewTabItem10.ContentControl = this.backstageViewClientControl10;
-            this.backstageViewTabItem10.Glyph = global::BarduckCRM.Properties.Resources.Telecoms_Icon_Mavi;
+            this.backstageViewTabItem10.ImageOptions.ItemNormal.Image = global::BarduckCRM.Properties.Resources.Telecoms_Icon_Mavi;
             this.backstageViewTabItem10.Name = "backstageViewTabItem10";
-            this.backstageViewTabItem10.Selected = true;
             this.backstageViewTabItem10.Visible = false;
             // 
             // backstageViewTabItem14
             // 
             resources.ApplyResources(this.backstageViewTabItem14, "backstageViewTabItem14");
             this.backstageViewTabItem14.ContentControl = this.backstageViewClientControl14;
-            this.backstageViewTabItem14.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem14.Glyph")));
+            this.backstageViewTabItem14.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem14.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem14.Name = "backstageViewTabItem14";
-            this.backstageViewTabItem14.Selected = false;
             // 
             // backstageViewTabItem11
             // 
             resources.ApplyResources(this.backstageViewTabItem11, "backstageViewTabItem11");
             this.backstageViewTabItem11.ContentControl = this.backstageViewClientControl11;
-            this.backstageViewTabItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem11.Glyph")));
+            this.backstageViewTabItem11.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem11.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem11.Name = "backstageViewTabItem11";
-            this.backstageViewTabItem11.Selected = false;
             // 
             // backstageViewTabItem5
             // 
             resources.ApplyResources(this.backstageViewTabItem5, "backstageViewTabItem5");
             this.backstageViewTabItem5.ContentControl = this.backstageViewClientControl5;
-            this.backstageViewTabItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem5.Glyph")));
+            this.backstageViewTabItem5.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem5.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem5.Name = "backstageViewTabItem5";
-            this.backstageViewTabItem5.Selected = false;
             // 
             // backstageViewTabItem12
             // 
             resources.ApplyResources(this.backstageViewTabItem12, "backstageViewTabItem12");
             this.backstageViewTabItem12.ContentControl = this.backstageViewClientControl12;
-            this.backstageViewTabItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem12.Glyph")));
+            this.backstageViewTabItem12.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem12.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem12.Name = "backstageViewTabItem12";
-            this.backstageViewTabItem12.Selected = false;
             // 
             // backstageViewTabItem13
             // 
             resources.ApplyResources(this.backstageViewTabItem13, "backstageViewTabItem13");
             this.backstageViewTabItem13.ContentControl = this.backstageViewClientControl13;
-            this.backstageViewTabItem13.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem13.Glyph")));
+            this.backstageViewTabItem13.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem13.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem13.Name = "backstageViewTabItem13";
-            this.backstageViewTabItem13.Selected = false;
             // 
             // backstageViewTabItem4
             // 
             resources.ApplyResources(this.backstageViewTabItem4, "backstageViewTabItem4");
             this.backstageViewTabItem4.ContentControl = this.backstageViewClientControl4;
-            this.backstageViewTabItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem4.Glyph")));
+            this.backstageViewTabItem4.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem4.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem4.Name = "backstageViewTabItem4";
-            this.backstageViewTabItem4.Selected = false;
             // 
             // backstageViewTabItem7
             // 
             resources.ApplyResources(this.backstageViewTabItem7, "backstageViewTabItem7");
             this.backstageViewTabItem7.ContentControl = this.backstageViewClientControl7;
-            this.backstageViewTabItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem7.Glyph")));
+            this.backstageViewTabItem7.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem7.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem7.Name = "backstageViewTabItem7";
-            this.backstageViewTabItem7.Selected = false;
             // 
             // backstageViewTabItem3
             // 
             resources.ApplyResources(this.backstageViewTabItem3, "backstageViewTabItem3");
             this.backstageViewTabItem3.ContentControl = this.backstageViewClientControl3;
-            this.backstageViewTabItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem3.Glyph")));
+            this.backstageViewTabItem3.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem3.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem3.Name = "backstageViewTabItem3";
-            this.backstageViewTabItem3.Selected = false;
             this.backstageViewTabItem3.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewTabItem3_SelectedChanged);
             // 
             // backstageViewItemSeparator1
@@ -440,54 +427,54 @@
             // backstageViewButtonItem1
             // 
             resources.ApplyResources(this.backstageViewButtonItem1, "backstageViewButtonItem1");
-            this.backstageViewButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem1.Glyph")));
+            this.backstageViewButtonItem1.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem1.ImageOptions.ItemNormal.Image")));
             this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
             // 
             // backstageViewButtonItem2
             // 
             resources.ApplyResources(this.backstageViewButtonItem2, "backstageViewButtonItem2");
-            this.backstageViewButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem2.Glyph")));
+            this.backstageViewButtonItem2.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem2.ImageOptions.ItemNormal.Image")));
             this.backstageViewButtonItem2.Name = "backstageViewButtonItem2";
             // 
             // backstageViewTabItem8
             // 
             resources.ApplyResources(this.backstageViewTabItem8, "backstageViewTabItem8");
             this.backstageViewTabItem8.ContentControl = this.backstageViewClientControl8;
-            this.backstageViewTabItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem8.Glyph")));
+            this.backstageViewTabItem8.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem8.ImageOptions.ItemNormal.Image")));
             this.backstageViewTabItem8.Name = "backstageViewTabItem8";
-            this.backstageViewTabItem8.Selected = false;
             // 
             // backstageViewButtonItem_Cikis
             // 
             resources.ApplyResources(this.backstageViewButtonItem_Cikis, "backstageViewButtonItem_Cikis");
-            this.backstageViewButtonItem_Cikis.Glyph = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem_Cikis.Glyph")));
+            this.backstageViewButtonItem_Cikis.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewButtonItem_Cikis.ImageOptions.ItemNormal.Image")));
             this.backstageViewButtonItem_Cikis.Name = "backstageViewButtonItem_Cikis";
             this.backstageViewButtonItem_Cikis.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewButtonItem_Cikis_ItemClick);
             // 
             // barButtonItem1
             // 
             resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
             this.barButtonItem1.Id = 5;
-            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
             resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
-            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
             this.barButtonItem2.Id = 2;
-            this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
             this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem3
             // 
             resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
             this.barButtonItem3.Id = 1;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
+            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
@@ -506,36 +493,39 @@
             // barButtonItem4
             // 
             resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
-            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
             this.barButtonItem4.Id = 5;
-            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
             // 
             resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
             this.barButtonItem5.Id = 6;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
             this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // barButtonItem8
             // 
             resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
-            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
             this.barButtonItem8.Id = 9;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // btnQueryBuilder
             // 
             resources.ApplyResources(this.btnQueryBuilder, "btnQueryBuilder");
-            this.btnQueryBuilder.Glyph = ((System.Drawing.Image)(resources.GetObject("btnQueryBuilder.Glyph")));
             this.btnQueryBuilder.Id = 1;
-            this.btnQueryBuilder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnQueryBuilder.LargeGlyph")));
+            this.btnQueryBuilder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQueryBuilder.ImageOptions.Image")));
+            this.btnQueryBuilder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQueryBuilder.ImageOptions.LargeImage")));
             this.btnQueryBuilder.Name = "btnQueryBuilder";
             this.btnQueryBuilder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQueryBuilder_ItemClick);
             // 
@@ -550,7 +540,7 @@
             // 
             // ribbonPageGroupGenel
             // 
-            this.ribbonPageGroupGenel.Glyph = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroupGenel.Glyph")));
+            this.ribbonPageGroupGenel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroupGenel.ImageOptions.Image")));
             this.ribbonPageGroupGenel.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroupGenel.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroupGenel.Name = "ribbonPageGroupGenel";
@@ -561,6 +551,7 @@
             // 
             this.ribbonPageGroupSablon.ItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonPageGroupSablon.Name = "ribbonPageGroupSablon";
+            this.ribbonPageGroupSablon.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroupSablon, "ribbonPageGroupSablon");
             // 
             // ribbonPageGroup1
@@ -570,6 +561,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
             // 
             // ribbonPageSikKullanilanlarim
@@ -592,6 +584,7 @@
             this.ribbonPageGroup3});
             this.ribbonPage1.Name = "ribbonPage1";
             resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
+            this.ribbonPage1.Visible = false;
             // 
             // ribbonPageGroup3
             // 
@@ -614,7 +607,7 @@
             // recentPinItem1
             // 
             resources.ApplyResources(this.recentPinItem1, "recentPinItem1");
-            this.recentPinItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("recentPinItem1.Glyph")));
+            this.recentPinItem1.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("recentPinItem1.ImageOptions.ItemNormal.Image")));
             this.recentPinItem1.Name = "recentPinItem1";
             // 
             // xtraTabbedMdiManager1

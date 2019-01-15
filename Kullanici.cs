@@ -45,5 +45,10 @@ namespace BarduckCRM
             KullaniciKarti frm = new KullaniciKarti(KullaniciID);
             frm.ShowDialog();
         }
+
+        private void btnSil_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

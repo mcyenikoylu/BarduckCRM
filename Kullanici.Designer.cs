@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanici));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnEkle = new DevExpress.XtraBars.BarButtonItem();
@@ -37,7 +38,7 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.grd = new DevExpress.XtraGrid.GridControl();
-            this.sKullaniciResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sKullaniciResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKullaniciAdi = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -108,6 +109,7 @@
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
             this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
+            this.btnSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSil_ItemClick);
             // 
             // ribbonPage1
             // 

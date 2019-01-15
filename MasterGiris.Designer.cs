@@ -95,6 +95,7 @@
             this.txtParola.Location = new System.Drawing.Point(143, 97);
             this.txtParola.Name = "txtParola";
             this.txtParola.Properties.AutoHeight = false;
+            this.txtParola.Properties.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(275, 25);
             this.txtParola.TabIndex = 5;
             // 

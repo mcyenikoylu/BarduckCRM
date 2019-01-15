@@ -365,6 +365,7 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.ShowCaptionButton = false;
             this.ribbonPageGroup4.Text = "İşlemler";
+            this.ribbonPageGroup4.Visible = false;
             // 
             // ribbonPageGroup5
             // 
@@ -382,6 +383,7 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Barduck CRM";
+            this.ribbonPageGroup6.Visible = false;
             // 
             // ribbonStatusBar1
             // 

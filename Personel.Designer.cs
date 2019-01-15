@@ -57,6 +57,8 @@
             this.sPersonelResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvPersonel = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAdi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSoyadi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDepartman_TipID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAdres = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSehir = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -66,8 +68,6 @@
             this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAktif = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSkype = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colAdi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSoyadi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCinsiyeti_TipID72 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDogumTarihi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSil = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -294,6 +294,7 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "Bağlantı Detayları";
+            this.ribbonPageGroup2.Visible = false;
             // 
             // ribbonStatusBar1
             // 
@@ -370,6 +371,22 @@
             this.colID.VisibleIndex = 0;
             this.colID.Width = 150;
             // 
+            // colAdi
+            // 
+            this.colAdi.FieldName = "Adi";
+            this.colAdi.Name = "colAdi";
+            this.colAdi.Visible = true;
+            this.colAdi.VisibleIndex = 1;
+            this.colAdi.Width = 150;
+            // 
+            // colSoyadi
+            // 
+            this.colSoyadi.FieldName = "Soyadi";
+            this.colSoyadi.Name = "colSoyadi";
+            this.colSoyadi.Visible = true;
+            this.colSoyadi.VisibleIndex = 2;
+            this.colSoyadi.Width = 150;
+            // 
             // colDepartman_TipID1
             // 
             this.colDepartman_TipID1.FieldName = "Departman_TipID1";
@@ -437,22 +454,6 @@
             this.colSkype.Visible = true;
             this.colSkype.VisibleIndex = 10;
             this.colSkype.Width = 150;
-            // 
-            // colAdi
-            // 
-            this.colAdi.FieldName = "Adi";
-            this.colAdi.Name = "colAdi";
-            this.colAdi.Visible = true;
-            this.colAdi.VisibleIndex = 1;
-            this.colAdi.Width = 150;
-            // 
-            // colSoyadi
-            // 
-            this.colSoyadi.FieldName = "Soyadi";
-            this.colSoyadi.Name = "colSoyadi";
-            this.colSoyadi.Visible = true;
-            this.colSoyadi.VisibleIndex = 2;
-            this.colSoyadi.Width = 150;
             // 
             // colCinsiyeti_TipID72
             // 

@@ -104,51 +104,51 @@
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(465, 143);
+            this.ribbonControl1.Size = new System.Drawing.Size(706, 143);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // btnKaydet
             // 
             this.btnKaydet.Caption = "Kaydet";
-            this.btnKaydet.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.Glyph")));
             this.btnKaydet.Id = 1;
-            this.btnKaydet.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydet.LargeGlyph")));
+            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
+            this.btnKaydet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.LargeImage")));
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydet_ItemClick);
             // 
             // btnKaydetVeKapat
             // 
             this.btnKaydetVeKapat.Caption = "Kaydet ve Kapat";
-            this.btnKaydetVeKapat.Glyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.Glyph")));
             this.btnKaydetVeKapat.Id = 2;
-            this.btnKaydetVeKapat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.LargeGlyph")));
+            this.btnKaydetVeKapat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.ImageOptions.Image")));
+            this.btnKaydetVeKapat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKaydetVeKapat.ImageOptions.LargeImage")));
             this.btnKaydetVeKapat.Name = "btnKaydetVeKapat";
             this.btnKaydetVeKapat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKaydetVeKapat_ItemClick);
             // 
             // btnDuzenle
             // 
             this.btnDuzenle.Caption = "Düzenle";
-            this.btnDuzenle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Glyph")));
             this.btnDuzenle.Id = 4;
-            this.btnDuzenle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.LargeGlyph")));
+            this.btnDuzenle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.Image")));
+            this.btnDuzenle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.ImageOptions.LargeImage")));
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnTemizle
             // 
             this.btnTemizle.Caption = "Temizle";
-            this.btnTemizle.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Glyph")));
             this.btnTemizle.Id = 5;
-            this.btnTemizle.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTemizle.LargeGlyph")));
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.LargeImage")));
             this.btnTemizle.Name = "btnTemizle";
             // 
             // btnSil
             // 
             this.btnSil.Caption = "Sil";
-            this.btnSil.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSil.Glyph")));
             this.btnSil.Id = 6;
-            this.btnSil.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSil.LargeGlyph")));
+            this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
+            this.btnSil.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.LargeImage")));
             this.btnSil.Name = "btnSil";
             this.btnSil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSil_ItemClick);
             // 
@@ -157,17 +157,17 @@
             this.btnYazdir.ActAsDropDown = true;
             this.btnYazdir.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.btnYazdir.Caption = "Yazdır";
-            this.btnYazdir.Glyph = ((System.Drawing.Image)(resources.GetObject("btnYazdir.Glyph")));
             this.btnYazdir.Id = 7;
-            this.btnYazdir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnYazdir.LargeGlyph")));
+            this.btnYazdir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.Image")));
+            this.btnYazdir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.LargeImage")));
             this.btnYazdir.Name = "btnYazdir";
             // 
             // btnEpostaGonder
             // 
             this.btnEpostaGonder.Caption = "E-Posta Gönder";
-            this.btnEpostaGonder.Glyph = ((System.Drawing.Image)(resources.GetObject("btnEpostaGonder.Glyph")));
             this.btnEpostaGonder.Id = 10;
-            this.btnEpostaGonder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnEpostaGonder.LargeGlyph")));
+            this.btnEpostaGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEpostaGonder.ImageOptions.Image")));
+            this.btnEpostaGonder.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEpostaGonder.ImageOptions.LargeImage")));
             this.btnEpostaGonder.Name = "btnEpostaGonder";
             // 
             // ribbonGalleryBarItem1
@@ -179,13 +179,13 @@
             galleryItemGroup1.Caption = "Group5";
             galleryItem1.Caption = "Stok Yetkiler";
             galleryItem1.Description = "Stok Yetkiler";
-            galleryItem1.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem1.Image")));
+            galleryItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             galleryItem2.Caption = "CRM Yetkileri";
             galleryItem2.Description = "CRM Yetkileri";
-            galleryItem2.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem2.Image")));
+            galleryItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             galleryItem3.Caption = "Personel Yetkileri";
             galleryItem3.Description = "Personel Yetkileri";
-            galleryItem3.Image = ((System.Drawing.Image)(resources.GetObject("galleryItem3.Image")));
+            galleryItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -237,25 +237,25 @@
             // btnYardim
             // 
             this.btnYardim.Caption = "Yardım";
-            this.btnYardim.Glyph = ((System.Drawing.Image)(resources.GetObject("btnYardim.Glyph")));
             this.btnYardim.Id = 2;
-            this.btnYardim.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnYardim.LargeGlyph")));
+            this.btnYardim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYardim.ImageOptions.Image")));
+            this.btnYardim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYardim.ImageOptions.LargeImage")));
             this.btnYardim.Name = "btnYardim";
             // 
             // btnBilgi
             // 
             this.btnBilgi.Caption = "Bilgi";
-            this.btnBilgi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnBilgi.Glyph")));
             this.btnBilgi.Id = 3;
-            this.btnBilgi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBilgi.LargeGlyph")));
+            this.btnBilgi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBilgi.ImageOptions.Image")));
+            this.btnBilgi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBilgi.ImageOptions.LargeImage")));
             this.btnBilgi.Name = "btnBilgi";
             // 
             // btnDestekTalebi
             // 
             this.btnDestekTalebi.Caption = "Destek Talebi";
-            this.btnDestekTalebi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.Glyph")));
             this.btnDestekTalebi.Id = 4;
-            this.btnDestekTalebi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.LargeGlyph")));
+            this.btnDestekTalebi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.ImageOptions.Image")));
+            this.btnDestekTalebi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDestekTalebi.ImageOptions.LargeImage")));
             this.btnDestekTalebi.Name = "btnDestekTalebi";
             // 
             // toggAktif
@@ -270,32 +270,29 @@
             // 
             this.barLblKayitID.Caption = "KayitID";
             this.barLblKayitID.Description = "KayitID";
-            this.barLblKayitID.Glyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.Glyph")));
             this.barLblKayitID.Id = 19;
-            this.barLblKayitID.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.LargeGlyph")));
+            this.barLblKayitID.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.ImageOptions.Image")));
+            this.barLblKayitID.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitID.ImageOptions.LargeImage")));
             this.barLblKayitID.Name = "barLblKayitID";
-            this.barLblKayitID.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barLblKayitTarihi
             // 
             this.barLblKayitTarihi.Caption = "KayitTarihi";
             this.barLblKayitTarihi.Description = "KayitTarihi";
-            this.barLblKayitTarihi.Glyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.Glyph")));
             this.barLblKayitTarihi.Id = 20;
-            this.barLblKayitTarihi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.LargeGlyph")));
+            this.barLblKayitTarihi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.ImageOptions.Image")));
+            this.barLblKayitTarihi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitTarihi.ImageOptions.LargeImage")));
             this.barLblKayitTarihi.Name = "barLblKayitTarihi";
-            this.barLblKayitTarihi.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barLblKayitAktifPasif
             // 
             this.barLblKayitAktifPasif.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barLblKayitAktifPasif.Caption = "KayitAktifPasif";
             this.barLblKayitAktifPasif.Description = "KayitAktifPasif";
-            this.barLblKayitAktifPasif.GlyphDisabled = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.GlyphDisabled")));
             this.barLblKayitAktifPasif.Id = 21;
-            this.barLblKayitAktifPasif.LargeGlyphDisabled = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.LargeGlyphDisabled")));
+            this.barLblKayitAktifPasif.ImageOptions.DisabledImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.ImageOptions.DisabledImage")));
+            this.barLblKayitAktifPasif.ImageOptions.DisabledLargeImage = ((System.Drawing.Image)(resources.GetObject("barLblKayitAktifPasif.ImageOptions.DisabledLargeImage")));
             this.barLblKayitAktifPasif.Name = "barLblKayitAktifPasif";
-            this.barLblKayitAktifPasif.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage1
             // 
@@ -366,7 +363,7 @@
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 221);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(465, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(706, 31);
             // 
             // labelControl2
             // 
@@ -406,7 +403,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 252);
+            this.ClientSize = new System.Drawing.Size(706, 252);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.txtFirmaAdi);
             this.Controls.Add(this.labelControl1);

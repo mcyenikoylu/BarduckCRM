@@ -38,7 +38,6 @@
             this.colOnek = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pictureOnek = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.colAdiSoyadi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFirmaAdi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMeslek_TipID2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbMeslek = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.sTipResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -135,14 +134,14 @@
             // 
             // splitContainerControl1
             // 
-            this.splitContainerControl1.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("splitContainerControl1.Appearance.BackColor")));
+            this.splitContainerControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.splitContainerControl1.Appearance.Options.UseBackColor = true;
             resources.ApplyResources(this.splitContainerControl1, "splitContainerControl1");
             this.splitContainerControl1.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.grdBaglanti);
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
-            this.splitContainerControl1.Panel2.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("splitContainerControl1.Panel2.Appearance.BackColor")));
+            this.splitContainerControl1.Panel2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.splitContainerControl1.Panel2.Appearance.Options.UseBackColor = true;
             this.splitContainerControl1.Panel2.Controls.Add(this.tabPane1);
             this.splitContainerControl1.Panel2.Controls.Add(this.panelControl1);
@@ -175,7 +174,6 @@
             this.colID,
             this.colOnek,
             this.colAdiSoyadi,
-            this.colFirmaAdi,
             this.colMeslek_TipID2,
             this.colTarih,
             this.colPuan,
@@ -218,12 +216,6 @@
             resources.ApplyResources(this.colAdiSoyadi, "colAdiSoyadi");
             this.colAdiSoyadi.FieldName = "AdiSoyadi";
             this.colAdiSoyadi.Name = "colAdiSoyadi";
-            // 
-            // colFirmaAdi
-            // 
-            resources.ApplyResources(this.colFirmaAdi, "colFirmaAdi");
-            this.colFirmaAdi.FieldName = "FirmaAdi";
-            this.colFirmaAdi.Name = "colFirmaAdi";
             // 
             // colMeslek_TipID2
             // 
@@ -340,7 +332,6 @@
             // 
             // tabPane1
             // 
-            this.tabPane1.AllowCollapse = DevExpress.Utils.DefaultBoolean.Default;
             this.tabPane1.Controls.Add(this.tabNavigationPage1);
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             resources.ApplyResources(this.tabPane1, "tabPane1");
@@ -811,7 +802,6 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraGrid.Columns.GridColumn colFirmaAdi;
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
     }
 }

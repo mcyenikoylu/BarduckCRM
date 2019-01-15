@@ -63,9 +63,9 @@ namespace BarduckCRM
                     cmbUyrugu.Properties.DataSource = ulkelist;
                 }
 
-                var firmalist = data.S_Firma(-1).ToList();
-                if(firmalist.Count>0)
-                    cmbFirma.Properties.DataSource = firmalist;
+                //var firmalist = data.S_Firma(-1).ToList();
+                //if(firmalist.Count>0)
+                //    cmbFirma.Properties.DataSource = firmalist;
 
                 if (kayitid > 0)
                     DataGetir(kayitid);
@@ -103,7 +103,7 @@ namespace BarduckCRM
             list = data.S_Baglanti(id).ToList();
             if (list.Count > 0)
             {
-                rgBireyselKurumsal.SelectedIndex = list.FirstOrDefault().Kurumsal == true ? 1 : 0;
+                //rgBireyselKurumsal.SelectedIndex = list.FirstOrDefault().Kurumsal == true ? 1 : 0;
                 rcReyting.EditValue = list.FirstOrDefault().Reyting;
                 txtAdi.Text = list.FirstOrDefault().Adi;
                 txtSoyadi.Text = list.FirstOrDefault().Soyadi;
@@ -125,15 +125,15 @@ namespace BarduckCRM
                 toggCepTel.EditValue = list.FirstOrDefault().TanitimCepTel;
                 txtEPosta.Text = list.FirstOrDefault().Email;
                 toggEPosta.EditValue = list.FirstOrDefault().TanitimEPosta;
-                txtIsTel.Text = list.FirstOrDefault().IsTel;
-                toggIsTel.EditValue = list.FirstOrDefault().TanitimIsTel;
+                //txtIsTel.Text = list.FirstOrDefault().IsTel;
+                //toggIsTel.EditValue = list.FirstOrDefault().TanitimIsTel;
 
-                cmbFirma.EditValue = list.FirstOrDefault().FirmaID;
-                txtUnvan.Text = list.FirstOrDefault().Unvan;
-                txtDahili.Text = list.FirstOrDefault().Dahili;
+                //cmbFirma.EditValue = list.FirstOrDefault().FirmaID;
+                //txtUnvan.Text = list.FirstOrDefault().Unvan;
+                //txtDahili.Text = list.FirstOrDefault().Dahili;
                 tbcPuan.EditValue = list.FirstOrDefault().Puan;
 
-                memoNotlar.Text = list.FirstOrDefault().Notlar;
+                //memoNotlar.Text = list.FirstOrDefault().Notlar;
                 //peResim.EditValue = list.FirstOrDefault().re
 
                 barLblKayitID.Caption = list.FirstOrDefault().ID.ToString();
@@ -189,20 +189,20 @@ namespace BarduckCRM
                     txtAdi.Text + " " + txtSoyadi.Text,
                     txtAdres.Text,
                     toggAktif.Checked,
-                    rgBireyselKurumsal.SelectedIndex == 0 ? true : false,
+                    true,//rgBireyselKurumsal.SelectedIndex == 0 ? true : false,
                     txtCepTel.Text,
                     -1,
-                    txtDahili.Text,
+                    "",//txtDahili.Text,
                     Tarih1,
                     txtEPosta.Text,
                     txtEvTel.Text,
-                    Convert.ToInt32(cmbFirma.EditValue),
-                    txtIsTel.Text,
+                    null,//Convert.ToInt32(cmbFirma.EditValue),
+                    "",//txtIsTel.Text,
                     1, //kullanici id
-                    rgBireyselKurumsal.SelectedIndex == 1 ? true : false,
+                    true,//rgBireyselKurumsal.SelectedIndex == 1 ? true : false,
                     Convert.ToInt32(cmbMedeniHali.EditValue),
                     Convert.ToInt32(cmbMeslek.EditValue),
-                    memoNotlar.Text,
+                    "",//memoNotlar.Text,
                     Convert.ToInt32(cmbOnek.EditValue),
                     txtPostaKodu.Text,
                     Convert.ToInt32(tbcPuan.EditValue),
@@ -213,11 +213,11 @@ namespace BarduckCRM
                     Convert.ToBoolean(toggCepTel.EditValue),
                     Convert.ToBoolean(toggEPosta.EditValue),
                     Convert.ToBoolean(toggEvTel.EditValue),
-                    Convert.ToBoolean(toggIsTel.EditValue),
+                    null,//Convert.ToBoolean(toggIsTel.EditValue),
                     DateTime.Now.Date,
                     "",//ülke string
                     Convert.ToInt32(cmbUlke.EditValue),
-                    txtUnvan.Text,
+                    "",//txtUnvan.Text,
                     Convert.ToInt32(cmbUyrugu.EditValue)).ToList();
 
                 //genel tercihler
@@ -381,32 +381,40 @@ namespace BarduckCRM
             this.DialogResult = DialogResult.OK;
         }
 
-        private void cmbFirma_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
-        {
-            if (e.Button.Index == 1) //yeni alan ekle buttonu
-            {
-                int seciliFirmaID = Convert.ToInt32(cmbFirma.EditValue);
-                FirmaKarti frm = new FirmaKarti(-1,true);
-                frm.ShowDialog();
-                if (frm.DialogResult == DialogResult.OK)
-                {
-                    var firmalist = data.S_Firma(-1).ToList();
-                    cmbFirma.Properties.DataSource = firmalist;
-                    cmbFirma.EditValue = frm._FirmaID;
-                }
-                else
-                    cmbFirma.EditValue = seciliFirmaID;
-            }
-            else if (e.Button.Index == 2) //temizle buttonu
-            {
-                cmbFirma.EditValue = -1;
-            }
+        //private void cmbFirma_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        //{
+        //    if (e.Button.Index == 1) //yeni alan ekle buttonu
+        //    {
+        //        int seciliFirmaID = Convert.ToInt32(cmbFirma.EditValue);
+        //        FirmaKarti frm = new FirmaKarti(-1,true);
+        //        frm.ShowDialog();
+        //        if (frm.DialogResult == DialogResult.OK)
+        //        {
+        //            var firmalist = data.S_Firma(-1).ToList();
+        //            cmbFirma.Properties.DataSource = firmalist;
+        //            cmbFirma.EditValue = frm._FirmaID;
+        //        }
+        //        else
+        //            cmbFirma.EditValue = seciliFirmaID;
+        //    }
+        //    else if (e.Button.Index == 2) //temizle buttonu
+        //    {
+        //        cmbFirma.EditValue = -1;
+        //    }
 
-        }
+        //}
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
+        }
+
+        private void btnTemizle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (XtraMessageBox.Show("Alanları temizlemek istediğinizden eminmisiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+
+            }
         }
     }
 }

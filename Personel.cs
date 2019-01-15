@@ -78,6 +78,9 @@ namespace BarduckCRM
             var list = data.S_Personel(-1).ToList();
             if (list.Count > 0)
                 grdPersonel.DataSource = list;
+            else
+                grdPersonel.DataSource = null;
+
         }
     }
 }

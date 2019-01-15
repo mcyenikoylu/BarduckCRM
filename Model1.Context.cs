@@ -1462,5 +1462,18 @@ namespace BarduckCRM
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<IUD_Personel_Result>("IUD_Personel", silParameter, iDParameter, adiParameter, departman_TipID1Parameter, adresParameter, sehirParameter, ulkeIDParameter, cepTelParameter, evTelParameter, tarihParameter, emailParameter, aktifParameter, skypeParameter, soyadiParameter, cinsiyeti_TipID72Parameter, dogumTarihiParameter, olusturanKullaniciIDParameter, olusturanTarihParameter, degistirenKullaniciIDParameter, degistirenTarihParameter, unvanParameter, onekIDParameter, semtParameter, postaKoduParameter, ofisIDParameter, personelTakimIDParameter, iseBanlangicTarihiParameter, istenAyrilisTarihiParameter);
         }
+    
+        public virtual int U_KullaniciParola(Nullable<int> iD, string yeniparola)
+        {
+            var iDParameter = iD.HasValue ?
+                new ObjectParameter("ID", iD) :
+                new ObjectParameter("ID", typeof(int));
+    
+            var yeniparolaParameter = yeniparola != null ?
+                new ObjectParameter("yeniparola", yeniparola) :
+                new ObjectParameter("yeniparola", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("U_KullaniciParola", iDParameter, yeniparolaParameter);
+        }
     }
 }

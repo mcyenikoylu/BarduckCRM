@@ -55,6 +55,7 @@ namespace BarduckCRM
             {
                 kullaniciid = Convert.ToInt32(list.FirstOrDefault().ID);
                 Genel.AktifKullaniciID = kullaniciid;
+                Genel.AktifKullaniciAdi = txtKullaniciAdi.Text;
 
                 var ayarlar = data.S_KullaniciAyarlari(kullaniciid).ToList();
                 if(ayarlar.Count>0)

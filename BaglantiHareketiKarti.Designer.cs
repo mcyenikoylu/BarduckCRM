@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaglantiHareketiKarti));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -58,7 +59,7 @@
             this.gaugeControl_HareketSuresi = new DevExpress.XtraGauges.Win.GaugeControl();
             this.digitalGauge1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge();
             this.digitalBackgroundLayerComponent1 = new DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent();
-            this.sBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.lblMeslek = new DevExpress.XtraEditors.LabelControl();
             this.lblAdiSoyadi = new DevExpress.XtraEditors.LabelControl();
@@ -71,10 +72,10 @@
             this.colTarih1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colPersonelID = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.cmbPersonelID = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.sPersonelResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sPersonelResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colHareketTipi_TipID17 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.sTipResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sTipResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colAciklamaNotu = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.memoAciklamaNotu = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.colBaglantiID = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -139,15 +140,15 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.cmbHareketDurumu = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbDurdurulacakHareket = new DevExpress.XtraEditors.LookUpEdit();
-            this.sDurdurulacakBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sDurdurulacakBaglantiHareketleriResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.cmbPersonel = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbOfis = new DevExpress.XtraEditors.LookUpEdit();
-            this.sOfisResultBindingSource = new System.Windows.Forms.BindingSource();
+            this.sOfisResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbHareketTipi = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbHareketKaynagi = new DevExpress.XtraEditors.LookUpEdit();
-            this.timerSure = new System.Windows.Forms.Timer();
+            this.timerSure = new System.Windows.Forms.Timer(this.components);
             this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -320,7 +321,6 @@
             // 
             // tabPane1
             // 
-            this.tabPane1.AllowCollapse = DevExpress.Utils.DefaultBoolean.Default;
             this.tabPane1.Controls.Add(this.tabNavigationPage1);
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             this.tabPane1.Controls.Add(this.tabNavigationPage3);
@@ -816,6 +816,7 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.ShowCaptionButton = false;
             this.ribbonPageGroup4.Text = "İşlemler";
+            this.ribbonPageGroup4.Visible = false;
             // 
             // ribbonPageGroup5
             // 
@@ -836,6 +837,7 @@
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "Barduck CRM";
+            this.ribbonPageGroup6.Visible = false;
             // 
             // repositoryItemAppointmentResource1
             // 
@@ -1100,6 +1102,7 @@
             superToolTip1.Items.Add(toolTipTitleItem1);
             this.simpleButton2.SuperTip = superToolTip1;
             this.simpleButton2.TabIndex = 73;
+            this.simpleButton2.Visible = false;
             // 
             // simpleButton3
             // 
@@ -1112,6 +1115,7 @@
             superToolTip2.Items.Add(toolTipTitleItem2);
             this.simpleButton3.SuperTip = superToolTip2;
             this.simpleButton3.TabIndex = 72;
+            this.simpleButton3.Visible = false;
             // 
             // simpleButton1
             // 
@@ -1124,6 +1128,7 @@
             superToolTip3.Items.Add(toolTipTitleItem3);
             this.simpleButton1.SuperTip = superToolTip3;
             this.simpleButton1.TabIndex = 71;
+            this.simpleButton1.Visible = false;
             // 
             // cmbHareketDurumu
             // 
