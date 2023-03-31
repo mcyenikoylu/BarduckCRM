@@ -1,4 +1,6 @@
-# BarduckCRM
+# Barduck CRM, Customer Relationship Management
+Customer transactions program for small business. Manage sales and marketing operations. Create separate user login accounts for your salespeople. And keep track of your employees' customer communications. You detailed customer movements and get reports. (2019)
+
 web page: www.barduckcrm.com <br/>
 installation: https://link.medium.com/cJ9GiHuZRR
 
