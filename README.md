@@ -27,7 +27,7 @@ Blog for Installation: https://link.medium.com/cJ9GiHuZRR
 ## Deployment
 
 * C# .NET
-* Entity Frameword
+* Entity Framework
 * LONQ
 * MSLocalDB
 * T-SQL
