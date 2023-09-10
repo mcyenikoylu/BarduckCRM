@@ -1350,3 +1350,5 @@ C:\Users\cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\obj\Debug\BarduckCR
 C:\Users\cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\obj\Debug\BarduckCRM.csproj.CopyComplete
 C:\Users\cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\obj\Debug\BarduckCRM.exe
 C:\Users\cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\obj\Debug\BarduckCRM.pdb
+C:\Users\Cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\bin\Debug\EntityFramework.dll
+C:\Users\Cenk\source\repos\mcyenikoylu\BarduckCRM\BarduckCRM\bin\Debug\EntityFramework.SqlServer.dll
